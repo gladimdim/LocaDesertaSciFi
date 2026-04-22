@@ -43,14 +43,12 @@
             "id": "c04ea1e1d1fa3b2b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Books/Зоряний Гетьманат/Зоряний Гетьманат.md",
-                "mode": "source",
-                "source": false
+                "file": "Books/Вістря Кулаку/Images/Kirilo_Gnatovich.png"
               },
-              "icon": "lucide-file",
-              "title": "Зоряний Гетьманат"
+              "icon": "lucide-image",
+              "title": "Kirilo_Gnatovich"
             }
           }
         ],
@@ -127,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/Зоряний Гетьманат/Зоряний Гетьманат.md",
+                "file": "Books/Вістря Кулаку/Images/Kirilo_Gnatovich.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +135,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Зоряний Гетьманат"
+              "title": "Backlinks for Kirilo_Gnatovich"
             }
           },
           {
@@ -215,10 +213,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "c04ea1e1d1fa3b2b",
+  "active": "f893e407bc30aa74",
   "lastOpenFiles": [
+    "Books/Вістря Кулаку/Нотатки/Кирило Гнатович Скеля.md",
     "Books/Вістря Кулаку/Вістря Кулаку.md",
     "Books/Зоряний Гетьманат/Зоряний Гетьманат.md",
+    "Books/Вістря Кулаку/Images/Kirilo_Gnatovich.png",
+    "Books/Вістря Кулаку/Нотатки",
+    "Books/Вістря Кулаку/Kirilo_Gnatovich.png",
+    "Books/Вістря Кулаку/Images",
+    "Books/Вістря Кулаку/Images.md",
     "Всесвіт/Європа Юпітерна/Повстання Науки.md",
     "Всесвіт/Європа Юпітерна/Європа Юпітерна.md",
     "Всесвіт/Європа Юпітерна/Перший Варп Стрибок.md",
@@ -244,15 +248,10 @@
     "Всесвіт/Імперії/Федерація Гетьманату/Різне/Піндос.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатор.md",
-    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Обшитований козак.md",
-    "Всесвіт/Імперії/Федерація Гетьманату/Історія/Історія.md",
-    "Всесвіт/Імперії/Імперія Сонця/Військова Справа/Саманаки.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Список_Подій",
     "Всесвіт/Імперії/Федерація Гетьманату/Різне",
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа",
-    "Всесвіт/Імперії/Федерація Гетьманату/Історія",
-    "Всесвіт/Імперії/Імперія Сонця/Військова Справа",
     "Images/Hetmanat_Terminator.png",
     "Images/Hetmanat_Orbital_Aviation.png",
     "Images/Hetmanat_Atmosphere_Aviation.png",
@@ -260,8 +259,6 @@
     "Books/Зоряний Гетьманат/Нотатки/Images/M111_Art.png",
     "Books/Зоряний Гетьманат/Images/Picture_11.png",
     "Books/Зоряний Гетьманат/Images/ChatGPT Image Aug 28, 2025, 06_16_26 PM.png",
-    "Books/Зоряний Гетьманат/Images/Picture_10.png",
-    "Books/Зоряний Гетьманат/Images/Corridor_Two_Persons.png",
-    "Books/Зоряний Гетьманат/Images/Picture_9.png"
+    "Books/Зоряний Гетьманат/Images/Picture_10.png"
   ]
 }
