@@ -43,12 +43,14 @@
             "id": "c04ea1e1d1fa3b2b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Books/Вістря Кулаку/Images/Kirilo_Gnatovich.png"
+                "file": "Books/Вістря Кулаку/Нотатки/Кирило Гнатович Скеля.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Kirilo_Gnatovich"
+              "icon": "lucide-file",
+              "title": "Кирило Гнатович Скеля"
             }
           }
         ],
@@ -125,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/Вістря Кулаку/Images/Kirilo_Gnatovich.png",
+                "file": "Books/Вістря Кулаку/Нотатки/Кирило Гнатович Скеля.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +137,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Kirilo_Gnatovich"
+              "title": "Backlinks for Кирило Гнатович Скеля"
             }
           },
           {
@@ -213,12 +215,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "f893e407bc30aa74",
+  "active": "c04ea1e1d1fa3b2b",
   "lastOpenFiles": [
-    "Books/Вістря Кулаку/Нотатки/Кирило Гнатович Скеля.md",
-    "Books/Вістря Кулаку/Вістря Кулаку.md",
     "Books/Зоряний Гетьманат/Зоряний Гетьманат.md",
     "Books/Вістря Кулаку/Images/Kirilo_Gnatovich.png",
+    "Books/Вістря Кулаку/Нотатки/Кирило Гнатович Скеля.md",
+    "Books/Вістря Кулаку/Вістря Кулаку.md",
     "Books/Вістря Кулаку/Нотатки",
     "Books/Вістря Кулаку/Kirilo_Gnatovich.png",
     "Books/Вістря Кулаку/Images",
