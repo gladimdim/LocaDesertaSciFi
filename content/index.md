@@ -1,3 +1,10 @@
+---
+title: "Loca Deserta SciFi Universe"
+lang: "uk"
+translationKey: "index"
+translations:
+  en: "/en"
+---
 Ознаймося з всесвітом:
 
 - [[Всесвіт/Історія/Головна Історія Всесвіту|Головна Історія Всесвіту]]

@@ -1,0 +1,30 @@
+.language-switcher {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.35rem;
+  min-height: 32px;
+  white-space: nowrap;
+
+  & .language-switcher-current,
+  & a {
+    border: 1px solid var(--lightgray);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    line-height: 1;
+    padding: 0.28rem 0.45rem;
+  }
+
+  & .language-switcher-current {
+    color: var(--dark);
+  }
+
+  & a {
+    color: var(--secondary);
+    text-decoration: none;
+
+    &:hover {
+      border-color: var(--secondary);
+    }
+  }
+}
