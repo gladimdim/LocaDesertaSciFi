@@ -1,10 +1,11 @@
 import styles from "./styles/languageSwitcher.scss"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import { joinSegments, pathToRoot } from "../util/path"
 
 const labels: Record<string, string> = {
-  uk: "Українська",
-  en: "English",
+  uk: "🇺🇦",
+  en: "🇬🇧",
 }
 
 const LanguageSwitcher: QuartzComponent = ({
@@ -19,14 +20,19 @@ const LanguageSwitcher: QuartzComponent = ({
     return null
   }
 
+  const baseDir = pathToRoot(fileData.slug!)
+
   return (
     <nav class={classNames(displayClass, "language-switcher")} aria-label="Language">
       <span class="language-switcher-current">{labels[currentLang] ?? currentLang}</span>
-      {Object.entries(translations).map(([lang, href]) => (
-        <a href={href} hreflang={lang} lang={lang}>
-          {labels[lang] ?? lang}
-        </a>
-      ))}
+      {Object.entries(translations).map(([lang, href]) => {
+        const resolvedHref = href.startsWith("/") ? joinSegments(baseDir, href.slice(1)) : href
+        return (
+          <a href={resolvedHref} hreflang={lang} lang={lang}>
+            {labels[lang] ?? lang}
+          </a>
+        )
+      })}
     </nav>
   )
 }

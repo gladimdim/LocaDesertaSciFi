@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "uk-UA",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "gladimdim.github.io/LocaDesertaSciFi",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
