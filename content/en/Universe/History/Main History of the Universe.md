@@ -4,6 +4,11 @@ lang: "en"
 translationKey: "universe/history/main-history-of-the-universe"
 translations:
   uk: "/Всесвіт/Історія/Головна-Історія-Всесвіту"
+description: "From the first warp jump on Jovian Europa to the Martian Division of the Universe — the complete timeline of the Loca Deserta sci-fi universe."
+tags:
+  - history
+  - lore
+  - warp
 ---
 # Main Events in History
 

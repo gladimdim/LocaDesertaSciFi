@@ -4,6 +4,10 @@ lang: "en"
 translationKey: "universe/empires/sun-empire/sun-empire"
 translations:
   uk: "/Всесвіт/Імперії/Імперія-Сонця/Імперія-Сонця"
+description: "The Empire of the Sun — a life-long emperor, genetically engineered citizens, and an iron grip over its galactic sector. Primary antagonist of the Hetmanate Federation."
+tags:
+  - empire-of-the-sun
+  - lore
 ---
 # Empire of the Sun
 

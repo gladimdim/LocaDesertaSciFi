@@ -4,6 +4,12 @@ lang: "en"
 translationKey: "books/encounter-in-the-steppe"
 translations:
   uk: "/Books/Зустріч-в-степу/Зустріч-в-степу"
+description: "Three Hetmanate plastun scouts raid behind enemy lines on the besieged colony Loca Deserta-17 as the Empire of the Sun closes in. A military sci-fi short story."
+tags:
+  - fiction
+  - military
+  - hetmanate-federation
+  - empire-of-the-sun
 ---
 # Encounter in the Steppe
 

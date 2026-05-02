@@ -4,6 +4,10 @@ lang: "en"
 translationKey: "universe/empires/corporate-republic/corporate-republic"
 translations:
   uk: "/Всесвіт/Імперії/Корпоративна-Республіка/Корпоративна-Республіка"
+description: "The Corporate Republic — profit-driven star empire controlling the upper-right galactic sector, governed by corporate boards and market logic rather than tradition or ideology."
+tags:
+  - corporate-republic
+  - lore
 ---
 # Corporate Republic
 
