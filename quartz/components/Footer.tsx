@@ -1,13 +1,16 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/footer.scss"
 import { i18n } from "../i18n"
+import { joinSegments } from "../util/path"
 
 export default (() => {
   const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+    const base = cfg.baseUrl ?? ""
+    const rssUrl = `https://${joinSegments(base, "index.xml")}`
     return (
       <footer class={`${displayClass ?? ""}`}>
         <p class="footer-rss">
-          <a href="/index.xml" aria-label="RSS Feed" title="Підписатися на RSS">
+          <a href={rssUrl} aria-label="RSS Feed" title="Підписатися на RSS">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               version="1.1"
