@@ -40,6 +40,7 @@ export interface Translation {
     }
     footer: {
       createdWith: string
+      rssSubscribe?: string
     }
     graph: {
       title: string

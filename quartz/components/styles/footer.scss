@@ -3,6 +3,24 @@ footer {
   margin-bottom: 4rem;
   opacity: 0.7;
 
+  & .footer-rss {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  & .rss-icon {
+    width: 14px;
+    height: 14px;
+    fill: var(--darkgray);
+    vertical-align: middle;
+    transition: fill 0.1s ease;
+
+    &:hover {
+      fill: #f26522;
+    }
+  }
+
   & ul {
     list-style: none;
     margin: 0;

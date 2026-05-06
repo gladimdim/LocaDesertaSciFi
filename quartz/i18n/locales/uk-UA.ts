@@ -37,6 +37,7 @@ export default {
     },
     footer: {
       createdWith: "Створено за допомогою",
+      rssSubscribe: "RSS-стрічка",
     },
     graph: {
       title: "Вигляд графа",

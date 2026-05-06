@@ -51,7 +51,12 @@ function generateSiteMap(cfg: GlobalConfiguration, idx: ContentIndexMap): string
   return `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${urls}</urlset>`
 }
 
-function generateRSSFeed(cfg: GlobalConfiguration, idx: ContentIndexMap, limit?: number): string {
+function generateRSSFeed(
+  cfg: GlobalConfiguration,
+  idx: ContentIndexMap,
+  limit?: number,
+  imageUrl?: string,
+): string {
   const base = cfg.baseUrl ?? ""
 
   const createURLEntry = (slug: SimpleSlug, content: ContentDetails): string => `<item>
@@ -78,6 +83,14 @@ function generateRSSFeed(cfg: GlobalConfiguration, idx: ContentIndexMap, limit?:
     .slice(0, limit ?? idx.size)
     .join("")
 
+  const image = imageUrl
+    ? `<image>
+      <url>${imageUrl}</url>
+      <title>${escapeHTML(cfg.pageTitle)}</title>
+      <link>https://${base}</link>
+    </image>`
+    : ""
+
   return `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
     <channel>
@@ -87,6 +100,7 @@ function generateRSSFeed(cfg: GlobalConfiguration, idx: ContentIndexMap, limit?:
         cfg.pageTitle,
       )}</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
+      ${image}
       ${items}
     </channel>
   </rss>`
@@ -129,9 +143,11 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
       }
 
       if (opts?.enableRSS) {
+        const base = cfg.baseUrl ?? ""
+        const rssImageUrl = `https://${joinSegments(base, "static/icon.png")}`
         yield write({
           ctx,
-          content: generateRSSFeed(cfg, linkIndex, opts.rssLimit),
+          content: generateRSSFeed(cfg, linkIndex, opts.rssLimit, rssImageUrl),
           slug: (opts?.rssSlug ?? "index") as FullSlug,
           ext: ".xml",
         })
