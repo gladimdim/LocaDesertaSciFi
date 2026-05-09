@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бойовий Молот.md",
+                "file": "Books/Вістря Кулаку/Вістря Кулаку.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Бойовий Молот"
+              "title": "Вістря Кулаку"
             }
           }
         ]
@@ -170,6 +170,7 @@
   },
   "active": "ef5d5ea967a56f00",
   "lastOpenFiles": [
+    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бойовий Молот.md",
     "Books/Вістря Кулаку/Вістря Кулаку.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Історія/Історія.md",
     "en/Universe/Empires/Hetmanate Federation/Star Affairs/Ships/DARYA-Class Ships.md",
@@ -199,7 +200,6 @@
     "en/Universe/Empires/Hetmanate Federation/Miscellany",
     "en/Universe/Empires/Hetmanate Federation/Military Affairs",
     "en/Universe/Empires/Hetmanate Federation/Military Affairs of the Hetmanate Federation.md",
-    "en/Universe/Empires/Hetmanate Federation/Kish.md",
     "en/Universe/Empires/Hetmanate Federation/History",
     "en/Universe/Empires/Empire of the Sun/Military Affairs",
     "en/Universe/Technologies/Warp",
