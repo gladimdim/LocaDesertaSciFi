@@ -3,17 +3,20 @@ footer {
   margin-bottom: 4rem;
   opacity: 0.7;
 
-  & .footer-rss {
-    display: flex;
+  & .footer-rss a {
+    display: inline-flex;
     align-items: center;
     gap: 0.25rem;
+    text-decoration: none;
   }
 
   & .rss-icon {
     width: 14px;
     height: 14px;
+    max-width: 14px;
+    max-height: 14px;
+    flex-shrink: 0;
     fill: var(--darkgray);
-    vertical-align: middle;
     transition: fill 0.1s ease;
 
     &:hover {
