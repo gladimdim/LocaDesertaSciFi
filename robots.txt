@@ -6,3 +6,6 @@ Sitemap: https://gladimdim.github.io/LocaDesertaSciFi/sitemap.xml
 Disallow: /private/
 Disallow: /.obsidian/
 Disallow: /templates/
+Disallow: .claude
+Disallow: .github
+Disallow: node_modules
