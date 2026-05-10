@@ -7,4 +7,4 @@ translations:
 ---
 Unlike [[Atmospheric Flyers|atmospheric aviation]], orbital aviation can launch from a planet's surface and reach that same planet's orbit. It is used to guard planetary surroundings and to move weapons and troops quickly from one side of a planet to another. It cannot make interplanetary transitions.
 
-![Orbital aviation](../../../../Images/Hetmanat_Orbital_Aviation.png)
+![Orbital aviation](../../../../Images/Universe/Hetmanate-Federation/Hetmanat_Orbital_Aviation.png)

@@ -4,6 +4,7 @@ import path from "node:path"
 const root = process.cwd()
 const contentDir = path.join(root, "content")
 const enDir = path.join(contentDir, "en")
+const imagesDir = path.join(contentDir, "Images")
 
 const dirNames = new Map(
   Object.entries({
@@ -15,6 +16,8 @@ const dirNames = new Map(
     "military-affairs": "Military Affairs",
     miscellany: "Miscellany",
     "star-affairs": "Star Affairs",
+    "space-geography": "Space Geography",
+    weapons: "Weapons",
     ships: "Ships",
     history: "History",
     "europa-jovian": "Jovian Europa",
@@ -76,6 +79,13 @@ for (const file of walk(contentDir)) {
   contentBasenames.get(name).push(file)
 }
 
+const imageBasenames = new Map()
+for (const file of walk(imagesDir)) {
+  const name = path.basename(file)
+  if (!imageBasenames.has(name)) imageBasenames.set(name, [])
+  imageBasenames.get(name).push(file)
+}
+
 const englishFiles = walk(enDir).filter((file) => file.endsWith(".md"))
 const oldToNew = new Map()
 
@@ -116,6 +126,11 @@ const resolveMarkdownAsset = (oldRel, target) => {
     if (contentMarker) {
       targetAbs = path.join(contentDir, contentMarker[0].replace(/^\//, ""))
     }
+  }
+
+  if (!fs.existsSync(targetAbs) || !targetAbs.startsWith(`${imagesDir}${path.sep}`)) {
+    const imageMatches = imageBasenames.get(path.basename(pathname)) ?? []
+    if (imageMatches.length === 1) targetAbs = imageMatches[0]
   }
 
   if (!fs.existsSync(targetAbs)) {

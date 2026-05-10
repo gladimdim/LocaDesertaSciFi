@@ -27,4 +27,4 @@ Analogues elsewhere: [[../../Empire of the Sun/Military Affairs/Samanaki|Samanak
 
 The most common type of Terminator. They mainly use long-range personal laser firearms. Their only cold weapon is a power or plasma saber. They fight by covering the desperate attacks of the Bohatyrs. Such Terminator detachments can also operate heavy infantry systems such as machine guns, mortars, and plasma cannons.
 
-![Terminator](../../../../../Images/Hetmanat_Terminator.png)
+![Terminator](../../../../../Images/Universe/Hetmanate-Federation/Hetmanat_Terminator.png)

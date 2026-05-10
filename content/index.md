@@ -4,10 +4,6 @@ lang: "uk"
 translationKey: "index"
 translations:
   en: "/en"
-description: "Loca Deserta — всесвіт наукової фантастики на основі козацьких традицій. Три зоряні імперії, варп-подорожі та Федерація Гетьманату — від Старої Землі до зірок."
-tags:
-  - lore
-  - universe
 ---
 Ознаймося з всесвітом:
 

@@ -622,6 +622,61 @@ The most common type of Terminator. They mainly use long-range personal laser fi
 `,
   },
   {
+    source: "content/Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Сколот.md",
+    titleUk: "Сколот",
+    titleEn: "Skolot",
+    en: "content/en/universe/empires/hetmanate-federation/military-affairs/skolot.md",
+    body: `A Skolot is a super-heavy mechanical armor-shell-tank that can hold one or several operators inside, depending on its size. It is one of the largest infantry power suits developed in the Hetmanate Federation. It is armed with heavy cannons, a plasma spitter, and may carry an anti-drone mount. It moves either on tracks or on mechanical legs. It is controlled by one operator seated inside the chest section of the mech. Variants with several additional operators are possible, allowing independent fire from cannons and plasma spitters. In firepower, it is second only to a tank.
+
+![Skolot](../Images/Skolot.jpg)
+`,
+  },
+  {
+    source: "content/Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатори-дуболоми.md",
+    titleUk: "Термінатори-дуболоми",
+    titleEn: "Terminator Bruisers",
+    en: "content/en/universe/empires/hetmanate-federation/military-affairs/terminator-bruisers.md",
+    body: `A variety of [[terminator|Terminators]] specialized for close combat. They have thicker armor and a more open visor for better visibility.
+
+## Training
+
+Selection begins at the rank of Terminator III for separate training and retraining in close combat. Preference is given to Cossacks with slightly reduced mental abilities but stronger psychological resilience for extremely brutal close fighting, when the enemy must literally be torn in half by hand.
+
+## Weapons
+
+Terminator shield  
+[[../weapons/short-plasma-handgun|Short Plasma Handgun]]  
+Grenades  
+Chest-breakers  
+Fists  
+Heavy plasma infantry saber  
+[[../weapons/combat-hammer|Combat Hammer]]  
+[[../weapons/javelin-spear|Javelin Spear]]
+
+## Armor
+
+Structurally, the armor is identical to [[terminator|Terminator]] armor, but it is slightly larger and has thicker protective plates. The Bruisers' visor is more open to make orientation in space easier. On magnetic holders across the back, they carry several spare armor plates for rapid replacement during battle.
+
+## Use
+
+They enter battle first. Their task is to push as deeply as possible into enemy ranks and sow panic, destroying enemies in close combat by barbaric methods. The weapons carried by Bruisers terrify unaccustomed soldiers. Usually, after Bruiser strikes, human bodies fall apart with instant depressurization.
+
+## Strengths
+
+Inflicting moral damage on the enemy. Forcing a path even through concrete shelters and engineering obstacles. In close combat they are effectively invulnerable.
+
+## Weaknesses
+
+Because of their increased protection, they need frequent battery replacements in the spacesuit and can therefore take part in battle for only a few hours before withdrawing. Because of the physical and psychological strain, they need rest or stimulating medicines for faster recovery.
+
+They are vulnerable to heavy infantry and artillery fire. Because of their larger size, they are easier to hit.
+
+## Analogues in Other Empires
+
+[[../../sun-empire/military-affairs/samanaki|Samanaki]] from the [[../../sun-empire/military-affairs|Empire of the Sun]]
+`,
+  },
+  {
     source: "content/Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Харцизи.md",
     titleUk: "Харцизи",
     titleEn: "Khartsyzy",
@@ -823,6 +878,109 @@ The Great Meadow is protected by Haiduks.
 The space sector received by the Hetmanate is called the Hetmanate Sector, or HetSec.
 
 HetSec is divided into palankas; one palanka usually contains one galaxy. Since habitable planets and systems are extremely rare, the population is concentrated in habitable systems scattered across the palankas.
+`,
+  },
+  {
+    source: "content/Всесвіт/Імперії/Федерація Гетьманату/Космічна Географія/Система Мюрид.md",
+    titleUk: "Система Мюрид",
+    titleEn: "Muryid System",
+    en: "content/en/universe/empires/hetmanate-federation/space-geography/muryid-system.md",
+    body: `The heart of the arms industry of the [[../hetmanate-federation|Hetmanate Federation]]. It forges the best armor, weapons, rolled metal, and even hull plating for spacecraft.
+`,
+  },
+  {
+    source: "content/Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бойовий Молот.md",
+    titleUk: "Бойовий Молот",
+    titleEn: "Combat Hammer",
+    en: "content/en/universe/empires/hetmanate-federation/weapons/combat-hammer.md",
+    body: `Used mostly by [[../military-affairs/terminator-bruisers|Bruisers]] because of its great weight and destructive properties. It can have different heads on one or both sides of the hammer. The weapon is made by smiths from the [[../space-geography/muryid-system|Muryid System]] as a personal order for a Cossack [[../military-affairs/terminator|Terminator]].
+
+# Variants
+
+## Combat Hammer with a Plasma Striking Head
+
+One side has a classic spike for piercing armor and light armored vehicles; the other has a blunt striking end with built-in plasma feed for burning through steel defenses and destroying engineering structures and obstacles.
+
+![Combat hammer with plasma head](../Images/Warhammer_Plasma_Spike.jpg)
+
+![](../Images/Wahammer_Spike_With_Claw.jpg)
+
+## Classic Blunt Hammer
+
+A hammer in classic form. Both sides have a heavy blunt striking head. The pommel of the handle can have different attachments, such as a steel claw, spear, and others.
+
+![](../Images/Warhammer_Classic.jpg)
+
+## Hammer with a Bec de Corbin
+
+A heavy Terminator hammer with a bec-de-corbin axe on one side. Well suited for destroying lightly armored infantry, compared with a Terminator, or for opening the plating of tanks and infantry fighting vehicles.
+
+![Hammer with bec de corbin](../Images/Warhammer_Axe.jpg)
+`,
+  },
+  {
+    source: "content/Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Вепр-3.md",
+    titleUk: "Вепр-3",
+    titleEn: "Vepr-3",
+    en: "content/en/universe/empires/hetmanate-federation/weapons/vepr-3.md",
+    body: `Vepr-3 is a heavy infantry machine gun.
+
+It is used by [[../military-affairs/haiduks|Haiduk]] and [[../military-affairs/serdiuks|Serdiuk]] forces during ground operations. It can operate in airless environments thanks to oxidizer tanks.
+
+It has a built-in gravitometer: the shooter does not need to calculate gravity manually. The machine gun automatically adjusts the trajectory for each bullet. Two ammunition boxes can be connected at once: one with needle-shaped explosive ammunition for infantry or crowds of savages, and the other with plasma for piercing armor. Ammunition types can be alternated for greater effect. The machine gun can be controlled remotely through an AI channel while the operator remains in safety.
+`,
+  },
+  {
+    source: "content/Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Плазмовий Короткий Самопал.md",
+    titleUk: "Плазмовий Короткий Самопал",
+    titleEn: "Short Plasma Handgun",
+    en: "content/en/universe/empires/hetmanate-federation/weapons/short-plasma-handgun.md",
+    body: `The short handgun is used as a secondary weapon by [[../military-affairs/terminator|Terminator]]-[[../military-affairs/serdiuks|Serdiuks]] and [[../military-affairs/haiduks|Haiduks]]. It fires pieces of plasma weighing up to 20-50 grams. They do not travel far, but they can burn through power armor and destroy a biological target.
+
+There are different variations of this weapon. Since it is a Terminator's personal weapon, each one usually decorates it in his own way.
+
+# Modifications
+
+## Single-Shot Short Handgun
+
+Extremely powerful in close combat. It fires the entire plasma charge from the flask in one shot. Because of the large mass of plasma fired, it must be reloaded every time. It is a favorite weapon of hand-to-hand Terminators.
+
+![Short Plasma Carbine](../Images/Short_Plasma_Carbine.jpg)
+`,
+  },
+  {
+    source: "content/Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Плекс-гель.md",
+    titleUk: "Плекс-гель",
+    titleEn: "Plex-Gel",
+    en: "content/en/universe/empires/hetmanate-federation/weapons/plex-gel.md",
+    body: `Plex-gel is a viscous liquid that hardens very quickly and fills every crack where it is applied. It is sprayed from canisters. It is used when space armor is depressurized as a result of hits or damage. It is included in the kit of all armor suits used by [[../military-affairs/serdiuks|Serdiuks]] and [[../military-affairs/haiduks|Haiduks]].
+`,
+  },
+  {
+    source:
+      "content/Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Протипіхотна Міна 15 (ПП-15).md",
+    titleUk: "Протипіхотна Міна 15 (ПП-15)",
+    titleEn: "Antipersonnel Mine 15 (AP-15)",
+    en: "content/en/universe/empires/hetmanate-federation/weapons/antipersonnel-mine-15-ap-15.md",
+    body: `The AP-15 antipersonnel mine is used by [[../military-affairs/terminator|Terminators]] or other Cossacks in power suits. It contains fifteen kilograms of melt-substance, which detonates into an even layer across all 360 degrees and incinerates infantry around it.
+`,
+  },
+  {
+    source: "content/Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Спис-джавелін.md",
+    titleUk: "Спис-джавелін",
+    titleEn: "Javelin Spear",
+    en: "content/en/universe/empires/hetmanate-federation/weapons/javelin-spear.md",
+    body: `The javelin spear is widely used by [[../military-affairs/terminator|Terminators]], both [[../military-affairs/serdiuks|Serdiuks]] and [[../military-affairs/haiduks|Haiduks]]. It is well suited for close combat in combination with a shield.
+
+![Javelin](../Images/Javelin.jpg)
+
+The advantage of the javelin over simple spears is its head, onto which various standard infantry or anti-tank mines can be mounted and thrown at the enemy. When used as a simple cold weapon, the spearhead has a drill-like tip powered by a small built-in motor. If the spear sinks even slightly into enemy armor or flesh, the Terminator can activate the motor with a button and drill deeper into the armor. The battery-powered motor does not last long, but if the drilling succeeds it practically guarantees complete damage to the target, boring through 15-20 centimeters of standard space-armor plating.
+
+## Use in Ranged Combat
+
+The javelin can be thrown like an ordinary spear after its drill has been switched on. This tactic is used to damage or depressurize lightly armored transport or an enemy in a heavy protective suit.
+
+Various melt-mines can also be attached to the spear. One of the most common is the [[antipersonnel-mine-15-ap-15|AP-15]]. A Terminator can throw the javelin several dozen meters away and strike an enemy hiding behind a breastwork or some other cover. Thanks to its ballistic flight path, it hits the head, shoulders, or upper protective plates of vehicles, which are usually thinner. The AP-15 detonates on impact and scatters melt-substance in all directions, effectively burning out a circle up to twenty meters in radius.
 `,
   },
   {
@@ -1035,4 +1193,5 @@ for (const entry of entries) {
 }
 
 console.log(`Updated ${entries.length} Ukrainian pages and wrote ${entries.length} English pages.`)
+await import("./consolidate-images.mjs")
 await import("./localize-english-paths.mjs")

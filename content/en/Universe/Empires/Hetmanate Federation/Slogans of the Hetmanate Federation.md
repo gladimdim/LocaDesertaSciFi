@@ -7,7 +7,7 @@ translations:
 ---
 # Slogans
 
-![One for All](../../../../Всесвіт/Імперії/Федерація Гетьманату/Images/Odin_Za_Vsih.jpg)
+![One for All](../../../../Images/Universe/Hetmanate-Federation/Odin_Za_Vsih.jpg)
 
 One for all and all for the Kish.  
 Be independent; work together with others.  
