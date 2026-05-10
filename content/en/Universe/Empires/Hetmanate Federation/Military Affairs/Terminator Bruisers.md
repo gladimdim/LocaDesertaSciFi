@@ -5,11 +5,11 @@ translationKey: "universe/empires/hetmanate-federation/military-affairs/terminat
 translations:
   uk: "/Всесвіт/Імперії/Федерація-Гетьманату/Військова-Справа/Термінатори-дуболоми"
 ---
-A variety of [[Terminator|Terminators]] specialized for close combat. They have thicker armor and a more open visor for better visibility.
+A [[Terminator|Terminator]] variant specialized for close assault. They have thicker armor and a more open visor for better visibility.
 
 ## Training
 
-Selection begins at the rank of Terminator III for separate training and retraining in close combat. Preference is given to Cossacks with slightly reduced mental abilities but stronger psychological resilience for extremely brutal close fighting, when the enemy must literally be torn in half by hand.
+Selection begins at the rank of Terminator III for separate training and retraining in close assault. Preference is given to Cossacks with slightly reduced mental abilities but stronger psychological resilience for extremely brutal close fighting, when the enemy must literally be torn in half by hand.
 
 ## Weapons
 
@@ -28,15 +28,15 @@ Structurally, the armor is identical to [[Terminator|Terminator]] armor, but it 
 
 ## Use
 
-They enter battle first. Their task is to push as deeply as possible into enemy ranks and sow panic, destroying enemies in close combat by barbaric methods. The weapons carried by Bruisers terrify unaccustomed soldiers. Usually, after Bruiser strikes, human bodies fall apart with instant depressurization.
+They enter battle first. Their task is to punch as deeply as possible into enemy ranks and sow panic, destroying enemies in close combat by barbaric methods. The weapons carried by Bruisers terrify unaccustomed soldiers. Usually, after Bruiser strikes, human bodies come apart with instant depressurization.
 
 ## Strengths
 
-Inflicting moral damage on the enemy. Forcing a path even through concrete shelters and engineering obstacles. In close combat they are effectively invulnerable.
+Inflicting morale shock on the enemy. Forcing a breach even through concrete shelters and engineering obstacles. In close combat they are effectively invulnerable.
 
 ## Weaknesses
 
-Because of their increased protection, they need frequent battery replacements in the spacesuit and can therefore take part in battle for only a few hours before withdrawing. Because of the physical and psychological strain, they need rest or stimulating medicines for faster recovery.
+Because of their increased protection, they need frequent battery replacements in the spacesuit and can therefore remain in battle for only a few hours before withdrawing. Because of the physical and psychological strain, they need rest or combat stimulants for faster recovery.
 
 They are vulnerable to heavy infantry and artillery fire. Because of their larger size, they are easier to hit.
 

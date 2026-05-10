@@ -9,6 +9,6 @@ The largest ships of the Hetmanate Federation are DARYA-class ships. They are mo
 
 They perform [[../../../../Technologies/Warp/Warp|warp]] transitions.
 
-They are used to move large military groupings between different parts of space. Around ten ships of this class can carry one invasion or defense corps.
+They are used to deploy large military formations between different parts of space. Around ten ships of this class can carry one invasion or defense corps.
 
 The largest ship for warp crossings is named Volyn and is sixty-one kilometers long.

@@ -7,4 +7,4 @@ translations:
 ---
 # Military Affairs
 
-All men are soldiers of the empire. The empire permanently maintains an enormous fleet. It can increase that fleet's size fairly quickly through genetic changes. It has strong recovery potential in both equipment and people.
+All men are soldiers of the empire. The empire permanently maintains an enormous fleet. It can expand that fleet fairly quickly through genetic alteration and mass mobilization. It has strong replacement capacity in both equipment and manpower.

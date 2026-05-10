@@ -5,7 +5,7 @@ translationKey: "universe/empires/hetmanate-federation/weapons/combat-hammer"
 translations:
   uk: "/Всесвіт/Імперії/Федерація-Гетьманату/Озброєння/Бойовий-Молот"
 ---
-Used mostly by [[../Military Affairs/Terminator Bruisers|Bruisers]] because of its great weight and destructive properties. It can have different heads on one or both sides of the hammer. The weapon is made by smiths from the [[../Space Geography/Muryid System|Muryid System]] as a personal order for a Cossack [[../Military Affairs/Terminator|Terminator]].
+Used mostly by [[../Military Affairs/Terminator Bruisers|Bruisers]] because of its great weight and destructive force. It can have different heads on one or both sides of the hammer. The weapon is forged by smiths from the [[../Space Geography/Muryid System|Muryid System]] as a personal order for a Cossack [[../Military Affairs/Terminator|Terminator]].
 
 # Variants
 
@@ -25,6 +25,6 @@ A hammer in classic form. Both sides have a heavy blunt striking head. The pomme
 
 ## Hammer with a Bec de Corbin
 
-A heavy Terminator hammer with a bec-de-corbin axe on one side. Well suited for destroying lightly armored infantry, compared with a Terminator, or for opening the plating of tanks and infantry fighting vehicles.
+A heavy Terminator hammer with a bec-de-corbin axe on one side. Well suited for destroying infantry lightly armored by Terminator standards, or for splitting open the plating of tanks and infantry fighting vehicles.
 
 ![Hammer with bec de corbin](../../../../../Images/Universe/Hetmanate-Federation/Warhammer_Axe.jpg)

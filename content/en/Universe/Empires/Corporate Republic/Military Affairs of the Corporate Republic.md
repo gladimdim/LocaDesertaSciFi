@@ -9,4 +9,4 @@ translations:
 
 Entirely mercenary.
 
-Military service is used as a social elevator. The republic permanently maintains an enormous fleet. It can expand the fleet by hiring new soldiers through corporations and offering handouts to citizens. The fleet is technologically advanced, but expensive to maintain and slow to recover.
+Military service is used as a social elevator. The republic permanently maintains an enormous fleet. It can expand that fleet by hiring fresh manpower through corporations and issuing enlistment payouts to citizens. The fleet is technologically advanced, but expensive to maintain and slow to replace after losses.

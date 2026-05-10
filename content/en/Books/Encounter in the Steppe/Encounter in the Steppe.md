@@ -25,7 +25,7 @@ His two comrades also dismounted and coughed the moment they pulled the respirat
 
 "The devil knows — maybe they've played with their genetic modifications enough that they can breathe ox farts." Dmytro Hordynia, their third man, joined the conversation but still hadn't gotten off his horse, peering out into the steppe.
 
-"Enough chattering. Let's get to work." Bohdan Tytar, as the squad leader of the plastun scouts, politely cut off the conversation that was breaking their concentration.
+"Enough chatter. Back to work." Bohdan Tytar, as the squad leader of the plastun scouts, cut off the conversation that was breaking their concentration.
 
 He walked several meters to the side, following the tracks from a caterpillar tread. Around the impression left in the ground by the heavy machinery they'd been tracking, half a dozen more tracks were visible — most likely from wheels. "Damn, they've got a whole crew here. I thought it was just one melt-carrier chugging through the steppe."
 
@@ -39,13 +39,13 @@ They were clearly left by Empire of the Sun equipment that had passed right thro
 
 The other two haiduks had already climbed off their horses. The pebbles crackled under their heavy iron boots. Each disconnected the wire that linked them to their horse's control module. On the forehead of each bot-horse was a small bronze trident, and below it — pressed into the metal — the name of the regiment and company: "Spears. Plastun-12." Not one of the bots even stirred.
 
-Bohdan Tytar was the otaman[^1] of a small plastun[^2] scout squad, which had now been two days into a raid behind the lines of the Empire of the Sun[^3]. Its forces surrounded the only hive-city on the colony planet "Loca Deserta-17" in a wide crescent. Their squad had been caught resting when the invasion began, and within three hours of the alarm, the full regiment of "Zbarazh Spears" had been assembled.
+Bohdan Tytar was the otaman[^1] of a small plastun[^2] scout squad, which had now been two days into a raid behind the lines of the Empire of the Sun[^3]. Its forces had encircled the only hive-city on the colony planet "Loca Deserta-17" in a wide crescent. Their squad had been caught resting when the invasion began, and within three hours of the alarm, the full regiment of "Zbarazh Spears" had mustered.
 
-The attacker had broken through orbital defenses in the first days of the attack, drawing the heavy atmospheric flyer[^4] battles into a conflict that had not ceased since. For Tytar and his plastuns, this was already their second raid. When the imperials managed to land their mobile spaceport, things on the colony surface became truly grim.
+The attacker had broken through orbital defenses in the first days of the assault, dragging the heavy atmospheric flyer[^4] battles into an air war that had not ceased since. For Tytar and his plastuns, this was already their second raid. When the imperials managed to land their mobile spaceport, the colony surface became a killing ground.
 
-Enormous — simply colossal — ships, three to four hundred meters long, were ferrying troops and equipment from the invasion fleet in orbit down to the surface for the siege of the only hive-city. The Hets[^5] had erected several lines of defense. The most important was a trench with fortifications stretching seventy kilometers between two natural obstacles — the ocean on the left and impassable thickets on the right. Fighting was ongoing along the entire length of this line.
+Enormous — simply colossal — ships, three to four hundred meters long, were ferrying troops and equipment from the invasion fleet in orbit down to the surface for the siege of the only hive-city. The Hets[^5] had erected several defensive belts. The most important was a fortified trench line stretching seventy kilometers between two natural obstacles — the ocean on the left and impassable thickets on the right. Fighting raged along the entire length of this line.
 
-The attackers were reinforcing their siege forces daily; it had even come to the deployment of heavy titan-tanks on their side. The task of the plastuns — light, mobile infantry — was to impede the free movement of individual units and saboteurs, and to gradually, slowly bleed the enemy and its material base.
+The attackers were reinforcing their siege force daily; it had even come to the deployment of heavy titan-tanks on their side. The task of the plastuns — light, mobile infantry — was to restrict the free movement of detachments and saboteurs, and to bleed the enemy's manpower and materiel base day by day.
 
 It was the trail of one such column that the plastuns had stumbled upon two days ago. It was a convoy transporting melt-charges for tanks and rifles. About a day ago, atmospheric flyers had raided it, destroying half the convoy — but the trucks with enormous barrels of plasma had somehow survived the rocket salvo and cannon fire.
 
@@ -55,7 +55,7 @@ The order for the second raid Bohdan Tytar received personally from the commande
 
 This time their unit numbered only three. Bohdan Tytar — otaman; Dmytro Hordynia — operator of the heavy flamethrower "Hornet," which hung on the right side of his bot-horse; and Opanas Kelep — rifleman and communications officer. The objectives were no longer as sweeping as before.
 
-The mission of the patrol was to locate and destroy just one transport vehicle and, if possible, reduce the enemy headcount. The melt-carrier[^6] was an excellent target for their Hornet-42 flamethrower. "We'll camp here for the night. Near the stream you can hear machinery moving clearly, and our biologists say this water's drinkable." Bohdan Tytar turned to his men and began pulling things from the saddlebags on his bot-horse.
+The mission of the patrol was to locate and destroy just one transport vehicle and, if possible, inflict enemy casualties. The melt-carrier[^6] was an excellent target for their Hornet-42 flamethrower. "We'll camp here for the night. Near the stream you can hear machinery moving clearly, and our biologists say this water's drinkable." Bohdan Tytar turned to his men and began pulling things from the saddlebags on his bot-horse.
 
 Hordynia and Kelep also began rummaging through their bags, looking for ration packs and sleeping rolls. Then all three lowered their horses to the ground: the bots folded their mechanical iron legs and lay down on their bellies, like camels.
 
@@ -73,7 +73,7 @@ Bohdan pulled out a sealed food pack and settled onto his sleeping mat. "At 04:0
 
 All three silently choked down their food. It was actually nutritious and didn't irritate the stomach, but when you've been eating the same thing dry for two weeks straight, even cake becomes revolting.
 
-"Here's what I'm thinking." Tytar rinsed his mouth from his flask after the porridge and continued. "Opanas, you'll prepare the Hornet in advance so we can ride up, aim, sting, and run. If there's a big boom — we'll decide on eliminating the personnel based on the situation. We fall back toward the wall immediately. In case of wounds or losing a horse, we assess on the spot. No spare horses — we'll try two on one... we'll manage somehow. We don't think about capture, but life is life..."
+"Here's what I'm thinking." Tytar rinsed his mouth from his flask after the porridge and continued. "Opanas, you'll prepare the Hornet in advance so we can ride up, aim, sting, and run. If there's a big detonation — we'll decide on liquidating the personnel based on the situation. We fall back toward the wall immediately. In case of wounds or losing a horse, we assess on the spot. No spare horses — we'll try two on one... we'll manage somehow. We don't think about capture, but war is war..."
 
 "If my wound is serious, leave me — I'll handle it myself. Better someone gets out of here." Dmytro stared at the ground, then twitched and stuffed the emptied pack into his kit.
 
@@ -89,7 +89,7 @@ Bohdan lay down on the mat and fell instantly asleep from exhaustion. Hordynia r
 
 The planet "Loca Deserta-17" had been habitable for about seven years. They'd even started growing their own food here, though not enough to cover all needs. The nature resembled the homeland steppe — with stone ridges, very ancient mountains scattered here and there, and an enormous ocean that covered almost the entire surface of the planet. A single continent bore the hive-city on its shore; in the north, tall mountains rose, covered with moss and various ferns. From the mountains stretched a plateau, where all of the Hetmanate Federation's mining operations were concentrated.
 
-The farther south one went, the better the land became. And around the hive, grain fields stretched to the horizon. Now, after the attack, the beautiful yellow fields were all cut through with tracks where haiduks rode; here and there, preparations for losing the first defense line and retreating to the colony were underway.
+The farther south one went, the better the land became. And around the hive, grain fields stretched to the horizon. Now, after the attack, the beautiful yellow fields were slashed with haiduk tracks; here and there, preparations for abandoning the first defense line and withdrawing to the colony were underway.
 
 The damned Sunflowers had set their spaceport five hundred kilometers from the hive. The Hets couldn't hit it with rocket weaponry — the narrow-eyes defended the spaceport well, and it kept changing location. In general, a mobile spaceport, when you control the skies, gives attackers an enormous advantage. It can only be struck with heavy rockets, but for that you need to know the precise location. And to know it, you need orbital satellites or reconnaissance rockets... which get shot down by atmospheric and space aircraft a hundred kilometers before they could reach the possible target area.
 
@@ -97,9 +97,9 @@ And the Hets' military engineers were no slouches either. They devised a clever 
 
 Hordynia, after returning from the first sortie, had managed to witness the launch of massive two-hundred-meter rockets that had fired from the tunnels north of the hive-city. Even from that distance — some thirty to forty kilometers — everyone could hear the building roar of the boost engines. Four rockets had been launched in a single salvo.
 
-At that moment Dmytro had been seized by a kind of hope that the rockets would reach their target and at least partially relieve the pressure on the first defense line, and the haiduks might somehow push the enemy back from their only city... But later that evening, a rumor had rippled through the townspeople and haiduks that only two of the rockets had managed to reach the target area... where the target no longer was.
+At that moment Dmytro had been seized by the hope that the rockets would reach their target and at least partially relieve the pressure on the first defense line, and the haiduks might somehow push the enemy back from their only city... But later that evening, a rumor had rippled through the townspeople and haiduks that only two of the rockets had managed to reach the target area... where the target no longer was.
 
-That night, the enemy had struck the mountain ridge with orbital strikes, where the launch tunnels were located. A few bombs were also dropped on the city itself, but the anti-orbital defenses managed to intercept them before they reached the altitude of atmospheric aviation.
+That night, the enemy had hit the mountain ridge with orbital strikes, where the launch tunnels were located. A few bombs were also dropped on the city itself, but the anti-orbital defenses managed to intercept them before they reached the altitude of atmospheric aviation.
 
 As though someone had heard Dmytro's thoughts — on the black-blue sky, he noticed three stars moving with extraordinary speed across the dark dome of space in a single direction.
 
@@ -113,7 +113,7 @@ Hordynia jerked sharply when he saw a flash of light on the horizon, and a few s
 
 He raised the rifle to his shoulder, pressed his eye to the scope, trying to make out what was happening on the steppe horizon. Unfortunately, the thermal sight only reached a kilometer, and the ordinary optical lenses in such darkness gave no better result than his own eyes.
 
-A few more explosions lit up the sky from below, and the soft sound of gunfire reached his ears with a delay of a good ten seconds.
+A few more explosions lit up the sky from below, and the distant crackle of gunfire reached his ears with a delay of a good ten seconds.
 
 Dmytro got up and walked over to the sleeping Bohdan Tytar. He shook him lightly by the shoulder, and Bohdan snapped his eyes open, staring at Hordynia.
 
@@ -121,17 +121,17 @@ Dmytro got up and walked over to the sleeping Bohdan Tytar. He shook him lightly
 
 Tytar rose, pulled a sizeable pair of binoculars from his personal bag, and pressed them to his eyes, peering toward the horizon Dmytro was pointing at.
 
-After a minute of watching, the sky lit up again with flashes, and the soft rumble of explosions rolled to the ears of both haiduks.
+After a minute of watching, the sky lit up again with flashes, and the distant rumble of explosions rolled to the ears of both haiduks.
 
-"I can see ours. Either they've attacked some armor, or the armor is chasing them across the steppe." The binoculars' tenfold digital zoom allowed him to make out only large objects at that distance. "Either way, we need to reinforce them and link up. We prepare for battle — and they're heading our way."
+"I can see ours. Either they've hit some armor, or the armor is chasing them across the steppe." The binoculars' tenfold digital zoom allowed him to make out only large objects at that distance. "Either way, we need to reinforce them and link up. We prepare for battle — and they're heading our way."
 
 Bohdan lowered the binoculars, climbed down from the boulder he'd been standing on at full height, and looked at Hordynia.
 
-"Wake Kelep. His Hornet is going to come in handy. With the sound of the fighting, our target has most likely already woken up too — so we won't catch anyone by surprise."
+"Wake Kelep. His Hornet is going to come in handy. With that firefight going, our target has most likely already woken up too — so we won't catch anyone by surprise."
 
 Kelep woke the same way as Bohdan: snapping open completely unsleepy eyes, with no sharp movements, sighs, or gasps. Years of training, practically from childhood, had given the plastuns complete control over the body in extreme moments — like "a big mustachioed uncle with a topknot and a rifle shaking you by the shoulder in the middle of the night in the steppe, deep behind enemy lines."
 
-"Kelep — rise and shine. There's a firefight underway with another plastun squad. We need to reinforce them. Ready the Hornet for combat immediately. There's some kind of machinery involved."
+"Kelep — up. Another plastun squad is in a firefight. We need to reinforce them. Ready the Hornet for combat immediately. Enemy armor is involved."
 
 Kelep, silently, as if receiving such an order in the middle of the night were perfectly normal, rose, rolled up his sleeping bag with the mat, and stuffed it behind the horse's saddle. Then he walked around to the right side and opened the sizeable case containing the Hornet launch unit.
 
@@ -145,29 +145,29 @@ None of the optical targeting systems found in the "Bumblebees" used by space ha
 
 "Understood." Kelep and Hordynia answered simultaneously.
 
-The gunfire was getting ever closer. The sky no longer lit up as much from explosions, but the plastuns clearly distinguished the fire from haiduk laser rifles and some kind of rapid-fire weapon — most likely the Sunflowers'.
+The gunfire was getting ever closer. The sky no longer lit up as much from explosions, but the plastuns clearly distinguished the fire from haiduk laser rifles and an enemy rapid-firer — most likely the Sunflowers'.
 
 In just four minutes after the first flashes, all three were ready for battle and mounted. Kelep, as the designated Hornet gunner, loaded it with one round and raised the launch tube to his right shoulder. He gripped it firmly by the handle that protruded from below. The shell itself stuck out in front of the tube and glinted faintly under the stars of the "Loca Deserta-17" colony. The launcher was recoilless. Kelep was preparing to fire straight from a gallop. Hordynia, as the second crew member, checked once more the box containing three additional charges for the Hornet, then flicked the safety off his laser rifle, which he always kept in hand.
 
-"They're even closer to us now. The Sunflowers have run into another one of our patrols and are driving them across the steppe. Our people are still holding on. Here's the plan: we fly straight at them, but come in from the left flank. I can see two mechanized infantry vehicles — one of them is a tarantula. The other — unclear, but wheeled. Kelep — first target is the tarantula[^8]. It can change direction at any moment and is very maneuverable. Then you hit the other vehicle, whatever it is. A few dozen meters out, I'll try to reach ours on the vox so we don't shoot each other. Let's go! For the Stars and the Sich!"
+"They're even closer to us now. The Sunflowers have run into another one of our patrols and are driving them across the steppe. Our people are still holding. Here's the plan: we fly straight at them, but come in from the left flank. I can see two mechanized infantry vehicles — one of them is a tarantula. The other — unclear, but wheeled. Kelep — first target is the tarantula[^8]. It can change direction at any moment and is very maneuverable. Then you hit the other vehicle, whatever it is. A few dozen meters out, I'll try to reach ours on the vox so we don't shoot each other. Let's go! For the Stars and the Sich!"
 
 "For the Stars and the Sich!"
 
 All three bot-horses gathered speed and raced toward the glow that was growing larger by the moment. The delay between the flashes and the explosions shrank with each dull strike of their bot-horses' metal hooves.
 
-The final minutes before battle stretched slowly. Approaching the skirmish, the plastuns could already make out half a dozen riders performing the finest feats of trick riding, dodging the salvos of melt-fire, laser bolts, and grenades that the narrow-eyes were pouring on them from their fighting machines.
+The final minutes before contact stretched slowly. Approaching the firefight, the plastuns could already make out half a dozen riders performing the finest feats of trick riding, dodging the salvos of melt-fire, laser bolts, and grenades that the narrow-eyes were pouring on them from their fighting machines.
 
 On the tarantula, hanging half out of hatches, sat three Sunflowers firing at the Hets. Several spotlights on each vehicle tried to catch the silhouettes of horses in the night steppe. The imperials weren't going for the kill. They were herding, keeping their distance, again and again cutting down those who slowed.
 
-The plastuns fought back as best they could, but couldn't inflict significant damage or penetrate the armored machines. When a laser or plasma shot from a rifle struck near the silhouette sticking out of a vehicle hatch, it would duck down for a few seconds, then reappear. The silhouette would vanish for a few seconds, then pop back up in the hatch.
+The plastuns returned fire as best they could, but couldn't inflict significant damage or penetrate the armored machines. When a laser or plasma shot from a rifle struck near the silhouette sticking out of a vehicle hatch, it would duck down for a few seconds, then reappear. The silhouette would vanish for a few seconds, then pop back up in the hatch.
 
-"I'm Plastun-12 — coming to assist. Pull the vehicles left of yourselves. We'll strike."
+"Plastun-12 — coming to assist. Pull the vehicles left of yourselves. We'll strike."
 
 Bohdan Tytar opened to a longer vox broadcast, trying to reach the plastuns. One of them had just been cut in half by a melt-machinegun burst, horse and all. The impact with the ground sent the dead man's helmet flying, revealing a long gray oseledets.
 
 "GOING LEFT!" — a breathless, unfamiliar voice that broke into a shout answered briefly over the vox.
 
-The surviving plastuns began shifting to the side, drawing the imperial vehicles with them and opening them up for a flanking strike from the Hornet.
+The surviving plastuns began shifting to the side, drawing the imperial vehicles with them and exposing them to a flanking strike from the Hornet.
 
 "Kelep — at your discretion. You go first, we're second. Work through all three charges. While they haven't spotted us, the first strike will be a surprise."
 
@@ -243,11 +243,11 @@ The heavy roar of a plasma cannon jerked him sharply back into the fight.
 
 "There are still two of ours. We need to extract them. The light support vehicle's left. It only has a plasma cannon." Tytar spoke coldly to the plastuns, not taking his eyes from the body that had fallen from the hatch. "The fight goes on. PULL YOURSELVES TOGETHER AND KEEP WORKING."
 
-Kelep felt his stomach clench. He had fired the shot, and the consequences were plain. Even knowing it had been necessary, the weight of responsibility pressed heavier than any gallop across the steppe.
+Kelep felt his stomach clench. He had fired the shot, and the consequences were plain. Even knowing it had been necessary, the weight of responsibility landed heavier than any gallop across the steppe.
 
 Meanwhile, the volume of fire from the fighting vehicle of the narrow-eyed scum was building. From two of its sides, two smaller plasma cannons had joined the chorus.
 
-"The vehicle is about two hundred meters out. Kelep — can you hit it from that distance?" Tytar was working out the plan to neutralize the second armor.
+"The vehicle is about two hundred meters out. Kelep — can you hit it from that distance?" Tytar was working out the plan to kill the second armor.
 
 "If we come in a little from the side, the vehicle's profile will be bigger. Then I can hit it. Head-on, I can't burn through that armor."
 
@@ -255,9 +255,9 @@ Meanwhile, the volume of fire from the fighting vehicle of the narrow-eyed scum 
 
 Plastuns never needed an order repeated twice. With movements honed over hundreds of drills, Hordynia opened the case with the melt-grenades on Kelep's horse, pulled out a charge, and slid it into the tube. A small red light near the collimator glowed faintly, signaling that the shell had been accepted and was ready to fire.
 
-The battle with the remnants of the other plastun element had gone still and was no longer shifting. None of them were coming over the vox anymore, but the characteristic green-tinted color of the plastuns' laser shots still bathed the steppe in its glow. In response, the plasma cannon from the roof of the armored rapid-firer put out three times as many shots, simply incinerating stones and boulders, burning holes through them. When plasma contacted cold stone, it burned through it and ruptured it, scattering dozens of fragments in every direction, which could easily kill a person without body armor.
+The battle with the remnants of the other plastun element had gone static and was no longer shifting. None of them were coming over the vox anymore, but the characteristic green-tinted color of the plastuns' laser shots still bathed the steppe in its glow. In response, the plasma cannon from the roof of the armored rapid-firer put out three times as many shots, simply incinerating stones and boulders, burning holes through them. When plasma contacted cold stone, it burned through it and ruptured it, scattering dozens of fragments in every direction, which could easily kill a person without body armor.
 
-Tytar tried several more times to reach the plastuns on the vox, but in response the ether only crackled with static. They moved on their bot-horses several hundred meters, getting as close to the combat vehicle's flank as possible. The vehicle itself had stopped and was laying covering fire, while a squad of light imperial infantry was advancing toward the improvised shelter of the nearly finished-off unknown plastuns.
+Tytar tried several more times to reach the plastuns on the vox, but in response the ether only crackled with static. They moved on their bot-horses several hundred meters, getting as close to the combat vehicle's flank as possible. The vehicle itself had stopped and was laying suppressive fire, while a squad of light imperial infantry was advancing toward the improvised shelter of the nearly wiped-out unknown plastuns.
 
 "We're... done. I'm the last one." — suddenly a signal broke through the vox. — "We're about to cook that vehicle. Hold on!" — "I'll take them with me. The plasma burned my legs, I can't feel them... where are they. The rapid-firer burned our horses too. Yokhym is dead." — the voice, with the strain of agony, was sliding almost into a howl. "They're already here!"
 
@@ -267,7 +267,7 @@ A few seconds later, at the spot among the boulders where the plastuns had held 
 
 Kelep had to dismount: the gully's exit was too steep for the horse, and it might lose footing with the loaded Hornet. Together with Hordynia, the two of them climbed the slope, with Dmytro pushing from behind, not letting him fall back. The extra fourteen kilograms of the loaded Hornet were making themselves felt. Hordynia himself held one more additional round in his hands.
 
-The rapid-firer continued vomiting plasma into the stone before it. Even at a distance of nearly two hundred meters, this wheeled vehicle was a fine target. Its large dimensions — five by twelve meters — allowed it to carry a squad of light infantry plus several small rapid-firers on the sides.
+The rapid-firer continued vomiting plasma into the stone before it. Even at a distance of nearly two hundred meters, this wheeled vehicle was a clean target. Its large dimensions — five by twelve meters — allowed it to carry a squad of light infantry plus several small rapid-firers on the sides.
 
 Hordynia barely peeked over the top of the gully, pressed his eye to the Hornet's sight, and within a second fired. The grenade needed less than two breaths to reach its target. The combat vehicle was not stuffed with electronics for intercepting mines or rocket grenades — it was more like an armored truck. So without any obstacles, all seven kilograms of the Hornet's charge entered directly under the base of the rapid-firer's turret.
 
@@ -301,7 +301,7 @@ Hordynia and Kelep spat simultaneously. Kelep's teeth had always been sensitive 
 
 After those words, Kelep and Hordynia instantly understood what was happening. They dropped the loaded Hornet and rolled the same way down the slope toward their horses.
 
-Imperial drones were scanning the surface with ultrasound. In sensitive people, the impulse caused toothache. Tytar's wisdom tooth started sharply aching again — as if someone were prying at it from the inside with an iron nail.
+Imperial drones were sweeping the surface with ultrasound. In sensitive personnel, the impulse caused toothache. Tytar's wisdom tooth started sharply aching again — as if someone were prying at it from the inside with an iron nail.
 
 The scanning drone itself flew at an altitude of several hundred meters, methodically striking downward with ultrasound, trying to find its quarry. Their last encounter with such a device had ended in the decimation of a plastun squad. First the drone had fired several rounds at them, and then a ballistic missile strike had followed within a few dozen minutes.
 
@@ -311,7 +311,7 @@ The trio of plastuns had only a few minutes left before the drone would pinpoint
 
 "We mount the bots and fall back!" Tytar was already on his horse, and on the move managed to connect the cord-jack to his wrist for firmer bot control.
 
-"Maybe we freeze? If we don't move, the scanner won't notice us. We'll just be pebbles on the ground." Hordynia couldn't get the bot-horse control cord into the jack, then spat and got on without it.
+"Maybe we freeze? If we don't move, the scanner won't notice us. We'll just be stones on the ground." Hordynia couldn't get the bot-horse control cord into the jack, then spat and got on without it.
 
 "Damn... The drone scanned us three times. The first pulse was weak — that was exactly when we fired the Hornet. So we lit up like a straw bull from the fairy tale. The next scans came with greater amplitude — it got our exact position. And now it's just saturating with waves. My teeth are going to start bleeding soon."
 
@@ -327,15 +327,15 @@ Tytar kicked his legs, directing the horse along the gully. Behind his back, the
 
 The trio of horses burst out of the gully and shot off across the green steppe. Here and there, stones jutted up from the ground, and between them the plastuns picked their path. Their greenish-brown cloaks billowed above the horses, partly masking the silhouettes of the iron beasts and riders from eyes above.
 
-The impulses from the ultrasonic scanner were weak at first, but every few hundred meters they grew stronger. The drone was clearly chasing them, trying to achieve its goal — drop a few bombs on the haiduks' heads. In the final kilometer, Tytar was constantly spitting saliva from his mouth — the pain from the waves the drone was sending had become continuous.
+The impulses from the ultrasonic scanner were weak at first, but every few hundred meters they grew stronger. The drone was clearly hunting them, trying to fulfill its mission — drop a few bombs on the haiduks' heads. In the final kilometer, Tytar was constantly spitting saliva from his mouth — the pain from the waves the drone was sending had become continuous.
 
-"Listen, Tytar — I just remembered." Kelep activated the vox to be able to speak with the squad leader at full speed. "A friend of mine from the mechanics gave me two decoys. They're small boxes, of a strange metallic shape — they reflect ultrasound very well. According to him, they imitate the size of a person on the scanner. Should we try? My teeth are taking hits too — the drone is getting closer. Another half hour of chase and we're done."
+"Listen, Tytar — I just remembered." Kelep activated the vox to speak with the squad leader at full speed. "A friend of mine from the mechanics gave me two decoys. They're small boxes, of a strange metallic shape — they reflect ultrasound very well. According to him, they imitate the size of a person on the scanner. Should we try? My teeth are taking hits too — the drone is closing. Another half hour of pursuit and we're done."
 
 "Oh, I heard about those boxes." Tytar squeezed the horse with his legs. "We stop. Set up the decoy."
 
 All three slowed their horses and jumped off on the move. Kelep pulled two gadgets the size of a fist from the pack on his horse's left side. Their faces were indented inward and had several ridges that converged concentrically toward the center of the figure. Whether the thing worked — no one yet knew.
 
-They also decided to build a small "foxhole" from the surrounding stones, placing the two decoys inside. For added realism, they sacrificed the Hornet tube, laying it on top of the shelter. From a great height, it might look like someone was lying there with a weapon, sheltered behind a parapet. At least that's what the three plastuns thought.
+They also decided to build a small fighting position from the surrounding stones, placing the two decoys inside. For added realism, they sacrificed the Hornet tube, laying it on top of the shelter. From a great height, it might look like someone was lying there with a weapon, sheltered behind a parapet. At least that's what the three plastuns thought.
 
 "Now we ride stirrup to stirrup. And like that, touching one another, we ride on."
 
@@ -357,7 +357,7 @@ As if confirming his words, the echo of two explosions rolled to them from behin
 
 "That's the smoke grenade I threw in too. So that after the explosion, we'd muddy the air a bit and force the drone to circle longer, checking the result of the strike." Hordynia was clearly proud that his own trick had worked too.
 
-"Well boys — you can't go wrong with you lot. We fly to the exit point, we'll be there by noon. Main thing — no contact with narrow-eyes!"
+"Well boys — you can't go wrong with you lot. We fly to the extraction point, we'll be there by noon. Main thing — no contact with narrow-eyes!"
 
 "For the Sich and the Meadow!"
 
@@ -365,7 +365,7 @@ The gallop gradually eased into a steady, economical pace. The horses breathed h
 
 The first rays slid across the waves of grass, and it seemed as if the earth remembered nothing. Not the explosions, not the plasma, not the screams. Only the wind and the steady rustle beneath the bot-horses' hooves.
 
-No one spoke. After a battle, words always feel superfluous. The ears still rang, the teeth ached with the dull echo of ultrasound, and fragments of bodies and armor flashed before the eyes again and again. Each rode in their own silence, carrying what cannot be shed even at full gallop.
+No one spoke. After a battle, words always feel superfluous. The ears still rang, the teeth ached with the dull echo of ultrasound, and fragments of bodies and armor flashed before the eyes again and again. Each rode in their own silence, carrying what cannot be dropped even at full gallop.
 
 Tytar looked back one last time. On the horizon there was nothing left to see — no smoke, no flashes. Only the steppe and the pale sky. Out there remained those who hadn't been taken away in time. Out there remained the battle.
 

@@ -23,9 +23,9 @@ Two Earth days later, another gravitational wave struck the sensors placed aroun
 
 Every member of the European (Jovian) International Research Station received access to all developments of the laboratory. In year 23 SE, each empire had already founded one colony in the nearest star system, Alpha Centauri. The search for further systems able to host humans showed that there were fairly few of them, and even fewer systems rich in useful minerals. Warp jumps were also expensive, because lawrencium and nobelium are unstable and must be held calm only under micronuclear explosions. The empires began debating who had the right to mine asteroids, comets, and planets and to create colonies there.
 
-In year 31 SE, the first armed clash occurred during the exploration of Teegarden's Star, specifically on the human-habitable planets Teegarden b and c. The Corporate Republic informed Europa that it had occupied Teegarden b. At the same time, the Empire of the Sun informed Europa that the Corporates had attacked its ships in the system and taken the warp-control point, effectively driving out the Sunflowers.
+In year 31 SE, the first armed clash erupted during the exploration of Teegarden's Star, specifically on the human-habitable planets Teegarden b and c. The Corporate Republic informed Europa that it had occupied Teegarden b. At the same time, the Empire of the Sun informed Europa that the Corporates had attacked its ships in the system and seized the warp-control point, effectively driving out the Sunflowers.
 
-This incident entered stellar history as the Teegarden Incident. It triggered unrest in the Solar System, and all three empires entered an undeclared war. The forces of the Hetmanate, the Corporates, and the Sunflowers headed toward Jovian Europa to seize control and development of warp crossings. Entering Europa's gravity zone would have meant the first solar world war, because the Jovian Europa zone was demilitarized.
+This incident entered stellar history as the Teegarden Incident. It triggered unrest in the Solar System, and all three empires entered an undeclared war. The battle groups of the Hetmanate, the Corporates, and the Sunflowers drove toward Jovian Europa to seize control of warp crossings and their further development. Entering Europa's gravity zone would have meant the first solar world war, because the Jovian Europa zone was demilitarized.
 
 The heads of warp-transition development on Jovian Europa, Mykhailo Sahaidak, Jack Mo (马云), and Richard Stalman, announced that any further movement by any empire to seize the warp laboratory and warp-engine production would cause the collapse of civilizations. Therefore, the research station's staff would start a warp engine directly on Jovian Europa, causing a gravitational rupture that would destroy the moon and the entire station.
 
@@ -45,7 +45,7 @@ Dan Rios, emperor of the Corporate Republic, was the first to draw three tickets
 - All warp technology belonged to Jovian Europa.
 - In case of violation of the rules, laws, or the Martian Division, Jovian Europa would disconnect the offender from warp crossings.
 - The Solar System became demilitarized, with a population of about 15-20 billion.
-- Order was maintained by Peace Troops directly subordinate only to the three heads of the laboratory on Jovian Europa.
+- Order was enforced by Peace Troops directly subordinate only to the three heads of the laboratory on Jovian Europa.
 - Each empire had a group of representatives on Jovian Europa.
 - The laws of the empires did not apply in the Solar System.
 - Jovian Europa was forbidden to research or develop any military technology.

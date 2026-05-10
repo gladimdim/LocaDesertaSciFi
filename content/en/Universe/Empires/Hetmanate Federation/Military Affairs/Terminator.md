@@ -17,7 +17,7 @@ There are several Terminator specializations.
 
 ### Bohatyrs
 
-The bravest are trained for assault operations with "cold" weapons: their own sabers, spears, shields, and short plasma muskets. They lead groups of less armored Serdiuks or Haiduks. They also take part in boardings of spacecraft and assaults on space, lunar, and asteroid fortresses. They are often used to protect their brothers-in-arms, the Rifleman-Terminators, so they are not surprised in hand-to-hand combat.
+The bravest are trained for assault operations with "cold" weapons: their own sabers, spears, shields, and short plasma muskets. They lead groups of less armored Serdiuks or Haiduks. They also take part in spacecraft boardings and assaults on space, lunar, and asteroid fortresses. They are often used to screen their brothers-in-arms, the Rifleman-Terminators, from sudden hand-to-hand combat.
 
 The name comes from the mythical warriors of the pre-Cossack age on [[../../../History/Old Earth|Old Earth]].
 
@@ -25,6 +25,6 @@ Analogues elsewhere: [[../../Empire of the Sun/Military Affairs/Samanaki|Samanak
 
 ### Riflemen
 
-The most common type of Terminator. They mainly use long-range personal laser firearms. Their only cold weapon is a power or plasma saber. They fight by covering the desperate attacks of the Bohatyrs. Such Terminator detachments can also operate heavy infantry systems such as machine guns, mortars, and plasma cannons.
+The most common type of Terminator. They mainly use long-range personal laser firearms. Their only cold weapon is a power or plasma saber. They fight by covering the furious charges of the Bohatyrs. Such Terminator detachments can also operate heavy infantry systems such as machine guns, mortars, and plasma cannons.
 
 ![Terminator](../../../../../Images/Universe/Hetmanate-Federation/Hetmanat_Terminator.png)
