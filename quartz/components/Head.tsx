@@ -36,6 +36,22 @@ export default (() => {
     )
     const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
 
+    // hreflang data from frontmatter
+    const pageLang = fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
+    const translations = fileData.frontmatter?.translations as Record<string, string> | undefined
+
+    // JSON-LD structured data
+    const dateModified = fileData.dates?.modified?.toISOString()
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: title.replace(titleSuffix, ""),
+      description,
+      dateModified,
+      inLanguage: pageLang,
+      url: socialUrl,
+    }
+
     return (
       <head>
         <title>{title}</title>
@@ -76,9 +92,18 @@ export default (() => {
 
         {cfg.baseUrl && (
           <>
+            <link rel="canonical" href={socialUrl} />
             <meta property="twitter:domain" content={cfg.baseUrl}></meta>
             <meta property="og:url" content={socialUrl}></meta>
             <meta property="twitter:url" content={socialUrl}></meta>
+            <meta property="og:locale" content={pageLang} />
+            {translations &&
+              Object.entries(translations).map(([lang, href]) => (
+                <link rel="alternate" hreflang={lang} href={`https://${cfg.baseUrl}${href}`} />
+              ))}
+            <link rel="alternate" hreflang={pageLang} href={socialUrl} />
+            <link rel="alternate" hreflang="x-default" href={`https://${cfg.baseUrl}`} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
           </>
         )}
 
