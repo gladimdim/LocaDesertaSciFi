@@ -40,21 +40,23 @@
             }
           },
           {
-            "id": "26db62f713524e3f",
+            "id": "f7f4e320e5244c43",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатор.md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бот-Коні.md",
                 "mode": "source",
                 "source": false
               },
+              "pinned": true,
               "icon": "lucide-file",
-              "title": "Термінатор"
+              "title": "Бот-Коні"
             }
           },
           {
-            "id": "f7f4e320e5244c43",
+            "id": "cc20c27c9a56cba1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -67,7 +69,8 @@
               "title": "Вепр-3"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -99,7 +102,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "зустріч в степ",
+                "query": "ейншт",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -202,13 +205,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Всесвіт/Історія/Головна Історія Всесвіту.md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Вепр-3.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Головна Історія Всесвіту"
+              "title": "Outline of Вепр-3"
             }
           }
         ],
@@ -229,12 +232,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "18a96bba0351b87e",
+  "active": "cc20c27c9a56cba1",
   "lastOpenFiles": [
+    "Всесвіт/Історія/Головна Історія Всесвіту.md",
     "Books/Вістря Кулаку/Вістря Кулаку.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бот-Коні.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатор.md",
-    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Вепр-3.md",
+    "Images/Universe/Hetmanate-Federation/Vepr3-2.jpg",
     "Books/Зоряний Гетьманат/Зоряний Гетьманат.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Вепр-3.md",
     "Images/Universe/Hetmanate-Federation/Vepr3.jpg",
     "Всесвіт/Імперії/Імперія Сонця/Наука Імперії Сонця.md",
     "Всесвіт/Імперії/Імперія Сонця/Військова Справа/Саманаки.md",
@@ -249,7 +255,6 @@
     "Images/Universe/Hetmanate-Federation/Steppe_Wagons.jpg",
     "Images/Universe/Hetmanate-Federation/Odin_Za_Vsih.jpg",
     "Images/Universe/Hetmanate-Federation/Short_Plasma_Carbine.jpg",
-    "Images/Universe/Hetmanate-Federation/Ivan_Sulima_Poltava.jpg",
     "Images/Universe/Hetmanate-Federation",
     "Images/Universe",
     "Images/Books/Zorianyi-Hetmanat/Notes",
@@ -271,9 +276,6 @@
     "en/Universe/Empires/hetmanate-federation/military-affairs/skolot.md",
     "en/Universe/Empires/hetmanate-federation/military-affairs/serdiuks.md",
     "en/Universe/Empires/hetmanate-federation/military-affairs/retired-cossack.md",
-    "en/Universe/Empires/hetmanate-federation/military-affairs/khartsyzy.md",
-    "en/Universe/Empires/hetmanate-federation/military-affairs/halving.md",
-    "en/Universe/Empires/hetmanate-federation/military-affairs/haiduks.md",
     "en/Universe/Empires/hetmanate-federation/weapons",
     "en/Universe/Empires/hetmanate-federation/star-affairs",
     "en/Universe/Empires/hetmanate-federation/space-geography"
