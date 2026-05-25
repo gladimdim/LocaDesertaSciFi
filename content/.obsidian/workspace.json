@@ -67,8 +67,7 @@
               "title": "Вепр-3"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -203,13 +202,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Вепр-3.md",
+                "file": "Всесвіт/Історія/Головна Історія Всесвіту.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Вепр-3"
+              "title": "Outline of Головна Історія Всесвіту"
             }
           }
         ],
@@ -230,8 +229,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "f7f4e320e5244c43",
+  "active": "18a96bba0351b87e",
   "lastOpenFiles": [
+    "Books/Вістря Кулаку/Вістря Кулаку.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатор.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Вепр-3.md",
     "Books/Зоряний Гетьманат/Зоряний Гетьманат.md",
     "Images/Universe/Hetmanate-Federation/Vepr3.jpg",
     "Всесвіт/Імперії/Імперія Сонця/Наука Імперії Сонця.md",
@@ -272,10 +274,7 @@
     "en/Universe/Empires/hetmanate-federation/military-affairs/khartsyzy.md",
     "en/Universe/Empires/hetmanate-federation/military-affairs/halving.md",
     "en/Universe/Empires/hetmanate-federation/military-affairs/haiduks.md",
-    "en/Universe/Empires/hetmanate-federation/history/history.md",
     "en/Universe/Empires/hetmanate-federation/weapons",
-    "en/Universe/Empires/hetmanate-federation/weaknesses.md",
-    "en/Universe/Empires/hetmanate-federation/territorial-structure.md",
     "en/Universe/Empires/hetmanate-federation/star-affairs",
     "en/Universe/Empires/hetmanate-federation/space-geography"
   ]
