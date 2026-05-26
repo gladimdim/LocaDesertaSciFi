@@ -40,37 +40,21 @@
             }
           },
           {
-            "id": "f7f4e320e5244c43",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бот-Коні.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Бот-Коні"
-            }
-          },
-          {
-            "id": "cc20c27c9a56cba1",
+            "id": "d1b0c5529af6987d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Протипіхотна Міна 15 (ПП-15).md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Події/Повстання Мюридів.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Протипіхотна Міна 15 (ПП-15)"
+              "title": "Повстання Мюридів"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -102,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ейншт",
+                "query": "мюр ид",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -205,13 +189,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Протипіхотна Міна 15 (ПП-15).md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Події/Повстання Мюридів.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Протипіхотна Міна 15 (ПП-15)"
+              "title": "Outline of Повстання Мюридів"
             }
           }
         ],
@@ -232,8 +216,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "cc20c27c9a56cba1",
+  "active": "d1b0c5529af6987d",
   "lastOpenFiles": [
+    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Правило \"до ноги\".md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бот-Коні.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Історія/Історія.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Події/Повстання Мюридів.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Космічна Географія/Система Мюрид.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Різне/Мюридська сталь.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Різне/Піндос.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Різне/Сонячник.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Події",
+    "Books/Зоряний Гетьманат/Зоряний Гетьманат.md",
+    "Images/Universe/Hetmanate-Federation/Murid_Metal_Smelting.jpg",
+    "en/Universe/Empires/Hetmanate Federation/Space Geography/Muryid System.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Протипіхотна Міна 15 (ПП-15).md",
     "Images/Universe/Hetmanate-Federation/PP-15.jpg",
     "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Плекс-гель.md",
     "Images/Universe/Hetmanate-Federation/Pleks_Gel_Compressed.jpg",
@@ -244,22 +241,17 @@
     "Images/Universe/Hetmanate-Federation/Vepr1-2.jpg",
     "Images/Universe/Hetmanate-Federation/Vepr1.jpg",
     "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Вепр-1.md",
-    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бот-Коні.md",
     "Images/Universe/Hetmanate-Federation/Vepr3-Modern.jpg",
     "Images/Universe/Hetmanate-Federation/Bot_Horse_Rider.jpg",
     "Images/Universe/Hetmanate-Federation/Bot_Horse.jpg",
     "Всесвіт/Історія/Головна Історія Всесвіту.md",
     "Books/Вістря Кулаку/Вістря Кулаку.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатор.md",
-    "Books/Зоряний Гетьманат/Зоряний Гетьманат.md",
     "Всесвіт/Імперії/Імперія Сонця/Наука Імперії Сонця.md",
     "Всесвіт/Імперії/Імперія Сонця/Військова Справа/Саманаки.md",
     "Books/Зустріч в степу/Зустріч в степу.md",
-    "Всесвіт/Імперії/Федерація Гетьманату/Історія/Історія.md",
     "Images/Universe/Hetmanate-Federation/Warhammer_Plasma_Spike.jpg",
     "Images/Universe/Hetmanate-Federation/Warhammer_Classic.jpg",
-    "Images/Universe/Hetmanate-Federation/Warhammer_Axe.jpg",
-    "Images/Universe/Hetmanate-Federation/Skolot.jpg",
     "Images/Universe/Hetmanate-Federation",
     "Images/Universe",
     "Images/Books/Zorianyi-Hetmanat/Notes",
@@ -269,16 +261,8 @@
     "en/Universe/Empires/hetmanate-federation/weapons/short-plasma-handgun.md",
     "en/Universe/Empires/hetmanate-federation/weapons/vepr-3.md",
     "en/Universe/Empires/hetmanate-federation/weapons/plex-gel.md",
-    "en/Universe/Empires/hetmanate-federation/weapons/javelin-spear.md",
-    "en/Universe/Empires/hetmanate-federation/weapons/combat-hammer.md",
     "en/Universe/Empires/hetmanate-federation/star-affairs/ships",
-    "en/Universe/Empires/hetmanate-federation/space-geography/muryid-system.md",
-    "en/Universe/Empires/hetmanate-federation/weapons/antipersonnel-mine-15-ap-15.md",
-    "en/Universe/Empires/hetmanate-federation/miscellany/sonyachnyk.md",
-    "en/Universe/Empires/hetmanate-federation/military-affairs/terminator-bruisers.md",
-    "en/Universe/Empires/hetmanate-federation/miscellany/pindos.md",
     "en/Universe/Empires/hetmanate-federation/weapons",
-    "en/Universe/Empires/hetmanate-federation/star-affairs",
-    "en/Universe/Empires/hetmanate-federation/space-geography"
+    "en/Universe/Empires/hetmanate-federation/star-affairs"
   ]
 }
