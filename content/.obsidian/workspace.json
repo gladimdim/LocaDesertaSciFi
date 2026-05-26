@@ -61,12 +61,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Вепр-3.md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Плекс-гель.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Вепр-3"
+              "title": "Плекс-гель"
             }
           }
         ],
@@ -205,13 +205,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Вепр-3.md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Плекс-гель.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Вепр-3"
+              "title": "Outline of Плекс-гель"
             }
           }
         ],
@@ -234,10 +234,14 @@
   },
   "active": "cc20c27c9a56cba1",
   "lastOpenFiles": [
+    "Images/Universe/Hetmanate-Federation/Pleks_Gel_Compressed.jpg",
+    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Спис-джавелін.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Плазмовий Короткий Самопал.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бойовий Молот.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Вепр-3.md",
     "Images/Universe/Hetmanate-Federation/Vepr1-2.jpg",
     "Images/Universe/Hetmanate-Federation/Vepr1.jpg",
     "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Вепр-1.md",
-    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Вепр-3.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бот-Коні.md",
     "Images/Universe/Hetmanate-Federation/Vepr3-Modern.jpg",
     "Images/Universe/Hetmanate-Federation/Bot_Horse_Rider.jpg",
@@ -250,7 +254,6 @@
     "Всесвіт/Імперії/Імперія Сонця/Військова Справа/Саманаки.md",
     "Books/Зустріч в степу/Зустріч в степу.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Історія/Історія.md",
-    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бойовий Молот.md",
     "Images/Universe/Hetmanate-Federation/Warhammer_Plasma_Spike.jpg",
     "Images/Universe/Hetmanate-Federation/Warhammer_Classic.jpg",
     "Images/Universe/Hetmanate-Federation/Warhammer_Axe.jpg",
@@ -274,8 +277,6 @@
     "en/Universe/Empires/hetmanate-federation/military-affairs/terminator-bruisers.md",
     "en/Universe/Empires/hetmanate-federation/miscellany/pindos.md",
     "en/Universe/Empires/hetmanate-federation/military-affairs/terminator.md",
-    "en/Universe/Empires/hetmanate-federation/military-affairs/skolot.md",
-    "en/Universe/Empires/hetmanate-federation/military-affairs/serdiuks.md",
     "en/Universe/Empires/hetmanate-federation/weapons",
     "en/Universe/Empires/hetmanate-federation/star-affairs",
     "en/Universe/Empires/hetmanate-federation/space-geography"
