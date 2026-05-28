@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gladimdim.github.io/LocaDesertaSciFi/sitemap.xml
+Sitemap: https://scifi.locadeserta.com/sitemap.xml
 
 Disallow: /private/
 Disallow: /.obsidian/
