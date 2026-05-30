@@ -45,16 +45,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Девізи Федерації Гетьманату.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Девізи Федерації Гетьманату"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ознай",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -107,8 +107,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -190,13 +189,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "Books/Вістря Кулаку/Вістря Кулаку.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of Вістря Кулаку"
             }
           }
         ],
@@ -217,10 +216,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "d1b0c5529af6987d",
+  "active": "6e38819215dc1989",
   "lastOpenFiles": [
-    "Books/Зустріч в степу/Зустріч в степу.md",
+    "en/Books/Star Hetmanate/Star Hetmanate.md.11600.1780148299685.g70xf1a5zut.tmp",
+    "en/Books/Star Hetmanate/Notes/MM-65.md",
+    "en/Books/Star Hetmanate/Notes/Viz-113.md",
+    "en/Books/Star Hetmanate/Notes",
+    "Всесвіт/Імперії/Федерація Гетьманату/Девізи Федерації Гетьманату.md",
     "Books/Вістря Кулаку/Вістря Кулаку.md",
+    "en/Books/Star Hetmanate/Star Hetmanate.md.11600.1780147529828.exgn7p1cu6h.tmp",
+    "en/Books/Star Hetmanate/Star Hetmanate.md.11600.1780147373761.893ks5xswb8.tmp",
+    "en/Books/Star Hetmanate/Star Hetmanate.md",
+    "en/Books/Star Hetmanate",
+    "index.md",
+    "Books/Зустріч в степу/Зустріч в степу.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Події/Повстання Мюридів.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Правило \"до ноги\".md",
     "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бот-Коні.md",
@@ -248,22 +257,12 @@
     "Images/Universe/Hetmanate-Federation/Bot_Horse_Rider.jpg",
     "Images/Universe/Hetmanate-Federation/Bot_Horse.jpg",
     "Всесвіт/Історія/Головна Історія Всесвіту.md",
-    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатор.md",
-    "Всесвіт/Імперії/Імперія Сонця/Наука Імперії Сонця.md",
-    "Всесвіт/Імперії/Імперія Сонця/Військова Справа/Саманаки.md",
     "Images/Universe/Hetmanate-Federation/Warhammer_Plasma_Spike.jpg",
     "Images/Universe/Hetmanate-Federation/Warhammer_Classic.jpg",
     "Images/Universe/Hetmanate-Federation",
     "Images/Universe",
     "Images/Books/Zorianyi-Hetmanat/Notes",
     "Images/Books/Zorianyi-Hetmanat",
-    "Images/Books/Vistria-Kulaku",
-    "Images/Books",
-    "en/Universe/Empires/hetmanate-federation/weapons/short-plasma-handgun.md",
-    "en/Universe/Empires/hetmanate-federation/weapons/vepr-3.md",
-    "en/Universe/Empires/hetmanate-federation/weapons/plex-gel.md",
-    "en/Universe/Empires/hetmanate-federation/star-affairs/ships",
-    "en/Universe/Empires/hetmanate-federation/weapons",
-    "en/Universe/Empires/hetmanate-federation/star-affairs"
+    "Images/Books/Vistria-Kulaku"
   ]
 }
