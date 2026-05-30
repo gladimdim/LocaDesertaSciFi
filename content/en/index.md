@@ -20,4 +20,4 @@ The book texts are kept in Ukrainian only:
 
 [[../Books/Зустріч в степу/Зустріч в степу|Meeting in the Steppe]] (short story)
 
-[[../Books/Зоряний Гетьманат/Зоряний Гетьманат|Star Hetmanate]] (first book in the universe)
+[[../Books/Зоряний Гетьманат/Зоряний Гетьманат|Space Hetmanate]] (first book in the universe)
