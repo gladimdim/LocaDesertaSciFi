@@ -165,13 +165,15 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-kanban:Create new board": false
     }
   },
   "active": "ef5d5ea967a56f00",
   "lastOpenFiles": [
-    "Books/Зустріч в степу/Зустріч в степу.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Сколот.md",
     "Books/Вістря Кулаку/Вістря Кулаку.md",
+    "Books/Зустріч в степу/Зустріч в степу.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бойовий Молот.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Історія/Історія.md",
     "en/Universe/Empires/Hetmanate Federation/Star Affairs/Ships/DARYA-Class Ships.md",
@@ -197,7 +199,6 @@
     "en/Universe/Empires/Hetmanate Federation/Social Structure of the Hetmanate Federation.md",
     "en/Universe/Empires/Hetmanate Federation/Slogans of the Hetmanate Federation.md",
     "en/Universe/Empires/Hetmanate Federation/Science of the Hetmanate Federation.md",
-    "en/Universe/Empires/Hetmanate Federation/Planetary Technologies of the Hetmanate Federation.md",
     "en/Universe/Empires/Hetmanate Federation/Miscellany",
     "en/Universe/Empires/Hetmanate Federation/Military Affairs",
     "en/Universe/Empires/Hetmanate Federation/History",
