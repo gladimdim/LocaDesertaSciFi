@@ -116,8 +116,8 @@
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
+            "showSearch": true,
+            "searchQuery": "Абатай",
             "backlinkCollapsed": false,
             "unlinkedCollapsed": true
           },
@@ -131,7 +131,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Всесвіт/Імперії/Федерація Гетьманату/Історія/Історія.md",
+            "file": "Books/Вістря Кулаку/Вістря Кулаку.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           },
@@ -145,17 +145,17 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Всесвіт/Імперії/Федерація Гетьманату/Історія/Історія.md",
-            "followCursor": false,
-            "showSearch": false,
-            "searchQuery": ""
+            "file": "Books/Вістря Кулаку/Вістря Кулаку.md",
+            "followCursor": true,
+            "showSearch": true,
+            "searchQuery": "Абатай"
           },
           "icon": "lucide-list",
           "title": "Outline"
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 1
   },
   "left-ribbon": {
     "hiddenItems": {
