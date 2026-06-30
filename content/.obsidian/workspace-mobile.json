@@ -117,7 +117,7 @@
             "extraContext": false,
             "sortOrder": "alphabetical",
             "showSearch": true,
-            "searchQuery": "Абатай",
+            "searchQuery": "",
             "backlinkCollapsed": false,
             "unlinkedCollapsed": true
           },
@@ -155,7 +155,7 @@
         }
       }
     ],
-    "currentTab": 1
+    "currentTab": 0
   },
   "left-ribbon": {
     "hiddenItems": {
