@@ -14,10 +14,9 @@ Explore the universe:
 
 ## Books
 
-The book texts are kept in Ukrainian only:
 
 [[../Books/Вістря Кулаку/Вістря Кулаку|Blade of the Fist]] (second book, in progress)
 
 [[../Books/Зустріч в степу/Зустріч в степу|Meeting in the Steppe]] (short story)
 
-[[../Books/Зоряний Гетьманат/Зоряний Гетьманат|Space Hetmanate]] (first book in the universe)
+[[../Books/Зоряний Гетьманат/Зоряний Гетьманат|Space Hetmanate]] (first book in the universe, foundation)
