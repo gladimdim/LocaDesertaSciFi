@@ -12,6 +12,10 @@ Explore the universe:
 - [[Universe/Empires/Corporate Republic/Corporate Republic|Corporate Republic]]
 - [[Universe/Empires/Empire of the Sun/Empire of the Sun|Empire of the Sun]]
 
+## Games
+
+[[Games/Loca Deserta Settlers|Loca Deserta: Settlers]] — a macro-economic space colony builder inspired by The Settlers III/IV.
+
 ## Books
 
 
