@@ -7,9 +7,13 @@ translations:
 ---
 A [[Terminator|Terminator]] variant specialized for close assault. They have thicker armor and a more open visor for better visibility.
 
+![Bruisers|262](../../../../Images/Universe/Hetmanate-Federation/Dubolomi_Pair.jpg)
+
 ## Training
 
 Selection begins at the rank of Terminator III for separate training and retraining in close assault. Preference is given to Cossacks with slightly reduced mental abilities but stronger psychological resilience for extremely brutal close fighting, when the enemy must literally be torn in half by hand.
+
+![Bruisers|280](../../../../Images/Universe/Hetmanate-Federation/Melee_Terminator.jpg)
 
 ## Weapons
 
@@ -17,7 +21,9 @@ Terminator shield
 [[../Weapons/Short Plasma Handgun|Short Plasma Handgun]]  
 Grenades  
 Chest-breakers  
+![Steel-Claw Bruiser|280](../../../../Images/Universe/Hetmanate-Federation/Dubolom_Steel_Paws.jpg)  
 Fists  
+![Fist Bruiser|280](../../../../Images/Universe/Hetmanate-Federation/Dubolom_Fist.jpg)  
 Heavy plasma infantry saber  
 [[../Weapons/Combat Hammer|Combat Hammer]]  
 [[../Weapons/Javelin Spear|Javelin Spear]]
