@@ -100,7 +100,8 @@
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 0,
+    "pinned": true
   },
   "right": {
     "id": "0271a418eb629892",
@@ -171,9 +172,10 @@
   },
   "active": "ef5d5ea967a56f00",
   "lastOpenFiles": [
-    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Сколот.md",
-    "Books/Вістря Кулаку/Вістря Кулаку.md",
     "Books/Зустріч в степу/Зустріч в степу.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Генетичні Технології Федерації Гетьманату.md",
+    "Books/Вістря Кулаку/Вістря Кулаку.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Сколот.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бойовий Молот.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Історія/Історія.md",
     "en/Universe/Empires/Hetmanate Federation/Star Affairs/Ships/DARYA-Class Ships.md",
@@ -198,7 +200,6 @@
     "en/Universe/Empires/Hetmanate Federation/Star Affairs",
     "en/Universe/Empires/Hetmanate Federation/Social Structure of the Hetmanate Federation.md",
     "en/Universe/Empires/Hetmanate Federation/Slogans of the Hetmanate Federation.md",
-    "en/Universe/Empires/Hetmanate Federation/Science of the Hetmanate Federation.md",
     "en/Universe/Empires/Hetmanate Federation/Miscellany",
     "en/Universe/Empires/Hetmanate Federation/Military Affairs",
     "en/Universe/Empires/Hetmanate Federation/History",
