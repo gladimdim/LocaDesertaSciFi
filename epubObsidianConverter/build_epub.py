@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """
 Convert Obsidian markdown books to EPUB.
-- Embeds images
-- Replaces [[wiki-links]] with glossary references (superscript numbers)
-- Builds a glossary at the end with active links
-- Adds a cover image if present
+Usage:  python3 build_epub.py [path/to/book_config.json]
+
+If no argument given, looks for book_config.json in the script's directory.
+See book_config.template.json for the required fields.
 """
 
 import re
 import os
 import sys
+import json
 import uuid
 from collections import OrderedDict
 
-# Add venv to path (relative to this script's location)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 VENV = os.path.join(PROJECT_ROOT, ".venv", "lib", "python3.9", "site-packages")
@@ -22,46 +22,64 @@ if VENV not in sys.path:
 
 from ebooklib import epub
 
-# ── Book configuration ──────────────────────────────────────────
-BOOK_FILE   = os.path.join(PROJECT_ROOT, "content/Books/Вістря Кулаку/Вістря Кулаку.md")
-BOOK_TITLE  = "Вістря Кулаку"
-BOOK_AUTHOR = "Гладкий Дмитро"
-OUTPUT_EPUB = os.path.join(PROJECT_ROOT, "output/Вістря_Кулаку.epub")
-CONTENT_ROOT = os.path.join(PROJECT_ROOT, "content")
-
-# ── Metadata ────────────────────────────────────────────────────
-BOOK_LANG        = "uk"
-BOOK_DESCRIPTION = (
-    "Далекий сектор Дике Поле. Глибокий тил Федерації Гетьманату, де війна — "
-    "лише чутка, а служба зводиться до патрулів і тренувань. Іван Донець, "
-    "термінатор другого ступеня, ще не знає, що саме тут, на задвірках імперії, "
-    "йому доведеться довести, чому його рід носить це звання уже в третьому поколінні.\n\n"
-    "Коли варп-станцію на покинутому місяці захоплюють елітні саманаки Імперії Сонця, "
-    "ударно-штурмовий полк отримує наказ на орбітальне десантування. Те, що мало бути "
-    "рутинною операцією, обертається кривавою м'ясорубкою в лабіринтах надземних укріплень. "
-    "Проти термінаторів — важка броня, плазмомети й фанатики, готові битися до кінця.\n\n"
-    "«Вістря Кулаку» — це історія про братерство, обпалене вакуумом і плазмою, про "
-    "вірність Січі, коли відступ неможливий, і про те, що навіть у найтемніших "
-    "коридорах ворожих позицій козак лишається козаком."
-)
-BOOK_PUBLISHER   = "Гладкий Дмитро"
-BOOK_SUBJECTS    = ["Sci-Fi", "Military SF", "Space Opera", "Козаки в космосі"]
-BOOK_RIGHTS      = "© Гладкий Дмитро. All rights reserved."
-BOOK_DATE         = "2026"
-BOOK_SERIES       = "Дике Поле Sci-Fi"   # series name (None = no series)
-BOOK_SERIES_INDEX = 3                 # volume number in series (None = unspecified)
-
-# ── Cover ───────────────────────────────────────────────────────
-# Explicit path (set to None to auto-detect Cover.jpg/.jpeg/.png next to the .md file)
-COVER_IMAGE = None
-
-# ── Sample EPUB ─────────────────────────────────────────────────
-# Set SAMPLE_EPUB = True to build a free-sample EPUB (last chapter only, no glossary)
-SAMPLE_EPUB  = False
-SAMPLE_TITLE = "Вістря Кулаку — Уривок"
-SAMPLE_OUTPUT = os.path.join(PROJECT_ROOT, "output/Вістря_Кулаку_Sample.epub")
-
 os.chdir(PROJECT_ROOT)
+
+
+# ── Config loader ───────────────────────────────────────────────
+
+def load_config(path=None):
+    """Load book metadata from a JSON config file. Returns a dict."""
+    if path is None:
+        # Default: look for book_config.json next to this script
+        path = os.path.join(SCRIPT_DIR, "book_config.json")
+    if not os.path.isfile(path):
+        print(f"ERROR: config file not found: {path}")
+        print("Copy book_config.template.json and fill in your book's details.")
+        sys.exit(1)
+    with open(path, "r", encoding="utf-8") as f:
+        cfg = json.load(f)
+    # Resolve relative paths to absolute (relative to PROJECT_ROOT)
+    for key in ("book_file", "output_epub", "content_root"):
+        if key in cfg and cfg[key] is not None:
+            cfg[key] = os.path.join(PROJECT_ROOT, cfg[key])
+    if "sample" in cfg and cfg["sample"]:
+        if "output" in cfg["sample"] and cfg["sample"]["output"]:
+            cfg["sample"]["output"] = os.path.join(PROJECT_ROOT, cfg["sample"]["output"])
+    # Defaults
+    cfg.setdefault("content_root", os.path.join(PROJECT_ROOT, "content"))
+    cfg.setdefault("language", "uk")
+    cfg.setdefault("cover_image", None)
+    cfg.setdefault("series", None)
+    cfg.setdefault("series_index", None)
+    return cfg
+
+
+# ── Load config (first CLI arg, or default) ─────────────────────
+
+cfg = load_config(sys.argv[1] if len(sys.argv) > 1 else None)
+
+# Shortcuts for convenience
+BOOK_FILE    = cfg["book_file"]
+BOOK_TITLE   = cfg["title"]
+BOOK_AUTHOR  = cfg["author"]
+OUTPUT_EPUB  = cfg["output_epub"]
+CONTENT_ROOT = cfg["content_root"]
+
+BOOK_LANG        = cfg["language"]
+BOOK_DESCRIPTION = cfg.get("description", "")
+BOOK_PUBLISHER   = cfg.get("publisher", "")
+BOOK_SUBJECTS    = cfg.get("subjects", [])
+BOOK_RIGHTS      = cfg.get("rights", "")
+BOOK_DATE        = cfg.get("date", "")
+BOOK_SERIES      = cfg.get("series")
+BOOK_SERIES_INDEX = cfg.get("series_index")
+
+COVER_IMAGE = cfg.get("cover_image")
+
+SAMPLE_EPUB  = cfg.get("sample", {}).get("enabled", False)
+SAMPLE_TITLE = cfg.get("sample", {}).get("title", f"{BOOK_TITLE} — Уривок")
+SAMPLE_OUTPUT = cfg.get("sample", {}).get("output", os.path.join(PROJECT_ROOT, f"output/{BOOK_TITLE}_Sample.epub"))
+SAMPLE_CUTOFF = cfg.get("sample", {}).get("cutoff_text", "")
 
 # ============================================================
 # STEP 0: Find cover image
@@ -596,10 +614,9 @@ def build_sample(chapters, images, cover_path):
     
     last_title, last_level, last_body = chapters[-1]
     
-    # Trim to the drop-pod launch moment
-    cutoff = "— За дві хвилини розженемося і падаємо прямо на їх порядки. З нами Січ!"
-    if cutoff in last_body:
-        last_body = last_body[:last_body.index(cutoff) + len(cutoff)]
+    # Trim at cutoff point (if configured)
+    if SAMPLE_CUTOFF and SAMPLE_CUTOFF in last_body:
+        last_body = last_body[:last_body.index(SAMPLE_CUTOFF) + len(SAMPLE_CUTOFF)]
     
     os.makedirs(os.path.dirname(SAMPLE_OUTPUT), exist_ok=True)
     

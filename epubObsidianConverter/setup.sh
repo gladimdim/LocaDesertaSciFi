@@ -25,11 +25,12 @@ setup_venv() {
 build_epub() {
     if [ ! -d "$VENV" ]; then
         echo "Virtual environment not found. Run setup first:"
-        echo "  ./epubObsidianConverter/setup.sh"
+        echo "  ./epubObsidianConverter/setup.sh setup"
         exit 1
     fi
     source "$VENV/bin/activate"
-    python3 "$(dirname "$0")/build_epub.py"
+    CONFIG="${1:-}"
+    python3 "$(dirname "$0")/build_epub.py" $CONFIG
 }
 
 # ── dispatch ───────────────────────────────────────────────────
