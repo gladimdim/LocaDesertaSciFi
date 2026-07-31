@@ -614,9 +614,9 @@ def build_sample(chapters, images, cover_path):
     
     last_title, last_level, last_body = chapters[-1]
     
-    # Trim at cutoff point (if configured)
+    # Trim at cutoff point (if configured) — cutoff text is excluded from the sample
     if SAMPLE_CUTOFF and SAMPLE_CUTOFF in last_body:
-        last_body = last_body[:last_body.index(SAMPLE_CUTOFF) + len(SAMPLE_CUTOFF)]
+        last_body = last_body[:last_body.index(SAMPLE_CUTOFF)]
     
     os.makedirs(os.path.dirname(SAMPLE_OUTPUT), exist_ok=True)
     
