@@ -24,63 +24,61 @@
             }
           },
           {
-            "id": "6e38819215dc1989",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Books/Вістря Кулаку/Вістря Кулаку.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Вістря Кулаку"
-            }
-          },
-          {
-            "id": "fd3353a591cdf4c3",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатор.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Термінатор"
-            }
-          },
-          {
-            "id": "0db33fe8526cb0d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Атабай.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Атабай"
-            }
-          },
-          {
             "id": "04f2063d2231917f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатор.md",
+                "file": "Books/Повстання Мюридів/Повстання Мюридів.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Термінатор"
+              "title": "Повстання Мюридів"
+            }
+          },
+          {
+            "id": "bc5d13fd8d5624a8",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Ударні реактивні сотні.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Ударні реактивні сотні"
+            }
+          },
+          {
+            "id": "f05a8377f4843992",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Важкий Піхотний Мельтостріл.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Важкий Піхотний Мельтостріл"
+            }
+          },
+          {
+            "id": "1ce787a794ebc9d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Ударні реактивні сотні.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ударні реактивні сотні"
             }
           }
         ],
@@ -219,13 +217,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатор.md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Ударні реактивні сотні.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Термінатор"
+              "title": "Outline of Ударні реактивні сотні"
             }
           }
         ],
@@ -247,33 +245,42 @@
       "bases:Create new base": false
     }
   },
-  "active": "04f2063d2231917f",
+  "active": "1ce787a794ebc9d5",
   "lastOpenFiles": [
+    "Всесвіт/Технології/Загальне Озброєння/Мельта.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Важкий Піхотний Мельтостріл.md",
+    "Images/Universe/Hetmanate-Federation/MeltaGunShtorm.jpg",
+    "Images/Universe/Hetmanate-Federation/MeltaGunMolot.jpg",
+    "Images/Universe/Hetmanate-Federation/MeltaGunPeklo.jpg",
+    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Важкий піхотний плазмостріл.md",
+    "Images/Universe/Hetmanate-Federation/MeltaGunEngineer.jpg",
+    "Images/Universe/Hetmanate-Federation/PlasmaGunDzhmil.jpg",
+    "Images/Universe/Hetmanate-Federation/PlasmaGunShershen.jpg",
+    "Images/Universe/Hetmanate-Federation/PlasmaGunGurza.jpg",
+    "Всесвіт/Технології/Загальне Озброєння/Плазма.md",
+    "Images/Universe/Hetmanate-Federation/PlasmaGunGadyuka.jpg",
+    "Images/Universe/Hetmanate-Federation/MeltaGun.jpg",
+    "Images/Universe/Hetmanate-Federation/MeltaGunner.jpg",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Ударні реактивні сотні.md",
+    "Books/Повстання Мюридів/Повстання Мюридів.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатор.md",
+    "Books/Повстання Мюридів",
+    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Сколот.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатори-дуболоми.md",
+    "Books/Вістря Кулаку/Вістря Кулаку.md",
+    "Books/Зоряний Гетьманат/Зоряний Гетьманат.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Атабай.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Плазмовий Короткий Самопал.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Плекс-гель.md",
-    "Images/Universe/Hetmanate-Federation/Terminators_Riding.jpg",
     "Всесвіт/Технології/Варп/Варп.md",
-    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатори-дуболоми.md",
-    "Books/Вістря Кулаку/Вістря Кулаку.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Історія/Історія.md",
-    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Сколот.md",
-    "Images/Universe/Hetmanate-Federation/Terminator.jpg",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Сердюки.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Гайдуки.md",
     "index.md",
     "Books/Зустріч в степу/анотація.txt",
     "Books/Вістря Кулаку/анотація.txt",
-    "Books/Вістря Кулаку/Images/battlefield_station.jpg",
-    "Books/Вістря Кулаку/Images/Firefight_Warp_Station.jpg",
-    "Books/Вістря Кулаку/Images/Skolots_in_Battle.jpg",
     "Books/Вістря Кулаку/Нотатки/Дмитро Величко (куріний).md",
     "Books/Вістря Кулаку/Images",
-    "Images/Games/Production_Chains.jpg",
-    "Images/Games/Game_Preview_2.jpg",
-    "Images/Games/Game_Preview.jpg",
     "Images/Games",
     "Images/untitled folder",
     "en/Universe/Empires/Hetmanate Federation/Star Affairs/Ships/Sokil.md",
@@ -281,19 +288,9 @@
     "en/Universe/Empires/Hetmanate Federation/Weapons/Bot-Horses.md",
     "en/Universe/Empires/Hetmanate Federation/Weapons/Vepr-1.md",
     "en/Universe/Empires/Hetmanate Federation/Miscellany/Muryid Steel.md",
-    "en/Universe/Empires/Hetmanate Federation/Events/Muryid Uprising.md",
     "en/Universe/Empires/Hetmanate Federation/Events",
-    "en/Universe/Empires/Hetmanate Federation/Military Affairs/Nullification.md",
-    "en/Universe/Empires/Hetmanate Federation/Military Affairs/Cossack.md",
-    "en/Universe/Empires/Hetmanate Federation/Military Affairs/Atabai.md",
-    "en/Universe/Technologies/General Weapons/Plasma.md",
-    "en/Universe/Technologies/General Weapons/Melta.md",
-    "en/Universe/Technologies/General Weapons/Laser Weapons.md",
     "en/Universe/Technologies/General Weapons",
     "en/Universe/Empires/Hetmanate Federation/Star Affairs/Ships/Ship Weapons",
-    "en/Games",
-    "Ігри",
-    "Images/Universe/Hetmanate-Federation/Tavr.jpg",
-    "Images/Universe/Hetmanate-Federation/Sokil.jpg"
+    "en/Games"
   ]
 }
