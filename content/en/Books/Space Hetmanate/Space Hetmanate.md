@@ -12,7 +12,7 @@ tags:
   - hetmanate-federation
   - sun-empire
 ---
-![Cover](../../../Images/Books/Zorianyi-Hetmanat/cover.jpg)
+![Cover](./Cover.jpg)
 # Chapter 0. Introduction to the "Loca Deserta Sci-Fi" Universe
 
 Greetings, friend! Glad you've decided to visit the fantastic universe of **"Loca Deserta Sci-Fi"**! This is the first book in the history of Ukrainian military space fiction. In this chapter, you'll learn about the major historical events of our universe.
@@ -506,8 +506,7 @@ The grenade landed two meters from his feet and exploded. A great cloud of dust 
 
 Since the grenade's explosion had blinded both sides, this was the best moment to throw the javelin without fear of catching a laser charge in the armpit during the wind-up.
 
-"Mykhailo, throw!"
-
+"Mykhailo, throw!".
 "Away!" Mykhailo exhaled sharply and hurled the spear.
 
 The spear sailed over Danylo and arced straight into the middle of the cluster of imperials sheltering behind their shield. The anti-personnel melt-mine was designed so that, thanks to its top-like shape, upon detonation it would scatter melt-matter a full 360 degrees. The soundless blast incinerated the sunners where the spear with the mine had directly landed. The others were sliced in half by the explosion and given such kinetic acceleration that the chunks of bisected bodies, with fragments of power suits, were thrown onto the parapet. Danylo and Mykhailo watched as frozen blood-vapor scattered in all directions and began to evaporate. The first two terminator shield-bearers were still standing, but they seemed to have been struck — their shields were tilting toward the ground.
