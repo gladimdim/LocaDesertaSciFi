@@ -221,10 +221,9 @@ def find_images_in_markdown(content, book_dir):
             img_path = path
         
         if not os.path.isfile(img_path):
-            # Try public/Images — strip leading ../ from path and go to project root
+            # Try public/Images — strip leading ../ from path, resolve relative to project root
             clean_path = re.sub(r'^(\.\./)+', '', path)
-            # book_dir is content/Books/Вістря Кулаку, need ../../../public/ to reach project-root/public/
-            alt_path = os.path.normpath(os.path.join(book_dir, "..", "..", "..", "public", clean_path))
+            alt_path = os.path.normpath(os.path.join(PROJECT_ROOT, "public", clean_path))
             if os.path.isfile(alt_path):
                 img_path = alt_path
         
@@ -246,7 +245,7 @@ def find_images_in_markdown(content, book_dir):
         if not os.path.isfile(img_path):
             # Try public/Images — strip leading ../ from path
             clean_path = re.sub(r'^(\.\./)+', '', path)
-            alt_path = os.path.normpath(os.path.join(book_dir, "..", "..", "..", "public", clean_path))
+            alt_path = os.path.normpath(os.path.join(PROJECT_ROOT, "public", clean_path))
             if os.path.isfile(alt_path):
                 img_path = alt_path
         if os.path.isfile(img_path):
@@ -275,57 +274,43 @@ def process_book():
     with open(BOOK_FILE, "r", encoding="utf-8") as f:
         content = f.read()
     
+    # Strip YAML frontmatter (--- ... ---) so metadata doesn't leak into book text
+    content = re.sub(r'^---\n.*?---\n', '', content, count=1, flags=re.DOTALL)
+    
     # Find and process images
     content, images = find_images_in_markdown(content, book_dir)
     print(f"Found {len(images)} images")
     
-    # Find all wiki-links and build glossary
-    wiki_links = re.findall(r'\[\[([^\]]+)\]\]', content)
-    
-    # Build ordered glossary (preserve order of first appearance)
-    glossary = OrderedDict()
-    link_counter = 0
-    
-    for link in wiki_links:
-        path, display = resolve_wikilink(link, BOOK_FILE)
-        if path and path not in glossary:
-            summary = extract_summary(path)
-            if summary:
-                glossary[path] = {
-                    'display': display,
-                    'summary': summary,
-                    'id': link_counter
-                }
-                link_counter += 1
-    
-    print(f"Glossary entries: {len(glossary)}")
-    
-    # Now replace wiki-links in content with superscript references
-    # We need to map each original [[link]] to its glossary id
-    # But since the same article might be linked multiple times, 
-    # we give each article a single glossary number
-    
-    # Build a map from resolved path to glossary number
-    path_to_num = {}
-    num = 1
-    for path in glossary:
-        path_to_num[path] = num
-        num += 1
-    
-    def replace_wikilink(match):
+    # ── Resolve wiki-links to plain display text (no glossary) ──
+    def replace_wikilink_display(match):
         link = match.group(1)
         parts = link.split("|")
-        display = parts[1] if len(parts) > 1 else parts[0].split("/")[-1]
-        path, _ = resolve_wikilink(link, BOOK_FILE)
-        if path and path in path_to_num:
-            return f'{display}[[{path_to_num[path]}]]'
-        else:
-            return display
+        return parts[1] if len(parts) > 1 else parts[0].split("/")[-1]
     
-    content = re.sub(r'\[\[([^\]]+)\]\]', replace_wikilink, content)
+    content = re.sub(r'\[\[([^\]]+)\]\]', replace_wikilink_display, content)
     
-    # Remove remaining [[n]] markers for glossary references (we'll handle these differently)
-    # Actually let me rethink. I'll convert to HTML first, then handle glossary refs.
+    # ── Extract footnotes [^N]: definition → this becomes our glossary ──
+    glossary = OrderedDict()  # footnote-based glossary
+    fn_pattern = re.compile(r'^\[\^(\d+)\]:\s*(.+)$', re.MULTILINE)
+    for m in fn_pattern.finditer(content):
+        num = m.group(1)
+        text = m.group(2).strip()
+        # Clean any remaining wiki-links in footnote definitions
+        text = re.sub(r'\[\[([^\]|]+)\|([^\]]+)\]\]', r'\2', text)
+        text = re.sub(r'\[\[([^\]]+)\]\]', r'\1', text)
+        glossary[num] = text
+    # Remove footnote definition blocks from content body
+    content = fn_pattern.sub('', content)
+    # Collapse multiple blank lines
+    content = re.sub(r'\n{3,}', '\n\n', content)
+    
+    print(f"Glossary entries (from footnotes): {len(glossary)}")
+    
+    # Replace inline [^N] with glossary-reference markers
+    content = re.sub(r'\[\^(\d+)\]', r'[[\1]]', content)
+    
+    # Build path_to_num for compatibility (not used anymore, but kept for signature)
+    path_to_num = {}
     
     return content, images, glossary, path_to_num, cover_path
 
@@ -464,6 +449,15 @@ def build_epub(chapters, images, glossary, path_to_num, cover_path):
         font-size: 0.75em; 
         font-weight: bold;
     }
+    sup a.fn-ref {
+        text-decoration: none;
+        color: #0066CC;
+        font-size: 0.75em;
+        font-weight: bold;
+    }
+    .fn-entry { margin: 0.3em 0 0.8em 0; }
+    .fn-entry p { text-indent: 0; }
+    .fn-num { font-weight: bold; font-size: 0.85em; }
     .glossary-entry { margin: 0.5em 0 1em 1em; }
     .glossary-term { font-weight: bold; }
     hr { margin: 2em 0; border: none; border-top: 1px solid #ccc; }
@@ -524,7 +518,7 @@ def build_epub(chapters, images, glossary, path_to_num, cover_path):
     def html_page(title, body):
         return f'''<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{BOOK_LANG}" lang="{BOOK_LANG}">
 <head><title>{title}</title>
 <link rel="stylesheet" type="text/css" href="style/default.css"/>
 </head>
@@ -535,19 +529,17 @@ def build_epub(chapters, images, glossary, path_to_num, cover_path):
 </html>'''
     
     # Build glossary chapter
-    glossary_html = '<h2>Глосарій</h2>\n<hr/>\n'
-    for path, info in glossary.items():
-        num = path_to_num[path]
-        article_title = os.path.splitext(os.path.basename(path))[0]
+    glossary_label = 'Glossary' if BOOK_LANG == 'en' else 'Глосарій'
+    glossary_html = f'<h2>{glossary_label}</h2>\n<hr/>\n'
+    for num, text in glossary.items():
         glossary_html += f'<div class="glossary-entry" id="glossary-{num}">'
-        glossary_html += f'<p class="glossary-term">{num}. {article_title}</p>'
-        glossary_html += f'<p>{info["summary"]}</p>'
+        glossary_html += f'<p class="glossary-term">{num}. {text}</p>'
         glossary_html += '</div>\n'
     
     glossary_full = f'''<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk">
-<head><title>Глосарій</title>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{BOOK_LANG}" lang="{BOOK_LANG}">
+<head><title>{glossary_label}</title>
 <link rel="stylesheet" type="text/css" href="style/default.css"/>
 </head>
 <body>
@@ -556,9 +548,9 @@ def build_epub(chapters, images, glossary, path_to_num, cover_path):
 </html>'''
     
     glossary_chapter = epub.EpubHtml(
-        title='Глосарій',
+        title=glossary_label,
         file_name='glossary.xhtml',
-        lang='uk'
+        lang=BOOK_LANG
     )
     glossary_chapter.content = glossary_full.encode('utf-8')
     glossary_chapter.add_item(css)
@@ -579,7 +571,7 @@ def build_epub(chapters, images, glossary, path_to_num, cover_path):
         ch = epub.EpubHtml(
             title=title,
             file_name=file_name,
-            lang='uk'
+            lang=BOOK_LANG
         )
         ch.content = full_html.encode('utf-8')
         ch.add_item(css)
@@ -623,9 +615,9 @@ def build_sample(chapters, images, cover_path):
     book = epub.EpubBook()
     book.set_identifier(str(uuid.uuid4()))
     book.set_title(SAMPLE_TITLE)
-    book.set_language('uk')
+    book.set_language(BOOK_LANG)
     book.add_author(BOOK_AUTHOR)
-    book.add_metadata('DC', 'description', f'Уривок із роману «{BOOK_TITLE}». Фінальний штурм варп-станції.')
+    book.add_metadata('DC', 'description', f'Sample from «{BOOK_TITLE}». Battle for the warp-station.')
     book.add_metadata('DC', 'publisher', BOOK_PUBLISHER)
     book.add_metadata('DC', 'rights', BOOK_RIGHTS)
     
@@ -662,21 +654,21 @@ def build_sample(chapters, images, cover_path):
     
     full_html = f'''<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{BOOK_LANG}" lang="{BOOK_LANG}">
 <head><title>{SAMPLE_TITLE}</title>
 <link rel="stylesheet" type="text/css" href="style/default.css"/>
 </head>
 <body>
 <h1>{BOOK_TITLE}</h1>
-<p><em>Уривок із фінальної глави «{last_title}»</em></p>
+<p><em>Excerpt from «{last_title}»</em></p>
 <hr/>
 {body_html}
 <hr/>
-<p style="text-align:center; font-style:italic;">Це безкоштовний уривок. Повну версію книги шукайте на сайті видавництва.</p>
+<p style="text-align:center; font-style:italic;">This is a free sample. The full book is available on the publisher's website.</p>
 </body>
 </html>'''
     
-    ch = epub.EpubHtml(title=SAMPLE_TITLE, file_name='sample.xhtml', lang='uk')
+    ch = epub.EpubHtml(title=SAMPLE_TITLE, file_name='sample.xhtml', lang=BOOK_LANG)
     ch.content = full_html.encode('utf-8')
     ch.add_item(css)
     for img in img_items.values():

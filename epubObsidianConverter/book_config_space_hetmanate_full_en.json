@@ -1,0 +1,24 @@
+{
+    "_comment": "Space Hetmanate English — Full Book",
+
+    "book_file": "content/en/Books/Space Hetmanate/Space Hetmanate.md",
+    "output_epub": "output/Space_Hetmanate.epub",
+    "content_root": "content",
+
+    "title": "Space Hetmanate",
+    "author": "Dmytro Gladkyi",
+    "language": "en",
+    "description": "A military sci-fi novel set in the Loca Deserta universe. The Hetmanate Federation faces the onslaught of the Sun Empire as haiduk terminators defend a warp-station on a desolate moon.",
+    "publisher": "Dmytro Gladkyi",
+    "subjects": ["Sci-Fi", "Military SF", "Space Opera", "Cossacks in Space"],
+    "rights": "© Dmytro Gladkyi. All rights reserved.",
+    "date": "2025",
+    "series": "Wild Field Sci-Fi",
+    "series_index": 1,
+
+    "cover_image": null,
+
+    "sample": {
+        "enabled": false
+    }
+}
