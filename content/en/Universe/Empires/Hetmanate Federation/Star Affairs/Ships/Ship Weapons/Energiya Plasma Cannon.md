@@ -6,8 +6,9 @@ translations:
   uk: "/Всесвіт/Імперії/Федерація-Гетьманату/Зоряна-Справа/Кораблі/Озброєння-Кораблів/Плазмостріл-Енергія"
 ---
 
-# Energiya Shipboard Plasma Cannon
+# "Energiya" Shipboard Plasma Cannon
 
+![[../../../../../../../Images/Universe/Hetmanate-Federation/Plasmostril_Energia.jpg|700]]
 **"Energiya"** is a universal medium-range shipboard plasma system designed for engaging combat ships, heavy interceptors, and armored targets. In the Hetmanate fleet, it occupies an intermediate position between the long-range "Shylo" laser systems and the close-range "Melta" launch system, combining high rate of fire, significant destructive power, and effectiveness at medium distances.
 
 Unlike a laser, which engages the target exclusively with light energy, "Energiya" forms a compact plasma clot, compressed by a powerful magnetic field. After firing, magnetic accelerators impart a velocity of several kilometers per second, and the plasma's own magnetic field allows it to retain its shape throughout most of the flight.

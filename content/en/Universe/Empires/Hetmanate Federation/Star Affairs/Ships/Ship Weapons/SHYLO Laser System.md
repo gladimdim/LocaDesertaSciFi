@@ -8,6 +8,8 @@ translations:
 
 # SHYLO Laser System
 
+![[../../../../../../../Images/Universe/Hetmanate-Federation/Shylo_Laser.jpg]]
+
 **"Shylo"** is a super-heavy strategic-class laser system installed on battleships, dreadnoughts, and orbital fortresses of the Hetmanate. Unlike conventional combat lasers, its primary purpose is the engagement of large spacecraft at interplanetary distances.
 
 The system consists of a multi-kilometer optical path, a phased emitter array, and a gigantic energy storage block. Before firing, energy from the ship's reactor is accumulated in superconducting capacitors over several seconds or even minutes. Only after reaching the required charge does the system generate a pulse whose power exceeds the capabilities of any tactical laser weapon by many orders of magnitude.

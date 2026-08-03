@@ -8,7 +8,7 @@ translations:
 
 # Tavr-Class Combat Ship
 
-![Sokil|452](../../../../../Images/Universe/Hetmanate-Federation/Tavr.jpg)
+![Sokil|720](../../../../../../Images/Universe/Hetmanate-Federation/Tavr.jpg)
 **"Tavr"** — the main combat ship of the Hetmanate Space Fleet. It is ships of this class that form the backbone of any strike squadron and carry out the majority of combat tasks in open space and in the orbits of planets, moons, and space stations. They combine high firepower, strong armor, and sufficient autonomy for prolonged combat campaigns.
 
 Unlike light interceptors, which rely on speed, the "Tavr" is built for waging protracted space battles. Its multi-layered armor, reinforced structural frame, and redundant life-support systems allow the ship to withstand numerous hits while remaining combat-capable even after serious damage.
@@ -31,6 +31,8 @@ The "Tavr's" armor consists of multi-layered composite plates, between which the
 The most critical systems — the reactor, command center, energy storage units, and control systems — are situated deep within the hull and protected by separate armored capsules. Even after the loss of individual compartments, the ship can continue to carry out its combat mission.
 
 ## Combat Employment
+
+![Тавр із групою|720](../../../../../../Images/Universe/Hetmanate-Federation/Tavr_with_group.jpg)
 
 "Tavrs" rarely operate alone. They are usually combined into battle lines, where dozens of ships concentrate the fire of their "Shylo" mounts on a single target. Such tactics allow even the armor of the heaviest enemy ships to be breached in a short time.
 

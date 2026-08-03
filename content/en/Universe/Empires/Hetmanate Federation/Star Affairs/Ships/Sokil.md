@@ -8,7 +8,8 @@ translations:
 
 # Sokil Space Interceptor
 
-![Sokil|449](../../../../../Images/Universe/Hetmanate-Federation/Sokil.jpg)
+
+![[../../../../../../Images/Universe/Hetmanate-Federation/Sokil_Interceptor.jpg|625]]
 
 **"Sokil"** — a single-seat space interceptor of the Hetmanate, designed for achieving space superiority, escorting strike squadrons, and defending large ships from fighters, torpedoes, and small attack craft. It is the most mass-produced combat vessel of the fleet and is considered the standard machine for most military pilots.
 

@@ -8,6 +8,8 @@ translations:
 
 # Shylo-M Laser System
 
+![[../../../../../../../Images/Universe/Hetmanate-Federation/Shilo_M.jpg|686]]
+
 **"Shylo-M"** is a lightweight shipboard version of the strategic "Shylo" complex, designed to equip interceptors, frigates, escort ships, and heavy fighters. It retains the main operating principle — engaging the target with an extremely narrow and precise laser beam — but sacrifices power for a fast firing cycle and compactness.
 
 Unlike the larger "Shylo," which accumulates energy for a single devastating shot, "Shylo-M" operates with short pulses lasting from a few milliseconds to tenths of a second. Each pulse burns through a small area of armor or overheats the ship's external systems. A series of precise hits allows the gradual destruction of the target's defenses, disabling engines, sensors, communication systems, or turrets.

@@ -8,6 +8,8 @@ translations:
 
 # Melta Launch System
 
+![[../../../../../../../Images/Universe/Hetmanate-Federation/Ship_Melta_Launcher.jpg|700]]
+
 **"Melta" Launch System** is a heavy shipboard thermal weapon designed to breach the toughest armor at short ranges. It is the primary weapon of assault and defense ships of the "Dub" class, although individual systems may also be installed on other heavy combat ships.
 
 Unlike "Shylo" laser systems, which inflict damage through prolonged concentration of light energy, the "Melta" launch system ejects a narrow stream of superheated plasma saturated with metallic aerosol. The stream is contained by a magnetic field only over a limited distance, after which it quickly disperses. This is why "Melta" is classified as a close-range space combat weapon.

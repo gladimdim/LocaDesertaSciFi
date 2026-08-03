@@ -8,6 +8,8 @@ translations:
 
 # Missile Systems
 
+![[../../../../../../../Images/Universe/Hetmanate-Federation/Rocket_Launchers.jpg|693]]
+
 **Missile systems** are auxiliary guided weapons of the Hetmanate Space Fleet, designed for engaging ships at long ranges, penetrating anti-missile defenses, and destroying high-value targets. Unlike laser and plasma weapons, missiles are independent combat vehicles capable of altering their flight trajectory, pursuing the target, and selecting the most vulnerable point for impact.
 
 Each missile is equipped with its own low-power reactor, navigation system, and maneuvering thrusters. After launch, it maintains communication with the carrier ship; however, if the control link is lost, it can complete the attack autonomously, using onboard sensors and embedded targeting algorithms.
