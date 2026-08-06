@@ -61,12 +61,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Кораблі класу ДАРЬЯ.md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Спис-джавелін.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Кораблі класу ДАРЬЯ"
+              "title": "Спис-джавелін"
             }
           }
         ],
@@ -207,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Кораблі класу ДАРЬЯ.md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Спис-джавелін.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -237,20 +237,26 @@
   },
   "active": "eb00f7e51747534b",
   "lastOpenFiles": [
-    "en/Universe/Empires/Hetmanate Federation/Star Affairs/Ships/DARYA-Class Ships.md",
+    "en/Universe/Empires/Hetmanate Federation/Weapons/Javelin Spear.md",
+    "Images/Universe/Hetmanate-Federation/Weapons/Javelin_1.png",
+    "Images/Universe/Hetmanate-Federation/Weapons/Javelin_2.png",
+    "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Кораблі класу Чумак.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Кораблі класу ДАРЬЯ.md",
+    "en/Universe/Empires/Hetmanate Federation/Star Affairs/Ships/Chumak-Class Ships.md",
+    "Images/Universe/Hetmanate-Federation/Ships/Ship_Chumak_2.png",
+    "Images/Universe/Hetmanate-Federation/Ships/Ship_Chumak_1.png",
+    "Images/Universe/Hetmanate-Federation/Ships/Ship_Chumak_4.png",
+    "Images/Universe/Hetmanate-Federation/Ships/Ship_Chumak_3.png",
+    "en/Universe/Empires/Hetmanate Federation/Star Affairs/Ships/DARYA-Class Ships.md",
     "Всесвіт/Історія/Знищення Африки.md",
     "Images/Universe/Hetmanate-Federation/Ships/Ship_Darya_5.png",
     "Images/Universe/Hetmanate-Federation/Ships/Ship_Darya_3.png",
     "Images/Universe/Hetmanate-Federation/Ships/Ship_Darya_4.png",
     "Images/Universe/Hetmanate-Federation/Ships/Ship_Darya_6.png",
-    "Images/Universe/Hetmanate-Federation/Ships/Ship_Darya_2.png",
     "Всесвіт/Історія/Хронологія.md",
-    "Images/Universe/Hetmanate-Federation/Ships/Ship_Darya.png",
     "Books/Зоряний Гетьманат/Зоряний Гетьманат.md",
     "Всесвіт/Технології/Зоряна Справа/Реактор Горизонт-М.md",
     "en/Universe/Empires/Hetmanate Federation/Space Geography/Muryid System.md",
-    "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Кораблі класу Чумак.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Озброєння Кораблів/Лазерна установка ШИЛО.md",
     "Books/Вістря Кулаку/Вістря Кулаку.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Плазмовий Короткий Самопал.md",
@@ -262,18 +268,12 @@
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Озброєння Кораблів/Система Запуску Мельти.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Озброєння Кораблів/Ракетні установки.md",
     "en/Universe/Empires/Hetmanate Federation/Star Affairs/Ships/Dub.md",
-    "Images/Universe/Hetmanate-Federation/Ships/Dub_Ship_2.png",
-    "Images/Universe/Hetmanate-Federation/Ships/Dub_Ship_1.png",
-    "Images/Universe/Hetmanate-Federation/Ships/Dub_Ship_3.png",
     "Всесвіт/Історія/Головна Історія Всесвіту.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Дуб.md",
     "en/Universe/Empires/Hetmanate Federation/Star Affairs/Ships/Tavr-Class Ships.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Кораблі класу Тавр.md",
-    "Images/Universe/Hetmanate-Federation/Weapons/Laser_Attack.png",
     "en/Universe/Empires/Hetmanate Federation/Star Affairs/Ships/Sokil.md",
     "Images/Universe/Hetmanate-Federation/Weapons",
-    "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Сокіл.md",
-    "en/Universe/Empires/Hetmanate Federation/Star Affairs/Ships/Ship Weapons/Energiya Plasma Cannon.md",
     "Images/Universe/Hetmanate-Federation/Ships",
     "Ship Weapons",
     "Books/Повстання Мюридів",
