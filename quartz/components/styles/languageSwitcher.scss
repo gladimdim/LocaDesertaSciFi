@@ -2,29 +2,28 @@
   align-items: center;
   display: flex;
   flex-shrink: 0;
-  gap: 0.35rem;
-  min-height: 32px;
-  white-space: nowrap;
 
-  & .language-switcher-current,
-  & a {
+  & .language-select {
+    appearance: auto;
+    background: var(--light);
     border: 1px solid var(--lightgray);
     border-radius: 4px;
-    font-size: 0.85rem;
-    line-height: 1;
-    padding: 0.28rem 0.45rem;
-  }
-
-  & .language-switcher-current {
     color: var(--dark);
-  }
-
-  & a {
-    color: var(--secondary);
-    text-decoration: none;
+    cursor: pointer;
+    font-family: var(--bodyFont);
+    font-size: 0.8rem;
+    line-height: 1;
+    max-width: none;
+    padding: 0.28rem 1rem 0.28rem 0.3rem;
+    text-overflow: ellipsis;
 
     &:hover {
       border-color: var(--secondary);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--secondary);
+      outline-offset: 1px;
     }
   }
 }

@@ -4,6 +4,7 @@ lang: "uk"
 translationKey: "games/loca-deserta-settlers"
 translations:
   en: "/en/Games/Loca-Deserta-Settlers"
+  de: "/de/Spiele/Loca-Deserta-Settlers"
 description: "Loca Deserta: Settlers — космічна економічна стратегія в реальному часі, натхненна The Settlers III/IV. Будуйте виробничі ланцюги, колонізуйте планети та керуйте ресурсами у всесвіті Loca Deserta. Грайте безкоштовно в браузері або завантажте на Windows, macOS та Linux."
 socialDescription: "Loca Deserta: Settlers — космічна економічна стратегія в реальному часі (RTS), натхненна The Settlers III/IV. Будуйте виробничі ланцюги, колонізуйте планети та керуйте ресурсами. Грайте безкоштовно в браузері!"
 tags:

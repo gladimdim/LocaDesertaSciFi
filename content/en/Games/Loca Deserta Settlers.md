@@ -4,6 +4,7 @@ lang: "en"
 translationKey: "games/loca-deserta-settlers"
 translations:
   uk: "/Ігри/Loca-Deserta-Settlers"
+  de: "/de/Spiele/Loca-Deserta-Settlers"
 description: "Loca Deserta: Settlers is a free real-time economic space colony builder inspired by The Settlers III and IV. Build production chains, colonize planets, manage resources, and expand your territory in the Loca Deserta universe. Play in your browser or download for Windows, macOS, and Linux."
 socialDescription: "Loca Deserta: Settlers is a free real-time economic space colony builder (RTS) inspired by The Settlers III & IV. Build production chains, colonize planets, and manage resources. Play free in your browser!"
 tags:
