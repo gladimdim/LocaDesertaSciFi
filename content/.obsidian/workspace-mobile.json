@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Характерники.md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Рабство.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Характерники"
+              "title": "Рабство"
             }
           }
         ]
@@ -173,8 +173,11 @@
   },
   "active": "ef5d5ea967a56f00",
   "lastOpenFiles": [
-    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бойовий Молот.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Ранги козаків.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Рабство.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Характерники.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа",
+    "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бойовий Молот.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Важкий піхотний плазмостріл.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Кораблі класу Чумак.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Сокіл.md",
@@ -198,8 +201,6 @@
     "en/Universe/Empires/Hetmanate Federation/Military Affairs/Haiduks.md",
     "en/Universe/Empires/Hetmanate Federation/History/History of the Hetmanate.md",
     "en/Universe/Empires/Empire of the Sun/Military Affairs/Samanaki.md",
-    "en/Universe/Technologies/Warp/Warp.md",
-    "en/Universe/Technologies/Warp/Warp Beacon.md",
     "en/Universe/Empires/Hetmanate Federation/Star Affairs",
     "en/Universe/Empires/Hetmanate Federation/Miscellany",
     "en/Universe/Empires/Hetmanate Federation/Military Affairs",
@@ -208,7 +209,6 @@
     "en/Universe/Technologies/Warp",
     "en/Universe/Technologies/Star Affairs",
     "en/Universe/Empires/Hetmanate Federation",
-    "en/Universe/Empires/Empire of the Sun",
     "Всесвіт/Імперії/Федерація Гетьманату/Images/Steppe_Wagons.jpg",
     "Всесвіт/Імперії/Федерація Гетьманату/Images/Cossacks_Free_Themselves.jpg",
     "Всесвіт/Імперії/Федерація Гетьманату/Images/Cossack_WarCamp.jpg",
