@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Рабство.md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Соціальні стани.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Рабство"
+              "title": "Соціальні стани"
             }
           }
         ]
@@ -173,8 +173,9 @@
   },
   "active": "ef5d5ea967a56f00",
   "lastOpenFiles": [
-    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Ранги козаків.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Рабство.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Соціальні стани.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Ранги козаків.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Характерники.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа",
     "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Бойовий Молот.md",
@@ -200,7 +201,6 @@
     "en/Universe/Empires/Hetmanate Federation/Military Affairs/Halving.md",
     "en/Universe/Empires/Hetmanate Federation/Military Affairs/Haiduks.md",
     "en/Universe/Empires/Hetmanate Federation/History/History of the Hetmanate.md",
-    "en/Universe/Empires/Empire of the Sun/Military Affairs/Samanaki.md",
     "en/Universe/Empires/Hetmanate Federation/Star Affairs",
     "en/Universe/Empires/Hetmanate Federation/Miscellany",
     "en/Universe/Empires/Hetmanate Federation/Military Affairs",
