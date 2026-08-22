@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатор.md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Адміністративний устрій.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Термінатор"
+              "title": "Адміністративний устрій"
             }
           }
         ]
@@ -114,7 +114,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Books/Вістря Кулаку/Вістря Кулаку.md",
+            "file": "Всесвіт/Імперії/Федерація Гетьманату/Адміністративний устрій.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -173,7 +173,14 @@
   },
   "active": "ef5d5ea967a56f00",
   "lastOpenFiles": [
+    "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Структура Федерації Гетьманату.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Адміністративний устрій.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Козаки.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Посполиті.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Кіш.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Соціальні стани.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатор.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа Федерації Гетьманату.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Рабство.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Ранги козаків.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Характерники.md",
@@ -184,7 +191,6 @@
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Сокіл.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Космічна Географія/Система Мюрид.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Озброєння/Вепр-3.md",
-    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Термінатор.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Історія/Історія.md",
     "Books/Вістря Кулаку/Вістря Кулаку.md",
     "Books/Зустріч в степу/Зустріч в степу.md",
@@ -195,12 +201,6 @@
     "en/Universe/Empires/Hetmanate Federation/Miscellany/Sonyachnyk.md",
     "en/Universe/Empires/Hetmanate Federation/Miscellany/Pindos.md",
     "en/Universe/Empires/Hetmanate Federation/Military Affairs/Terminator.md",
-    "en/Universe/Empires/Hetmanate Federation/Military Affairs/Serdiuks.md",
-    "en/Universe/Empires/Hetmanate Federation/Military Affairs/Retired Cossack.md",
-    "en/Universe/Empires/Hetmanate Federation/Military Affairs/Khartsyzy.md",
-    "en/Universe/Empires/Hetmanate Federation/Military Affairs/Halving.md",
-    "en/Universe/Empires/Hetmanate Federation/Military Affairs/Haiduks.md",
-    "en/Universe/Empires/Hetmanate Federation/History/History of the Hetmanate.md",
     "en/Universe/Empires/Hetmanate Federation/Star Affairs",
     "en/Universe/Empires/Hetmanate Federation/Miscellany",
     "en/Universe/Empires/Hetmanate Federation/Military Affairs",
