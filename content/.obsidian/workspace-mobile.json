@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Всесвіт/Імперії/Федерація Гетьманату/Адміністративний устрій.md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Просування козаків по службі.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Адміністративний устрій"
+              "title": "Просування козаків по службі"
             }
           }
         ]
@@ -114,7 +114,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Всесвіт/Імперії/Федерація Гетьманату/Адміністративний устрій.md",
+            "file": "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Просування козаків по службі.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -173,8 +173,9 @@
   },
   "active": "ef5d5ea967a56f00",
   "lastOpenFiles": [
-    "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Структура Федерації Гетьманату.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Адміністративний устрій.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Просування козаків по службі.md",
+    "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Структура Федерації Гетьманату.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Козаки.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Посполиті.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Кіш.md",
@@ -200,7 +201,6 @@
     "en/Universe/Empires/Hetmanate Federation/Star Affairs/Ships",
     "en/Universe/Empires/Hetmanate Federation/Miscellany/Sonyachnyk.md",
     "en/Universe/Empires/Hetmanate Federation/Miscellany/Pindos.md",
-    "en/Universe/Empires/Hetmanate Federation/Military Affairs/Terminator.md",
     "en/Universe/Empires/Hetmanate Federation/Star Affairs",
     "en/Universe/Empires/Hetmanate Federation/Miscellany",
     "en/Universe/Empires/Hetmanate Federation/Military Affairs",
