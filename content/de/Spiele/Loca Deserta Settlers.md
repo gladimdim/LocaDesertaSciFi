@@ -42,9 +42,9 @@ Eine echte **Aufbaustrategie** für Genre-Enthusiasten:
 - 🏭 **Tiefe Produktionsketten** — von Rohstoffen bis zu Endprodukten, ganz im Stil der Siedler
 - 🌍 **Planetenkolonisation** — jeder Planet mit eigenen Ressourcen und Bedingungen
 - 🗼 **Territoriale Expansion** — baue Türme, um mehr Land zu beanspruchen
-- 🚀 **Weltraum-Chumaky** — verwalte sternenfahrende Händler, die Versorgungsrouten zwischen Planeten betreiben
+- 🚀 **Flottenführung** — Frachter, Späher, Bauschiffe und Kriegsschiffe unter einer Wirtschaft
 
-Die Planetennamen verweisen auf reale ukrainische Orte: **Podillia**, **Zhovti Vody**, **Kryvbas** und weitere. Der Untertitel des Spiels ist eine Hommage an die *Chumaky* — ukrainische Ochsenkarren-Händler, die einst Salz und Waren durch die Steppe transportierten, hier neu interpretiert als sternenfahrende Händler der Zukunft.
+Die Planetennamen verweisen auf reale ukrainische Orte: **Podillia**, **Zhovti Vody**, **Kryvbas** und weitere.
 
 ![Loca Deserta Settlers Gameplay: Planeten und Kolonisation](../../Images/Games/Game_Preview_2.jpg)
 

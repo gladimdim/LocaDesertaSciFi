@@ -41,9 +41,9 @@ This is a true **economic strategy** for genre enthusiasts:
 - 🏭 **Deep production chains** — from raw materials to finished goods, Settlers-style
 - 🌍 **Planet colonisation** — each planet has unique resources and conditions
 - 🗼 **Territorial expansion** — build Towers to claim more land
-- 🚀 **Space Chumaky** — manage star-faring haulers running supply routes between planets
+- 🚀 **Fleet command** — cargo haulers, scouts, builders and warships under one economy
 
-Planet names reference real Ukrainian places: **Podillia**, **Zhovti Vody**, **Kryvbas**, and more. The game's subtitle is a tribute to the *Chumaky* — Ukrainian ox-cart merchants who once hauled salt and goods across the steppe, reimagined here as star-faring haulers of the future.
+Planet names reference real Ukrainian places: **Podillia**, **Zhovti Vody**, **Kryvbas**, and more.
 
 ![Loca Deserta Settlers gameplay: planets and colonisation](../../Images/Games/Game_Preview_2.jpg)
 
