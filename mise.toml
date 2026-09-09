@@ -1,0 +1,7 @@
+[tools]
+node = "22.16.0"
+
+# Arch/Omarchy ships libvips. sharp@0.34.5 then tries to compile from
+# source (and fails without node-gyp). Use the official prebuilt instead.
+[env]
+SHARP_IGNORE_GLOBAL_LIBVIPS = "1"
