@@ -8,7 +8,9 @@ translations:
 
 # Sokil Space Interceptor
 
-![[../../../../../../Images/Universe/Hetmanate-Federation/Ships/Sokil_1.png]]
+![Rank 1 Sokil, front three-quarter view](../../../../../../Images/Universe/Hetmanate-Federation/Ships/Sokil_R1_Front_Game.png)
+
+*Rank 1 Sokil, front three-quarter view.*
 
 
 **"Sokil"** — a single-seat space interceptor of the Hetmanate, designed for achieving space superiority, escorting strike squadrons, and defending large ships from fighters, torpedoes, and small attack craft. It is the most mass-produced combat vessel of the fleet and is considered the standard machine for most military pilots.
@@ -17,7 +19,9 @@ The designers sacrificed armor thickness for maximum speed and acceleration. The
 
 The main armament of the interceptor consists of **two "[[Ship Weapons/Shylo-M Laser Installation|Shylo-M]]" laser mounts**, positioned on either side of the nose section. A synchronized targeting system converges their beams onto a single point, significantly increasing lethality. Against fighters, a short burst is sufficient, while for engaging larger ships the pilot concentrates fire on sensors, engines, radiators, or other critical nodes.
 
-![[../../../../../../Images/Universe/Hetmanate-Federation/Ships/Sokil_2.png]]
+![Rank 2 Sokil, rear view showing its twin main engines](../../../../../../Images/Universe/Hetmanate-Federation/Ships/Sokil_R2_Rear_Game.png)
+
+*Rank 2 Sokil, rear view showing its twin main engines.*
 
 The secondary armament consists of micro-torpedo cassettes or short-range guided missiles. They are used to finish attacks on damaged targets or to intercept particularly maneuverable opponents that are difficult to keep in the laser crosshairs for long.
 
@@ -27,10 +31,14 @@ The "Sokil" possesses an exceptional thrust-to-mass ratio, allowing it to accele
 
 In Hetmanate tactics, "Sokils" rarely fight alone. They operate in flights of four or eight machines, attacking a target simultaneously from different directions. While some crews lure the enemy into a maneuver, others concentrate "Shylo-M" fire on the most vulnerable elements of the ship. Such tactics allow even light interceptors to gradually disable significantly larger vessels.
 
-![[../../../../../../Images/Universe/Hetmanate-Federation/Ships/Sokil_3.png]]
+![Rank 3 Sokil, dorsal view showing four gun mounts](../../../../../../Images/Universe/Hetmanate-Federation/Ships/Sokil_R3_Dorsal_Game.png)
+
+*Rank 3 Sokil, dorsal view showing four gun mounts.*
 
 Among fleet pilots, there is a rule:
 
 > **"If you are seen — you are already too late. The 'Sokil' wins before the enemy has time to aim its guns."**
 
-![[../../../../../../Images/Universe/Hetmanate-Federation/Sokil_Interceptor.jpg|625]]
+![Rank 2 Sokil firing its lasers](../../../../../../Images/Universe/Hetmanate-Federation/Ships/Sokil_R2_Combat_Game.png)
+
+*Rank 2 Sokil firing its lasers.*
