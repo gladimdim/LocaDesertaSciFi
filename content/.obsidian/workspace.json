@@ -54,9 +54,23 @@
               "icon": "lucide-file",
               "title": "Повстання Мюридів"
             }
+          },
+          {
+            "id": "c9ce3c7c63b3bd24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "en/Universe/Empires/Hetmanate Federation/Slogans of the Hetmanate Federation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Slogans of the Hetmanate Federation"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -222,8 +236,10 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "759ae114717cefb3",
+  "active": "c9ce3c7c63b3bd24",
   "lastOpenFiles": [
+    "Всесвіт/Імперії/Федерація Гетьманату/Девізи Федерації Гетьманату.md",
+    "Books/Повстання Мюридів/Повстання Мюридів.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа Федерації Гетьманату.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Січ/Зала Слави.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Ударні реактивні сотні.md",
@@ -237,7 +253,6 @@
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Ранги козаків.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Половинити.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Атабай.md",
-    "Всесвіт/Імперії/Федерація Гетьманату/Девізи Федерації Гетьманату.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Адміністративний устрій.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Федерація Гетьманату.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Кораблі класу Тавр.md",
@@ -256,7 +271,6 @@
     "Images/Universe/Hetmanate-Federation/SpaceCossacks/Three_Riders_Terminatorspng",
     "Images/Universe/Hetmanate-Federation/SpaceCossacks/Unconfirmed 591848.crdownload",
     "Images/Universe/Hetmanate-Federation/SpaceCossacks",
-    "Books/Повстання Мюридів/Повстання Мюридів.md",
     "Всесвіт/Історія/Головна Історія Всесвіту.md",
     "Всесвіт/Історія/Хронологія.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Справа/Кораблі/Кораблі класу ДАРЬЯ.md",
