@@ -61,12 +61,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "en/Universe/Empires/Hetmanate Federation/Slogans of the Hetmanate Federation.md",
+                "file": "Books/Повстання Мюридів/Повстання Мюридів.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Slogans of the Hetmanate Federation"
+              "title": "Повстання Мюридів"
             }
           }
         ],
@@ -104,7 +104,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "213",
+                "query": "виговський",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,7 +125,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -236,8 +237,9 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c9ce3c7c63b3bd24",
+  "active": "d58fe615a1f036ca",
   "lastOpenFiles": [
+    "en/Universe/Empires/Hetmanate Federation/Slogans of the Hetmanate Federation.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Девізи Федерації Гетьманату.md",
     "Books/Повстання Мюридів/Повстання Мюридів.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа Федерації Гетьманату.md",
@@ -281,7 +283,6 @@
     "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Просування козаків по службі.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Посполиті.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Козаки.md",
-    "en/Universe/Empires/Hetmanate Federation/Military Affairs/Customary Cossack Laws.md",
     "Images/Universe/Hetmanate-Federation/Weapons/Javelin_1.png",
     "Images/Universe/Hetmanate-Federation/Weapons/Javelin_2.png"
   ]
