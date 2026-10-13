@@ -61,16 +61,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Повстання Мюридів/Повстання Мюридів.md",
+                "file": "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Люциафан.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Повстання Мюридів"
+              "title": "Люциафан"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -125,8 +125,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -227,6 +226,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-kanban:Create new board": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -236,11 +236,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "d58fe615a1f036ca",
+  "active": "759ae114717cefb3",
   "lastOpenFiles": [
+    "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Люциафан.md",
+    "Books/Повстання Мюридів/Повстання Мюридів.md",
     "en/Universe/Empires/Hetmanate Federation/Slogans of the Hetmanate Federation.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Девізи Федерації Гетьманату.md",
-    "Books/Повстання Мюридів/Повстання Мюридів.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа Федерації Гетьманату.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Зоряна Січ/Зала Слави.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Ударні реактивні сотні.md",
@@ -281,7 +282,6 @@
     "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Ранги.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Просування козаків по службі.md",
     "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Посполиті.md",
-    "Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Козаки.md",
     "Images/Universe/Hetmanate-Federation/Weapons/Javelin_1.png",
     "Images/Universe/Hetmanate-Federation/Weapons/Javelin_2.png"
   ]
