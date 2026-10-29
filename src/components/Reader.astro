@@ -1,0 +1,198 @@
+---
+import Base from "../layouts/Base.astro"
+import { t, SITE, FLAG, type Lang } from "../lib/site"
+import { allNotes, translations, imageOf, thumb, summary, displayTitle, readingTime, wordCount, noteUrl, ogUrl, crumbs, articleHtml, headingsOf } from "../lib/notes"
+import { ART } from "../lib/universe"
+import type { Note } from "../lib/notes"
+
+const { note } = Astro.props as { note: Note }
+const lang = note.data.lang as Lang
+const s = t(lang)
+const notes = await allNotes()
+const headings = headingsOf(note)
+let html = articleHtml(note)
+const title = displayTitle(note)
+const first = headings[0]
+const hideH1 = !!first && first.depth === 1 && first.text.trim().toLowerCase() === title.toLowerCase()
+const hs = headings.filter((h) => !(hideH1 && h === first))
+const depth = hs.filter((h) => h.depth === 1).length >= 2 ? 1 : 2
+const chapters = hs.filter((h) => h.depth === depth).map((h) => ({ id: h.slug, text: h.text.replace(/\\\./g, ".").replace(/^[#\s]+/, "") }))
+const cover = /Мюрид/.test(note.id) ? ART.murids : imageOf(note, notes)
+// the book text often opens with its own cover — it is already in the header
+html = html.replace(/^\s*(<p>)?\s*<img [^>]*data-full="([^"]+)"[^>]*>\s*(<\/p>)?/, (m, _p, src) => (src === cover ? "" : m))
+const tr = await translations(note)
+const words = wordCount(note)
+const desc = summary(note, 200)
+const bc = await crumbs(note)
+const url = new URL(noteUrl(note.id), Astro.site).href
+const ld = [
+  {
+    "@type": "Book",
+    "@id": url,
+    url,
+    name: title,
+    description: desc,
+    inLanguage: lang,
+    image: new URL(thumb(cover, 1280)!, Astro.site).href,
+    author: { "@type": "Person", name: SITE.author, url: "https://dmytrogladkyi.com" },
+    wordCount: words,
+    bookFormat: "https://schema.org/EBook",
+    isAccessibleForFree: true,
+    isPartOf: { "@type": "CreativeWorkSeries", name: SITE.name, url: SITE.url },
+    ...(Object.keys(tr).length > 1 ? { workTranslation: Object.entries(tr).filter(([l]) => l !== lang).map(([, id]) => ({ "@id": new URL(noteUrl(id!), Astro.site).href })) } : {}),
+  },
+]
+---
+<Base title={title} description={desc} lang={lang} faction="hetman" image={ogUrl(note.id)} type="book" active="books" translations={tr} jsonLd={ld}>
+  <div class="progress" aria-hidden="true"><i id="prog"></i></div>
+
+  <header class="book-hero">
+    <img class="bg" src={thumb(cover, 1280)} alt="" />
+    <div class="wrap bh-in">
+      <img class="cov" src={thumb(cover, 480)} alt={title} />
+      <div class="bh-copy">
+        <nav class="mono crumbs">{bc.map((c) => <><a href={c.href}>{c.name}</a><span>/</span></>)}</nav>
+        <h1 class="display">{title}</h1>
+        <p class="sub">{desc}</p>
+        <p class="mono meta">
+          <span>{words.toLocaleString()} {s.words}</span><span>~{readingTime(note)} {s.minRead}</span><span>{chapters.length} {s.chapters.toLowerCase()}</span>
+          {Object.entries(tr).filter(([l]) => l !== lang).map(([l, id]) => <a href={noteUrl(id!)} hreflang={l} lang={l}>{FLAG[l as Lang]} {s.readIn} {l.toUpperCase()}</a>)}
+        </p>
+        <div class="ctas">
+          <a class="cta" id="start" href={chapters[0] ? `#${chapters[0].id}` : "#text"} data-cont={s.continueReading}>{s.read} →</a>
+          {chapters.length > 1 && <button class="cta alt" id="open-ch">☰ {s.chapters}</button>}
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="reader-wrap">
+    <article id="text" class:list={["prose reader", { "hide-h1": hideH1, [`ch${depth}`]: true }]}>
+      <Fragment set:html={html} />
+    </article>
+  </div>
+
+  <nav class="rbar hud" aria-label={s.chapters}>
+    <button id="rb-ch" class="rb-btn" aria-label={s.chapters}>☰</button>
+    <button id="rb-prev" class="rb-btn" aria-label={s.prev}>‹</button>
+    <span class="rb-cur" id="rb-cur">{chapters[0]?.text ?? title}</span>
+    <button id="rb-next" class="rb-btn" aria-label={s.next}>›</button>
+    <span class="rb-pct mono" id="rb-pct">0%</span>
+    <button id="rb-font" class="rb-btn" aria-label="Font size">Aa</button>
+  </nav>
+
+  <dialog id="chapters" class="ch-dlg">
+    <div class="hud ch-in">
+      <div class="hud-title">{s.chapters} <span class="r">{chapters.length}</span></div>
+      <ol>{chapters.map((c, i) => <li><a href={`#${c.id}`} data-id={c.id}><span class="mono">{String(i).padStart(2, "0")}</span>{c.text}</a></li>)}</ol>
+    </div>
+  </dialog>
+</Base>
+
+<script is:inline define:vars={{ bookId: note.id, chapters }}>
+  const key = "ld:read:" + bookId
+  const text = document.getElementById("text"), prog = document.getElementById("prog"), pct = document.getElementById("rb-pct"), cur = document.getElementById("rb-cur")
+  const heads = chapters.map((c) => document.getElementById(c.id)).filter(Boolean)
+  const dlg = document.getElementById("chapters")
+  let idx = 0, saveT
+
+  function state() {
+    const top = text.offsetTop, h = text.offsetHeight - innerHeight * 0.6
+    const p = Math.min(1, Math.max(0, (scrollY - top + innerHeight * 0.2) / h))
+    idx = 0
+    heads.forEach((el, i) => { if (el.getBoundingClientRect().top < innerHeight * 0.35) idx = i })
+    return p
+  }
+  function onScroll() {
+    const p = state()
+    prog.style.transform = `scaleX(${p})`
+    pct.textContent = Math.round(p * 100) + "%"
+    if (heads[idx]) cur.textContent = chapters[idx].text
+    document.querySelectorAll("#chapters a").forEach((a, i) => a.classList.toggle("on", i === idx))
+    document.body.classList.toggle("reading", scrollY > text.offsetTop - 200)
+    clearTimeout(saveT)
+    saveT = setTimeout(() => { try { if (p > 0.005) localStorage.setItem(key, JSON.stringify({ p, y: scrollY / document.documentElement.scrollHeight, c: idx })) } catch {} }, 400)
+  }
+  addEventListener("scroll", onScroll, { passive: true })
+  onScroll()
+
+  const go = (i) => heads[i] && heads[i].scrollIntoView({ behavior: "smooth" })
+  document.getElementById("rb-prev").onclick = () => go(Math.max(0, heads[idx]?.getBoundingClientRect().top < -40 ? idx : idx - 1))
+  document.getElementById("rb-next").onclick = () => go(Math.min(heads.length - 1, idx + 1))
+  const openCh = () => dlg.showModal()
+  document.getElementById("rb-ch").onclick = openCh
+  document.getElementById("open-ch")?.addEventListener("click", openCh)
+  dlg.addEventListener("click", (e) => { if (e.target === dlg || e.target.closest("a")) dlg.close() })
+
+  // font size: 3 steps, remembered
+  const sizes = ["17px", "19px", "21.5px"]
+  let fs = 1
+  try { fs = +(localStorage.getItem("ld:font") ?? 1) } catch {}
+  const applyFs = () => text.style.setProperty("--fs", sizes[fs])
+  applyFs()
+  document.getElementById("rb-font").onclick = () => { fs = (fs + 1) % sizes.length; applyFs(); try { localStorage.setItem("ld:font", fs) } catch {} }
+
+  // continue where the reader stopped
+  try {
+    const st = JSON.parse(localStorage.getItem(key) || "null")
+    if (st && st.p > 0.01) {
+      const a = document.getElementById("start")
+      a.textContent = a.dataset.cont + " · " + Math.round(st.p * 100) + "% →"
+      a.onclick = (e) => { e.preventDefault(); scrollTo({ top: st.y * document.documentElement.scrollHeight, behavior: "smooth" }) }
+    }
+  } catch {}
+</script>
+
+<style>
+  .progress { position: fixed; top: 64px; left: 0; right: 0; height: 3px; z-index: 49; background: rgba(120, 170, 255, 0.08); }
+  .progress i { display: block; height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-2)); transform-origin: 0 50%; transform: scaleX(0); box-shadow: 0 0 12px var(--accent-2); }
+  .book-hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
+  .book-hero .bg { position: absolute; inset: -40px; width: calc(100% + 80px); height: calc(100% + 80px); object-fit: cover; filter: blur(28px) saturate(1.2); opacity: 0.4; }
+  .book-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, var(--void), transparent 60%); }
+  .bh-in { position: relative; z-index: 1; display: grid; grid-template-columns: 260px 1fr; gap: 54px; align-items: center; padding: 70px 0 60px; }
+  .cov { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 3px 8px 8px 3px; box-shadow: 0 40px 80px -20px #000, 0 0 0 1px var(--line-2), 0 0 60px -10px var(--accent-2); transform: perspective(900px) rotateY(-10deg); }
+  .crumbs { display: flex; gap: 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 14px; }
+  .crumbs span { color: var(--muted); }
+  .bh-copy h1 { font-size: clamp(32px, 5vw, 64px); text-transform: uppercase; }
+  .sub { color: var(--dim); font: 18px/1.65 var(--read); max-width: 640px; margin: 18px 0 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 20px; color: var(--muted); font-size: 12px; margin: 20px 0 28px; }
+  .ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+  button.cta { border: 0; cursor: pointer; }
+
+  .reader-wrap { padding: 60px 16px 140px; }
+  .reader { --fs: 19px; max-width: 700px; margin: 0 auto; font-size: var(--fs); line-height: 1.8; }
+  .reader :global(p) { text-indent: 0; }
+  .reader.ch1 :global(h1), .reader.ch2 :global(h2) {
+    font-size: 1.55em; text-transform: uppercase; text-align: center; margin: 3.4em 0 1.6em; padding: 1.4em 0 0; border: 0; position: relative;
+  }
+  .reader.ch1 :global(h1)::before, .reader.ch2 :global(h2)::before {
+    content: "✦"; display: block; font-size: 0.6em; color: var(--accent-2); margin-bottom: 0.9em; text-shadow: 0 0 14px var(--accent-2);
+  }
+  .reader.ch1 :global(h1)::after, .reader.ch2 :global(h2)::after {
+    content: ""; display: block; width: 60px; height: 1px; margin: 0.9em auto 0; background: var(--accent);
+  }
+  .reader :global(hr) { width: 120px; margin: 2.6em auto; }
+
+  .rbar { position: fixed; left: 50%; bottom: 18px; z-index: 40; display: flex; align-items: center; gap: 6px; padding: 6px; width: min(640px, calc(100vw - 24px)); transform: translate(-50%, 140%); transition: transform .35s; background-color: rgba(7, 12, 24, 0.9); }
+  :global(body.reading) .rbar { transform: translate(-50%, 0); }
+  .rb-btn { flex: none; width: 40px; height: 38px; border: 1px solid var(--line-2); background: transparent; color: var(--dim); border-radius: 3px; font: 600 15px var(--mono); cursor: pointer; }
+  .rb-btn:hover { color: var(--text); border-color: var(--accent); }
+  .rb-cur { flex: 1; min-width: 0; text-align: center; font: 600 12px var(--display); text-transform: uppercase; letter-spacing: 0.03em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 0 8px; }
+  .rb-pct { flex: none; width: 46px; text-align: center; color: var(--accent-2); font-size: 12px; }
+
+  .ch-dlg { border: 0; padding: 0; background: transparent; width: min(560px, calc(100vw - 24px)); color: var(--text); margin: 10vh auto auto; }
+  .ch-dlg::backdrop { background: rgba(2, 3, 8, 0.75); backdrop-filter: blur(5px); }
+  .ch-in { background-color: var(--panel-solid); }
+  .ch-in ol { list-style: none; margin: 0; padding: 8px; max-height: 66vh; overflow: auto; }
+  .ch-in a { display: flex; gap: 14px; padding: 11px 12px; color: var(--dim); border-radius: 3px; font: 500 14.5px/1.35 var(--ui); }
+  .ch-in a span { color: var(--accent); font-size: 12px; padding-top: 2px; }
+  .ch-in a:hover, .ch-in a.on { color: var(--text); background: color-mix(in srgb, var(--accent) 12%, transparent); }
+  .ch-in a.on span { color: var(--accent-2); }
+
+  @media (max-width: 760px) {
+    .bh-in { grid-template-columns: 1fr; gap: 28px; padding: 40px 0; }
+    .cov { width: 180px; transform: none; }
+    .reader-wrap { padding-top: 36px; }
+    .rb-btn#rb-font { display: none; }
+  }
+</style>

@@ -1,0 +1,191 @@
+---
+import "../styles/global.css"
+import { SITE, FLAG, LANGS, LOCALE, t, homeUrl, type Lang } from "../lib/site"
+import { noteUrl } from "../lib/notes"
+import Search from "../components/Search.astro"
+interface Props {
+  title: string
+  description?: string
+  lang?: Lang
+  faction?: string
+  image?: string
+  imageAlt?: string
+  type?: "website" | "article" | "book"
+  active?: "codex" | "books" | "timeline" | "games" | "tags" | ""
+  translations?: Partial<Record<Lang, string>> // lang → note id
+  jsonLd?: Record<string, unknown>[]
+  published?: Date
+}
+const { title, lang = "uk", faction = "hetman", image = "/og/index.jpg", imageAlt, type = "website", active = "", translations = {}, jsonLd = [], published } = Astro.props
+const s = t(lang)
+const description = Astro.props.description ?? s.description
+const isHome = Astro.url.pathname === homeUrl(lang)
+const full = isHome ? `${SITE.name} — ${s.tagline}` : `${title} · ${SITE.short}`
+const canonical = new URL(Astro.url.pathname, Astro.site).href
+const ogImage = new URL(image, Astro.site).href
+const alt = Object.entries(translations).map(([l, id]) => ({ lang: l as Lang, href: new URL(noteUrl(id!), Astro.site).href }))
+// x-default: the Ukrainian original when there is one
+const xDefault = alt.find((a) => a.lang === "uk")?.href ?? alt[0]?.href
+
+const NAV: Record<Lang, { key: Props["active"]; label: string; href: string }[]> = {
+  uk: [
+    { key: "codex", label: s.codex, href: "/Всесвіт/" },
+    { key: "timeline", label: s.timeline, href: "/Всесвіт/Історія/Хронологія/" },
+    { key: "books", label: s.books, href: "/Books/" },
+    { key: "games", label: s.games, href: "/Ігри/Loca-Deserta-Settlers/" },
+  ],
+  en: [
+    { key: "codex", label: s.codex, href: "/en/Universe/" },
+    { key: "timeline", label: s.timeline, href: "/en/#timeline" },
+    { key: "books", label: s.books, href: "/en/Books/" },
+    { key: "games", label: s.games, href: "/en/Games/Loca-Deserta-Settlers/" },
+  ],
+  de: [
+    { key: "codex", label: s.codex, href: "/en/Universe/" },
+    { key: "timeline", label: s.timeline, href: "/en/#timeline" },
+    { key: "books", label: s.books, href: "/en/Books/" },
+    { key: "games", label: s.games, href: "/de/Spiele/Loca-Deserta-Settlers/" },
+  ],
+}
+const nav = NAV[lang].map((n) => ({ ...n, href: encodeURI(n.href) }))
+// language switch: this page's translation when there is one, else that language's home
+const langLinks = LANGS.filter((l) => l !== "de" || translations.de || lang === "de").map((l) => ({
+  l,
+  href: translations[l] ? noteUrl(translations[l]!) : homeUrl(l),
+  exact: !!translations[l] || l === lang,
+}))
+const graph = [
+  { "@type": "WebSite", "@id": `${SITE.url}/#website`, url: SITE.url, name: SITE.name, description: s.description, inLanguage: ["uk", "en", "de"], author: { "@type": "Person", name: SITE.author, url: "https://dmytrogladkyi.com" } },
+  ...jsonLd,
+]
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <script is:inline>document.documentElement.classList.add("js")</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{full}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={SITE.author} />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="theme-color" content="#03050b" />
+    <link rel="canonical" href={canonical} />
+    {alt.length > 1 && alt.map((a) => <link rel="alternate" hreflang={a.lang} href={a.href} />)}
+    {alt.length > 1 && <link rel="alternate" hreflang="x-default" href={xDefault} />}
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+    <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/index.xml" />
+    <link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:type" content={type === "website" ? "website" : type === "book" ? "book" : "article"} />
+    <meta property="og:title" content={isHome ? full : title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={LOCALE[lang]} />
+    {alt.filter((a) => a.lang !== lang).map((a) => <meta property="og:locale:alternate" content={LOCALE[a.lang]} />)}
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={imageAlt ?? title} />
+    {published && <meta property="article:published_time" content={published.toISOString()} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content={SITE.twitter} />
+    <meta name="twitter:title" content={isHome ? full : title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <script type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", "@graph": graph })} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script is:inline defer data-domain="scifi.locadeserta.com" src="https://plausible.io/js/script.js"></script>
+  </head>
+  <body data-faction={faction}>
+    <canvas id="stars" aria-hidden="true"></canvas>
+    <header class="bar" id="bar">
+      <div class="wrap">
+        <a class="brand" href={homeUrl(lang)} aria-label={SITE.name}>
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M16 2 L19 13 L30 16 L19 19 L16 30 L13 19 L2 16 L13 13 Z" fill="currentColor" fill-opacity=".18" />
+            <circle cx="16" cy="16" r="4.5" />
+            <path d="M16 6v4M16 22v4M6 16h4M22 16h4" stroke-width="1" />
+          </svg>
+          <span><b>LOCA DESERTA</b><small>SCI-FI UNIVERSE</small></span>
+        </a>
+        <nav class="nav" aria-label={s.allSections}>
+          {nav.map((n) => <a href={n.href} class={active === n.key ? "on" : ""}>{n.label}</a>)}
+        </nav>
+        <div class="sp"></div>
+        <button class="btn-ghost" id="open-search" aria-label={s.search}>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          <span class="sl">{s.search}</span> <kbd class="sl">Ctrl K</kbd>
+        </button>
+        <div class="langs" role="group" aria-label={s.readIn}>
+          {langLinks.map((x) =>
+            x.l === lang ? <span class="on" title={FLAG[x.l]}>{x.l.toUpperCase()}</span> : <a href={x.href} hreflang={x.l} lang={x.l} title={FLAG[x.l] + (x.exact ? "" : " · " + t(x.l).home)}>{x.l.toUpperCase()}</a>,
+          )}
+        </div>
+        <button class="btn-ghost burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main><slot /></main>
+
+    <footer class="foot">
+      <div class="wrap">
+        <span>{s.footer}</span>
+        <div class="sp"></div>
+        <a href="https://t.me/locadesertachumaki">{s.telegram}</a>
+        <a href="https://github.com/gladimdim/LocaDesertaSciFi">GitHub</a>
+        <a href="https://dmytrogladkyi.com">dmytrogladkyi.com</a>
+        <a href="/index.xml">RSS</a>
+      </div>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox"><img alt="" /><p></p></dialog>
+    <Search lang={lang} />
+
+    <script is:inline>
+      (() => {
+        // starfield: three parallax layers drifting slowly, a few twinkling
+        const c = document.getElementById("stars"), x = c.getContext("2d")
+        const still = matchMedia("(prefers-reduced-motion: reduce)").matches
+        let w, h, stars = [], dpr = Math.min(devicePixelRatio || 1, 2)
+        function init() {
+          w = c.width = innerWidth * dpr; h = c.height = innerHeight * dpr
+          const n = Math.round((innerWidth * innerHeight) / 5200)
+          stars = Array.from({ length: n }, () => ({ x: Math.random() * w, y: Math.random() * h, z: Math.random() ** 2.2, t: Math.random() * 6.28 }))
+        }
+        function frame(ts) {
+          x.clearRect(0, 0, w, h)
+          for (const s of stars) {
+            if (!still) { s.x -= (0.03 + s.z * 0.25) * dpr; if (s.x < 0) { s.x = w; s.y = Math.random() * h } }
+            const a = 0.25 + s.z * 0.75 * (0.75 + 0.25 * Math.sin(ts / 900 + s.t))
+            x.fillStyle = s.z > 0.85 ? `rgba(255,214,120,${a})` : `rgba(190,215,255,${a})`
+            const r = (0.35 + s.z * 1.25) * dpr
+            x.fillRect(s.x, s.y, r, r)
+          }
+          if (!still) requestAnimationFrame(frame)
+        }
+        init(); addEventListener("resize", init); requestAnimationFrame(frame)
+
+        // mobile menu
+        const bar = document.getElementById("bar"), burger = document.getElementById("burger")
+        burger.onclick = () => burger.setAttribute("aria-expanded", bar.classList.toggle("open"))
+
+        // lightbox for article art
+        const lb = document.getElementById("lightbox"), lbImg = lb.querySelector("img"), lbCap = lb.querySelector("p")
+        document.addEventListener("click", (e) => {
+          const img = e.target.closest("img[data-zoom], .zoomable img")
+          if (img && !img.closest("a")) { lbImg.src = img.dataset.full || img.currentSrc || img.src; lbCap.textContent = img.alt || ""; lb.showModal() }
+        })
+        lb.addEventListener("click", () => lb.close())
+
+        // reveal on scroll
+        const io = new IntersectionObserver((es) => es.forEach((e) => e.isIntersecting && (e.target.classList.add("in"), io.unobserve(e.target))), { rootMargin: "0px 0px -8% 0px" })
+        document.querySelectorAll(".reveal").forEach((el) => io.observe(el))
+      })()
+    </script>
+  </body>
+</html>

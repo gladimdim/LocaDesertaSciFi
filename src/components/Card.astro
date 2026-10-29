@@ -1,0 +1,37 @@
+---
+import { thumb } from "../lib/notes"
+interface Props { href: string; title: string; image?: string; kicker?: string; text?: string; faction?: string; folder?: boolean; eager?: boolean }
+const { href, title, image, kicker, text, faction, folder, eager } = Astro.props
+// cards without artwork get a generated "data plate": monogram over a coordinate grid
+const h = [...title].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7)
+const mono = title.replace(/[«»"'(]/g, "").trim().slice(0, 2)
+const code = `${String.fromCharCode(65 + (h % 26))}${(h % 900) + 100}-${((h >>> 8) % 90) + 10}`
+---
+<a class:list={["card reveal", { folder }]} href={href} data-faction={faction !== "deck" ? faction : undefined}>
+  {image ? (
+    <div class="img"><img src={thumb(image)} alt="" loading={eager ? "eager" : "lazy"} decoding="async" /></div>
+  ) : (
+    <div class="img plate" style={`--a:${(h % 60) - 30}deg`} aria-hidden="true">
+      <span class="mono-big">{mono}</span>
+      <span class="code">{code}</span>
+    </div>
+  )}
+  <div class="meta">
+    {kicker && <span class="k">{kicker}</span>}
+    <h3>{title}</h3>
+    {text && <p>{text}</p>}
+  </div>
+</a>
+<style>
+  .plate {
+    display: grid; place-items: center; position: relative;
+    background:
+      radial-gradient(circle at 70% 30%, color-mix(in srgb, var(--accent) 28%, transparent), transparent 60%),
+      linear-gradient(var(--a), color-mix(in srgb, var(--accent-2) 10%, transparent), transparent 60%),
+      repeating-linear-gradient(0deg, rgba(120, 170, 255, 0.07) 0 1px, transparent 1px 24px),
+      repeating-linear-gradient(90deg, rgba(120, 170, 255, 0.07) 0 1px, transparent 1px 24px),
+      #050913;
+  }
+  .mono-big { font: 800 58px/1 var(--display); text-transform: uppercase; color: transparent; -webkit-text-stroke: 1.5px color-mix(in srgb, var(--accent) 80%, white); text-shadow: 0 0 30px color-mix(in srgb, var(--accent) 40%, transparent); }
+  .code { position: absolute; left: 12px; bottom: 10px; font: 500 10px var(--mono); letter-spacing: 0.2em; color: var(--muted); }
+</style>

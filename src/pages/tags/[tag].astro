@@ -1,0 +1,21 @@
+---
+import Base from "../../layouts/Base.astro"
+import Card from "../../components/Card.astro"
+import { tagIndex, noteUrl, displayTitle, imageOf, summary, factionOf, allNotes } from "../../lib/notes"
+export async function getStaticPaths() {
+  return (await tagIndex()).map(([k, v]) => ({ params: { tag: k }, props: { label: v.label, notes: v.notes } }))
+}
+const { label, notes } = Astro.props
+const all = await allNotes()
+---
+<Base title={`#${label}`} lang="en" active="tags" description={`Loca Deserta Sci-Fi notes tagged #${label}: ${notes.map((n) => displayTitle(n)).join(", ")}`}>
+  <section class="wrap tg">
+    <p class="label"><a href="/tags/">Tags</a> · {notes.length}</p>
+    <h1 class="display">#{label}</h1>
+    <div class="grid">{notes.map((n) => <Card href={noteUrl(n.id)} title={displayTitle(n)} image={imageOf(n, all)} text={summary(n, 120)} kicker={n.data.lang.toUpperCase()} faction={factionOf(n.id)} />)}</div>
+  </section>
+</Base>
+<style>
+  .tg { padding-top: 90px; }
+  h1 { font-size: clamp(32px, 5vw, 60px); margin: 12px 0 34px; }
+</style>

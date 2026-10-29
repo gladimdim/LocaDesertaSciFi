@@ -1,0 +1,157 @@
+---
+import Base from "../layouts/Base.astro"
+import Card from "./Card.astro"
+import Sigil from "./Sigil.astro"
+import { t, SITE, FLAG, type Lang, entriesLabel } from "../lib/site"
+import { allNotes, folders, folderItems, crumbs, backlinks, translations, imageOf, coverOf, thumb, summary, displayTitle, readingTime, wordCount, noteUrl, factionOf, ogUrl, tagSlug, type Note, articleHtml, headingsOf } from "../lib/notes"
+
+const { note } = Astro.props as { note: Note }
+const d = note.data
+const lang = d.lang as Lang
+const s = t(lang)
+const notes = await allNotes()
+const headings = headingsOf(note)
+const html = articleHtml(note)
+const title = displayTitle(note)
+const faction = factionOf(note.id)
+const own = coverOf(note, notes)
+const banner = own ?? imageOf(note, notes)
+const firstH1 = headings.find((h) => h.depth === 1)
+const hideH1 = !!firstH1 && headings[0] === firstH1 && firstH1.text.replace(/^[#\s]+/, "").trim().toLowerCase() === title.toLowerCase()
+const toc = headings.filter((h) => h.depth <= 3 && !(hideH1 && h === firstH1))
+const bc = await crumbs(note)
+const back = (await backlinks(note)).filter((b) => b.id !== "index" && b.id !== "en")
+const tr = await translations(note)
+const fs = await folders()
+const folder = fs.get(d.folder)
+// folder notes list their section; other notes show their neighbours
+const items = folder && (d.isFolderNote || d.isIndex) ? await folderItems(folder, notes) : []
+const siblings = folder && !d.isFolderNote ? (await folderItems(folder, notes)).filter((i) => i.href !== noteUrl(note.id)).slice(0, 6) : []
+const desc = summary(note)
+const url = new URL(noteUrl(note.id), Astro.site).href
+const ld = [
+  {
+    "@type": "Article",
+    "@id": url,
+    url,
+    headline: title,
+    description: desc,
+    inLanguage: lang,
+    image: [new URL(ogUrl(note.id), Astro.site).href],
+    author: { "@type": "Person", name: SITE.author },
+    isPartOf: { "@id": `${SITE.url}/#website` },
+    ...(Object.keys(tr).length > 1 ? { workTranslation: Object.entries(tr).filter(([l]) => l !== lang).map(([, id]) => ({ "@id": new URL(noteUrl(id!), Astro.site).href })) } : {}),
+  },
+  {
+    "@type": "BreadcrumbList",
+    itemListElement: [...bc.map((c) => ({ name: c.name, url: new URL(c.href, Astro.site).href })), { name: title, url }].map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: c.url })),
+  },
+]
+const active = d.section === "Books" ? "books" : /Ігри|Games|Spiele/.test(d.section) ? "games" : /Хронологія/.test(note.id) ? "timeline" : "codex"
+---
+<Base title={title} description={desc} lang={lang} faction={faction} image={ogUrl(note.id)} type="article" active={active} translations={tr} jsonLd={ld} published={d.date}>
+  <header class="art-hero" class:list={{ "no-art": !own && faction !== "hetman" }}>
+    <div class="art-bg">
+      {own || faction === "hetman" || faction === "deck" || faction === "europa" ? <img src={thumb(banner, 1280)} alt="" /> : <Sigil kind={faction} />}
+    </div>
+    <div class="wrap art-head">
+      <nav class="crumbs mono" aria-label="breadcrumbs">
+        {bc.map((c) => <><a href={c.href}>{c.name}</a><span>/</span></>)}
+      </nav>
+      <h1 class="display">{title}</h1>
+      {(d.description || d.socialDescription) && <p class="sub">{d.description || d.socialDescription}</p>}
+      <div class="meta mono">
+        <span>{readingTime(note)} {s.minRead}</span>
+        <span>{wordCount(note).toLocaleString()} {s.words}</span>
+        {Object.keys(tr).length > 1 && (
+          <span class="tr">
+            {s.readIn}:
+            {Object.entries(tr).map(([l, id]) => (l === lang ? <b>{FLAG[l as Lang]} {l.toUpperCase()}</b> : <a href={noteUrl(id!)} hreflang={l} lang={l}>{FLAG[l as Lang]} {l.toUpperCase()}</a>))}
+          </span>
+        )}
+        {d.tags.map((tg) => <a class="tag" href={`/tags/${tagSlug(tg)}/`}>#{tg}</a>)}
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap art-grid">
+    <article class:list={["prose", { "hide-h1": hideH1 }]}>
+      <Fragment set:html={html} />
+    </article>
+    <aside class="side">
+      {toc.length > 2 && (
+        <nav class="hud toc" aria-label={s.contents}>
+          <div class="hud-title">{s.contents} <span class="r">{toc.length}</span></div>
+          <ol>{toc.map((h) => <li class={`d${h.depth}`}><a href={`#${h.slug}`} data-id={h.slug}>{h.text.replace(/^[#\s]+/, "")}</a></li>)}</ol>
+        </nav>
+      )}
+      {back.length > 0 && (
+        <div class="hud links">
+          <div class="hud-title">{s.mentionedIn} <span class="r">{back.length}</span></div>
+          <ul>{back.slice(0, 14).map((b) => <li><a href={noteUrl(b.id)}>{displayTitle(b)}</a></li>)}</ul>
+        </div>
+      )}
+    </aside>
+  </div>
+
+  {items.length > 0 && (
+    <section class="wrap more-sec">
+      <p class="label">{folder!.name} · {entriesLabel(lang, items.length)}</p>
+      <div class="grid">{items.map((i) => <Card href={i.href} title={i.title} image={i.image} text={i.text} kicker={i.folder ? `▸ ${entriesLabel(lang, i.count)}` : undefined} faction={i.faction} folder={i.folder} />)}</div>
+    </section>
+  )}
+  {siblings.length > 0 && (
+    <section class="wrap more-sec">
+      <p class="label">{s.sameFolder}</p>
+      <div class="grid">{siblings.map((i) => <Card href={i.href} title={i.title} image={i.image} text={i.text} faction={i.faction} folder={i.folder} />)}</div>
+    </section>
+  )}
+</Base>
+
+<script is:inline>
+  // highlight the current section in the TOC
+  const links = [...document.querySelectorAll(".toc a")]
+  if (links.length) {
+    const map = new Map(links.map((a) => [a.dataset.id, a]))
+    const io = new IntersectionObserver((es) => es.forEach((e) => {
+      if (e.isIntersecting) { links.forEach((a) => a.classList.remove("on")); map.get(e.target.id)?.classList.add("on") }
+    }), { rootMargin: "-15% 0px -75% 0px" })
+    document.querySelectorAll(".prose h1[id], .prose h2[id], .prose h3[id]").forEach((h) => io.observe(h))
+  }
+</script>
+
+<style>
+  .art-hero { position: relative; min-height: 420px; display: flex; align-items: flex-end; overflow: hidden; border-bottom: 1px solid var(--line); }
+  .art-bg { position: absolute; inset: 0; }
+  .art-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; opacity: 0.75; }
+  .art-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, var(--void) 2%, rgba(3, 5, 11, 0.7) 45%, rgba(3, 5, 11, 0.25)), linear-gradient(90deg, rgba(3, 5, 11, 0.85), transparent 70%); }
+  .art-head { position: relative; z-index: 1; padding: 110px 0 38px; }
+  .crumbs { display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px; }
+  .crumbs a { color: var(--accent); }
+  .crumbs span { color: var(--muted); }
+  .art-head h1 { font-size: clamp(30px, 5vw, 62px); text-transform: uppercase; max-width: 1000px; text-shadow: 0 4px 30px rgba(0, 0, 0, 0.6); }
+  .art-head h1::after { content: ""; display: block; width: 90px; height: 3px; margin-top: 20px; background: linear-gradient(90deg, var(--accent-2), var(--accent)); box-shadow: 0 0 16px var(--accent); }
+  .sub { max-width: 760px; color: var(--dim); font: 18px/1.6 var(--read); margin: 18px 0 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; margin-top: 22px; font-size: 12px; color: var(--muted); }
+  .meta .tr { display: inline-flex; gap: 10px; align-items: center; }
+  .meta .tr b { color: var(--accent-2); font-weight: 600; }
+  .tag { color: var(--accent-2); }
+  .art-grid { display: grid; grid-template-columns: minmax(0, 760px) 300px; gap: 64px; justify-content: space-between; padding-top: 50px; }
+  .side { display: flex; flex-direction: column; gap: 18px; position: sticky; top: 88px; align-self: start; max-height: calc(100vh - 110px); overflow: auto; scrollbar-width: thin; }
+  .toc ol, .links ul { list-style: none; margin: 0; padding: 10px 8px 12px; }
+  .toc a, .links a { display: block; padding: 6px 10px; font-size: 13px; line-height: 1.35; color: var(--dim); border-left: 2px solid transparent; }
+  .toc .d3 a { padding-left: 22px; font-size: 12.5px; }
+  .toc a:hover, .links a:hover { color: var(--text); }
+  .toc a.on { color: var(--text); border-left-color: var(--accent-2); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+  .more-sec { padding-top: 70px; }
+  .more-sec .label { margin-bottom: 18px; }
+  @media (max-width: 1080px) {
+    .art-grid { grid-template-columns: 1fr; gap: 30px; }
+    .side { position: static; max-height: none; }
+    .toc { display: none; }
+  }
+  @media (max-width: 640px) {
+    .art-hero { min-height: 300px; }
+    .art-head { padding: 80px 0 26px; }
+  }
+</style>

@@ -1,0 +1,26 @@
+---
+import Base from "../layouts/Base.astro"
+import { t } from "../lib/site"
+const s = t("uk"), e = t("en")
+---
+<Base title="404" lang="uk">
+  <section class="wrap nf">
+    <div class="hud box">
+      <div class="hud-title">ERR 404 <span class="r">LD-17</span></div>
+      <div class="in">
+        <p class="label gold">{s.notFound} · {e.notFound}</p>
+        <h1 class="display">404</h1>
+        <p>{s.notFoundLead}<br />{e.notFoundLead}</p>
+        <div class="ctas"><a class="cta" href="/">{s.backHome}</a><a class="cta alt" href="/en/">{e.backHome}</a></div>
+      </div>
+    </div>
+  </section>
+</Base>
+<style>
+  .nf { padding: 120px 0 40px; display: grid; place-items: center; }
+  .box { width: min(620px, 100%); }
+  .in { padding: 34px; }
+  h1 { font-size: 120px; line-height: 1; margin: 14px 0; color: transparent; -webkit-text-stroke: 2px var(--accent); }
+  p:not(.label) { color: var(--dim); font: 17px/1.6 var(--read); }
+  .ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+</style>

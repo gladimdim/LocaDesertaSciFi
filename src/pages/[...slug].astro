@@ -1,0 +1,45 @@
+---
+import Article from "../components/Article.astro"
+import Reader from "../components/Reader.astro"
+import FolderPage from "../components/FolderPage.astro"
+import { allNotes, folders, isBook, noteUrl, slugifyAlias, type Note, type Folder } from "../lib/notes"
+
+export async function getStaticPaths() {
+  const notes = await allNotes()
+  const ids = new Set(notes.map((n) => n.id))
+  const paths: { params: { slug: string }; props: { note?: Note; folder?: Folder; redirect?: string } }[] = []
+  for (const n of notes) if (n.id !== "index" && n.id !== "en") paths.push({ params: { slug: n.id }, props: { note: n } })
+  for (const f of (await folders()).values()) if (!ids.has(f.id) && f.id !== "de") paths.push({ params: { slug: f.id }, props: { folder: f } })
+  // Quartz alias pages (/Space-Settlers.html) → redirect to the note
+  const taken = new Set(paths.map((p) => p.params.slug))
+  for (const n of notes)
+    for (const a of n.data.aliases) {
+      const slug = slugifyAlias(a)
+      if (slug && !taken.has(slug)) {
+        taken.add(slug)
+        paths.push({ params: { slug }, props: { redirect: noteUrl(n.id) } })
+      }
+    }
+  return paths
+}
+
+const { note, folder, redirect } = Astro.props as { note?: Note; folder?: Folder; redirect?: string }
+---
+{redirect ? (
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <title>Redirecting…</title>
+      <link rel="canonical" href={new URL(redirect, Astro.site).href} />
+      <meta name="robots" content="noindex" />
+      <meta http-equiv="refresh" content={`0; url=${redirect}`} />
+    </head>
+    <body><a href={redirect}>{redirect}</a></body>
+  </html>
+) : folder ? (
+  <FolderPage folder={folder} />
+) : isBook(note!) ? (
+  <Reader note={note!} />
+) : (
+  <Article note={note!} />
+)}

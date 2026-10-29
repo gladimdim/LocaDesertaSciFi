@@ -1,0 +1,94 @@
+---
+import { t, type Lang } from "../lib/site"
+const { lang } = Astro.props as { lang: Lang }
+const s = t(lang)
+---
+<dialog id="search" class="srch" data-lang={lang} data-empty={s.noResults}>
+  <div class="hud srch-in">
+    <div class="srch-q">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+      <input id="srch-input" placeholder={s.searchPlaceholder} autocomplete="off" spellcheck="false" />
+      <kbd>esc</kbd>
+    </div>
+    <ul id="srch-res"></ul>
+  </div>
+</dialog>
+
+<style is:global>
+  .srch { border: 0; padding: 0; background: transparent; width: min(760px, calc(100vw - 24px)); margin: 11vh auto auto; color: var(--text); }
+  .srch::backdrop { background: rgba(2, 3, 8, 0.7); backdrop-filter: blur(5px); }
+  .srch-in { background-color: var(--panel-solid); box-shadow: 0 40px 100px -20px #000, var(--glow); }
+  .srch-q { display: flex; align-items: center; gap: 12px; padding: 16px 18px; border-bottom: 1px solid var(--line); color: var(--accent); }
+  .srch-q input { flex: 1; background: none; border: 0; outline: 0; color: var(--text); font: 500 17px var(--ui); }
+  .srch-q kbd { font: 10px var(--mono); color: var(--muted); border: 1px solid var(--line-2); padding: 3px 6px; border-radius: 3px; }
+  #srch-res { list-style: none; margin: 0; padding: 6px; max-height: 56vh; overflow-y: auto; overflow-x: hidden; }
+  #srch-res a > span { min-width: 0; }
+  #srch-res a { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center; padding: 8px 10px; border-radius: 3px; color: var(--text); }
+  #srch-res img { width: 56px; height: 40px; object-fit: cover; border-radius: 2px; border: 1px solid var(--line); background: #000; }
+  #srch-res b { display: block; font: 600 14.5px/1.3 var(--ui); }
+  #srch-res small { display: block; color: var(--muted); font: 12px/1.4 var(--mono); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #srch-res .sel a { background: color-mix(in srgb, var(--accent) 16%, transparent); box-shadow: inset 2px 0 0 var(--accent-2); }
+  #srch-res mark { background: none; color: var(--accent-2); }
+  #srch-res .empty { padding: 22px; color: var(--muted); font: 13px var(--mono); }
+</style>
+
+<script is:inline>
+  (() => {
+    const dlg = document.getElementById("search"), input = document.getElementById("srch-input"), res = document.getElementById("srch-res")
+    const lang = dlg.dataset.lang
+    let data = null, items = [], sel = 0
+    const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c])
+    const hl = (s, qs) => { let h = esc(s); for (const q of qs) h = h.replace(new RegExp("(" + q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "ig"), "<mark>$1</mark>"); return h }
+    async function open(q = "") {
+      if (!dlg.open) dlg.showModal()
+      input.value = q; input.focus()
+      data ??= await (await fetch("/search.json")).json()
+      render()
+    }
+    function render() {
+      const qs = input.value.trim().toLowerCase().split(/\s+/).filter(Boolean)
+      items = data
+        .map((d) => {
+          const tl = d.t.toLowerCase(), xl = d.x.toLowerCase()
+          let s = d.l === lang ? 2 : 0
+          for (const q of qs) {
+            if (tl.includes(q)) s += tl.startsWith(q) ? 8 : 5
+            else if (xl.includes(q)) s += 1
+            else return null
+          }
+          return { d, s }
+        })
+        .filter(Boolean)
+        .sort((a, b) => b.s - a.s)
+        .slice(0, 30)
+        .map((x) => x.d)
+      sel = 0
+      res.innerHTML = items.length
+        ? items.map((d, i) => {
+            let snip = d.p
+            if (qs[0]) { const at = d.x.toLowerCase().indexOf(qs[0]); if (at >= 0) snip = (at > 40 ? "…" : "") + d.x.slice(Math.max(0, at - 40), at + 100) }
+            return `<li class="${i ? "" : "sel"}"><a href="${d.u}"><img src="${d.i}" alt="" loading="lazy"><span><b>${hl(d.t, qs)} <small style="display:inline">${d.l.toUpperCase()}</small></b><small>${hl(snip, qs)}</small></span></a></li>`
+          }).join("")
+        : `<li class="empty">${dlg.dataset.empty}</li>`
+    }
+    function move(k) {
+      const lis = res.querySelectorAll("li"); if (!items.length) return
+      lis[sel]?.classList.remove("sel"); sel = (sel + k + items.length) % items.length
+      lis[sel].classList.add("sel"); lis[sel].scrollIntoView({ block: "nearest" })
+    }
+    input.addEventListener("input", render)
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowDown") { e.preventDefault(); move(1) }
+      if (e.key === "ArrowUp") { e.preventDefault(); move(-1) }
+      if (e.key === "Enter" && items[sel]) location.href = items[sel].u
+    })
+    dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close() })
+    document.getElementById("open-search").onclick = () => open()
+    document.addEventListener("keydown", (e) => {
+      const typing = /INPUT|TEXTAREA/.test(document.activeElement?.tagName || "")
+      if ((e.key === "k" && (e.ctrlKey || e.metaKey)) || (e.key === "/" && !typing)) { e.preventDefault(); dlg.open ? dlg.close() : open() }
+    })
+    const q0 = new URLSearchParams(location.search).get("q")
+    if (q0 !== null) open(q0)
+  })()
+</script>

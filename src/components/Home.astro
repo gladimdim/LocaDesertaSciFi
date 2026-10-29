@@ -1,0 +1,337 @@
+---
+import Base from "../layouts/Base.astro"
+import Sigil from "./Sigil.astro"
+import { t, homeId, SITE, type Lang } from "../lib/site"
+import { allNotes, byId, books, imageOf, noteUrl, summary, displayTitle, wordCount, readingTime, thumb, translations, factionOf } from "../lib/notes"
+import { ART, GALLERY, FACTIONS, CODEX_LINKS, ERAS, START_BOOK, GAME, CODEX_ROOT, byKey } from "../lib/universe"
+
+interface Props { lang: Lang }
+const { lang } = Astro.props
+const s = t(lang)
+const notes = await allNotes()
+const home = await byId(homeId(lang))
+
+// annotations written next to links in index.md, e.g. "(третя книга, серія …)"
+const notesOnLinks = new Map<string, string>()
+for (const m of home?.body.matchAll(/\]\((\/[^)]+)\)\s*(?:\(([^)]+)\)|—\s*([^\n]+))/g) ?? []) {
+  try {
+    notesOnLinks.set(decodeURIComponent(m[1]).replace(/^\/|\/$/g, ""), (m[2] ?? m[3]).trim())
+  } catch {}
+}
+
+const factions = await Promise.all(
+  FACTIONS.map(async (f) => {
+    const n = (await byKey(f.key, lang))!
+    return { ...f, n, href: noteUrl(n.id), title: displayTitle(n), text: summary(n, 190), motto: f.motto[lang] }
+  }),
+)
+const codex = await Promise.all(
+  CODEX_LINKS.map(async (c) => {
+    const n = (await byKey(c.key, lang))!
+    return { ...c, href: noteUrl(n.id), title: displayTitle(n), text: summary(n, 130) }
+  }),
+)
+const shelf = (await books(lang)).map((b, i) => {
+  const words = wordCount(b)
+  const cover = imageOf(b, notes)
+  return {
+    id: b.id,
+    href: noteUrl(b.id),
+    title: displayTitle(b),
+    cover: /Мюрид/.test(b.id) ? ART.murids : cover,
+    words,
+    mins: readingTime(b),
+    note: notesOnLinks.get(b.id),
+    text: summary(b, 220),
+    lang: b.data.lang,
+  }
+})
+const eras = await Promise.all(
+  ERAS.map(async (e) => {
+    let href: string | undefined, title = e.title?.[lang], text = e.text?.[lang]
+    if (e.key) {
+      const n = await byKey(e.key, lang)
+      if (n) {
+        href = noteUrl(n.id)
+        title ??= displayTitle(n)
+        text ??= summary(n, 170)
+      }
+    }
+    if (e.book) {
+      const tr = await translations((await byId(e.book))!)
+      href = noteUrl(tr[lang] ?? (lang === "de" ? tr.en : undefined) ?? e.book)
+    }
+    return { year: e.year[lang], href, title, text }
+  }),
+)
+const game = await byId(GAME[lang])
+const codexCount = notes.filter((n) => (n.data.section === "Всесвіт" || n.data.section === "Universe") && n.data.lang === (lang === "de" ? "en" : lang)).length
+const bookWords = shelf.reduce((a, b) => a + b.words, 0)
+const fmt = (n: number) => n.toLocaleString(lang === "uk" ? "uk-UA" : lang === "de" ? "de-DE" : "en-US")
+const start = START_BOOK[lang]
+const tr = home ? await translations(home) : { uk: "index", en: "en" }
+const ld = [{ "@type": "CreativeWorkSeries", name: SITE.name, url: SITE.url, author: { "@type": "Person", name: SITE.author }, hasPart: shelf.map((b) => ({ "@type": "Book", name: b.title, url: new URL(b.href, SITE.url).href, inLanguage: b.lang })) }]
+---
+<Base title={SITE.name} lang={lang} translations={tr} jsonLd={ld} image={`/og/${lang === "uk" ? "index" : lang}.jpg`}>
+  <section class="hero">
+    <picture class="hero-art">
+      <source media="(max-width: 700px)" srcset={thumb(ART.hero, 1280)} />
+      <img src={thumb(ART.hero, 1280)} alt="" fetchpriority="high" />
+    </picture>
+    <div class="scan" aria-hidden="true"></div>
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="label gold">{s.heroKicker}</p>
+        <h1 class="display">{s.heroTitle[0]}<span>{s.heroTitle[1]}</span></h1>
+        <p class="lead">{s.heroLead}</p>
+        <div class="ctas">
+          <a class="cta" href={noteUrl(start)}>{s.startReading} <span aria-hidden="true">→</span></a>
+          <a class="cta alt" href={noteUrl(CODEX_ROOT[lang])}>{s.openCodex}</a>
+        </div>
+      </div>
+      <div class="hud readout" aria-label="Status">
+        <div class="hud-title">Bridge · status <span class="r">LD-17</span></div>
+        <dl>
+          <div><dt>{s.codex}</dt><dd>{codexCount}<small>{s.entries}</small></dd></div>
+          <div><dt>{s.books}</dt><dd>{shelf.length}<small>{fmt(bookWords)} {s.words}</small></dd></div>
+          <div><dt>{s.factions}</dt><dd>3<small>{lang === "uk" ? "ФГ · КР · ІС" : "HF · CR · ES"}</small></dd></div>
+          <div><dt>Era</dt><dd>~495<small>{lang === "uk" ? "ЗЕ" : "SE"}</small></dd></div>
+        </dl>
+        <div class="sweep" aria-hidden="true"><i></i></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="factions">
+    <header class="sec-h reveal">
+      <p class="label">01 · {s.codex}</p>
+      <h2>{s.factions}</h2>
+      <p>{s.codexLead}</p>
+    </header>
+    <div class="factions">
+      {factions.map((f, i) => (
+        <a class="faction reveal" href={f.href} data-faction={f.faction} style={`transition-delay:${i * 90}ms`}>
+          <div class="f-art">{f.art ? <img src={thumb(f.art, 1280)} alt="" loading="lazy" /> : <Sigil kind={f.faction} />}</div>
+          <div class="f-body">
+            <p class="label">{f.motto}</p>
+            <h3>{f.title}</h3>
+            <p>{f.text}</p>
+            <span class="more mono">{s.open} →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+    <div class="codex-row">
+      {codex.map((c) => (
+        <a class="hud mini reveal" href={c.href} data-faction={c.faction !== "deck" ? c.faction : undefined}>
+          <img src={thumb(c.art)} alt="" loading="lazy" />
+          <div><h3>{c.title}</h3><p>{c.text}</p></div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap sec" id="books">
+    <header class="sec-h reveal">
+      <p class="label">02 · {s.books}</p>
+      <h2>{s.books}</h2>
+      <p>{s.booksLead}</p>
+    </header>
+    <div class="shelf">
+      {shelf.map((b, i) => (
+        <article class="book reveal" style={`transition-delay:${i * 80}ms`} data-book={b.id}>
+          <a class="cover" href={b.href} aria-label={b.title}>
+            {b.cover && <img src={thumb(b.cover, 480)} alt="" loading="lazy" />}
+            <span class="spine" aria-hidden="true"></span>
+          </a>
+          <div class="b-body">
+            <p class="label gold">{b.lang !== lang ? `${b.lang.toUpperCase()} · ` : ""}{b.note ?? `${s.read}`}</p>
+            <h3><a href={b.href}>{b.title}</a></h3>
+            <p class="b-text">{b.text}</p>
+            <p class="b-meta mono">{fmt(b.words)} {s.words} · ~{b.mins} {s.minRead}</p>
+            <a class="cta alt small" href={b.href} data-cont={s.continueReading}>{s.read} →</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap sec" id="timeline">
+    <header class="sec-h reveal">
+      <p class="label">03 · {s.timeline}</p>
+      <h2>{s.timeline}</h2>
+      <p>{s.timelineLead}</p>
+    </header>
+    <ol class="tl">
+      {eras.map((e, i) => (
+        <li class="reveal" style={`transition-delay:${i * 60}ms`}>
+          <span class="yr mono">{e.year}</span>
+          <span class="dot" aria-hidden="true"></span>
+          <div class="ev">
+            <h3>{e.href ? <a href={e.href}>{e.title}</a> : e.title}</h3>
+            <p>{e.text}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+    {lang === "uk" && <p class="tl-more reveal"><a class="cta alt small" href={noteUrl("Всесвіт/Історія/Хронологія")}>{s.fullTimeline} →</a></p>}
+  </section>
+
+  {game && (
+    <section class="wrap sec" id="games">
+      <a class="hud game reveal" href={noteUrl(game.id)}>
+        <div class="hud-title">04 · {s.games} <span class="r">RTS · colony builder</span></div>
+        <div class="g-in">
+          <img src={thumb(ART.game, 1280)} alt="" loading="lazy" />
+          <div>
+            <h2>{displayTitle(game)}</h2>
+            <p>{summary(game, 260)}</p>
+            <span class="cta small">{s.open} →</span>
+          </div>
+        </div>
+      </a>
+    </section>
+  )}
+
+  <section class="sec archive" aria-label="Archive">
+    <div class="wrap"><p class="label">05 · Archive</p></div>
+    <div class="strip zoomable">
+      {[...GALLERY, ...GALLERY].map((g, i) => <img src={thumb(g)} data-full={g} alt="" loading="lazy" aria-hidden={i >= GALLERY.length ? "true" : undefined} />)}
+    </div>
+  </section>
+</Base>
+
+<script is:inline>
+  // "continue reading" on books the visitor has started
+  document.querySelectorAll("[data-book]").forEach((el) => {
+    try {
+      const st = JSON.parse(localStorage.getItem("ld:read:" + el.dataset.book) || "null")
+      if (st && st.p > 0.01) {
+        const a = el.querySelector("[data-cont]")
+        a.textContent = a.dataset.cont + " · " + Math.round(st.p * 100) + "% →"
+        a.classList.remove("alt")
+      }
+    } catch {}
+  })
+  // archive strip: open the full-size art
+  document.querySelectorAll(".strip img").forEach((img) => img.addEventListener("click", () => {
+    const lb = document.getElementById("lightbox"); lb.querySelector("img").src = img.dataset.full; lb.querySelector("p").textContent = ""; lb.showModal()
+  }))
+</script>
+
+<style>
+  .hero { position: relative; min-height: min(92vh, 900px); display: flex; align-items: flex-end; overflow: hidden; border-bottom: 1px solid var(--line); }
+  .hero-art { position: absolute; inset: 0; }
+  .hero-art img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 40%; animation: drift 40s ease-in-out infinite alternate; }
+  .hero::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(3, 5, 11, 0.94) 0%, rgba(3, 5, 11, 0.7) 38%, rgba(3, 5, 11, 0.05) 70%), linear-gradient(0deg, var(--void) 0%, transparent 35%); }
+  .scan { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.025) 0 1px, transparent 1px 3px); mix-blend-mode: overlay; }
+  @keyframes drift { from { transform: scale(1.04) translate(0, 0); } to { transform: scale(1.12) translate(-2%, -1%); } }
+  .hero-in { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 330px; gap: 40px; align-items: end; padding: 120px 0 70px; }
+  .hero h1 { font-size: clamp(44px, 7.4vw, 108px); line-height: 0.95; font-weight: 800; letter-spacing: -0.03em; margin: 18px 0 24px; text-transform: uppercase; }
+  .hero h1 span { display: block; font-size: 0.42em; letter-spacing: 0.02em; margin-top: 0.35em; color: transparent; -webkit-text-stroke: 1px var(--accent-2); text-shadow: 0 0 30px color-mix(in srgb, var(--accent-2) 40%, transparent); }
+  .lead { max-width: 560px; font: 400 19px/1.65 var(--read); color: var(--dim); margin: 0 0 34px; }
+  .ctas { display: flex; flex-wrap: wrap; gap: 14px; }
+  .readout { background-color: rgba(5, 10, 22, 0.72); overflow: hidden; }
+  .readout dl { margin: 0; display: grid; grid-template-columns: 1fr 1fr; }
+  .readout dl div { padding: 16px 18px; border-top: 1px solid var(--line); }
+  .readout dl div:nth-child(odd) { border-right: 1px solid var(--line); }
+  .readout dl div:nth-child(-n + 2) { border-top: 0; }
+  .readout dt { font: 600 10px var(--mono); letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+  .readout dd { margin: 6px 0 0; font: 700 28px/1 var(--display); color: var(--text); }
+  .readout dd small { display: block; font: 500 10.5px/1.3 var(--mono); color: var(--accent); margin-top: 6px; letter-spacing: 0.04em; }
+  .sweep { height: 3px; background: var(--line); overflow: hidden; }
+  .sweep i { display: block; width: 30%; height: 100%; background: linear-gradient(90deg, transparent, var(--accent), transparent); animation: sweep 3.2s linear infinite; }
+  @keyframes sweep { from { transform: translateX(-100%); } to { transform: translateX(340%); } }
+
+  .sec { padding-top: 110px; }
+  .sec-h { max-width: 720px; margin-bottom: 38px; }
+  .sec-h h2 { font-size: clamp(30px, 4vw, 48px); margin: 12px 0 12px; text-transform: uppercase; }
+  .sec-h p:last-child { color: var(--dim); font: 400 17px/1.6 var(--read); margin: 0; }
+
+  .factions { display: grid; grid-template-columns: 1.35fr 1fr 1fr; gap: 18px; }
+  .faction { position: relative; display: flex; flex-direction: column; color: var(--text); background: var(--panel-solid); border: 1px solid var(--line); border-top: 2px solid var(--accent); border-radius: var(--radius); overflow: hidden; transition: transform .25s, box-shadow .25s, border-color .25s; }
+  .faction:hover { color: var(--text); transform: translateY(-4px); box-shadow: var(--glow); border-color: var(--accent); }
+  .f-art { aspect-ratio: 16 / 10; overflow: hidden; background: #000; position: relative; }
+  .f-art img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s; }
+  .faction:hover .f-art img { transform: scale(1.05); }
+  .f-art::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 50%, var(--panel-solid)); }
+  .f-body { padding: 4px 24px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .f-body h3 { font-size: 22px; text-transform: uppercase; }
+  .f-body p:not(.label) { margin: 0; color: var(--dim); font: 15.5px/1.6 var(--read); flex: 1; }
+  .more { color: var(--accent); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; }
+  .codex-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 18px; }
+  .mini { display: grid; grid-template-columns: 110px 1fr; gap: 16px; padding: 14px; color: var(--text); align-items: center; transition: box-shadow .2s; }
+  .mini:hover { color: var(--text); box-shadow: var(--glow); }
+  .mini img { width: 110px; height: 80px; object-fit: cover; border-radius: 2px; }
+  .mini h3 { font-size: 14px; text-transform: uppercase; margin-bottom: 6px; }
+  .mini p { margin: 0; color: var(--dim); font-size: 13px; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  .shelf { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .book { display: grid; grid-template-columns: 170px 1fr; gap: 24px; padding: 22px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }
+  .cover { position: relative; aspect-ratio: 2 / 3; display: block; border-radius: 2px 6px 6px 2px; overflow: hidden; background: linear-gradient(160deg, #13203d, #05080f); box-shadow: 0 24px 50px -16px #000, 0 0 0 1px var(--line-2); transition: transform .3s, box-shadow .3s; transform: perspective(800px) rotateY(-8deg); }
+  .cover:hover { transform: perspective(800px) rotateY(0) translateY(-3px); box-shadow: 0 30px 60px -16px #000, 0 0 30px -6px var(--accent-2); }
+  .cover img { width: 100%; height: 100%; object-fit: cover; }
+  .spine { position: absolute; inset: 0 auto 0 0; width: 10px; background: linear-gradient(90deg, rgba(0, 0, 0, 0.55), rgba(255, 255, 255, 0.12), transparent); }
+  .b-body { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .b-body h3 { font-size: 21px; text-transform: uppercase; }
+  .b-body h3 a { color: var(--text); }
+  .b-text { margin: 0; color: var(--dim); font: 15px/1.6 var(--read); display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .b-meta { margin: 0; color: var(--muted); font-size: 12px; }
+  .cta.small { padding: 11px 16px; font-size: 11px; align-self: flex-start; margin-top: auto; }
+
+  .tl { list-style: none; margin: 0; padding: 0; position: relative; }
+  .tl::before { content: ""; position: absolute; left: 150px; top: 8px; bottom: 8px; width: 1px; background: linear-gradient(var(--accent), var(--accent-2)); opacity: 0.5; }
+  .tl li { display: grid; grid-template-columns: 130px 41px 1fr; align-items: start; padding: 14px 0; }
+  .yr { text-align: right; color: var(--accent-2); font-size: 13px; padding-top: 3px; }
+  .dot { justify-self: center; width: 11px; height: 11px; margin-top: 6px; border: 2px solid var(--accent); background: var(--void); transform: rotate(45deg); box-shadow: 0 0 12px var(--accent); }
+  .ev { max-width: 720px; }
+  .ev h3 { font-size: 17px; text-transform: uppercase; margin-bottom: 6px; }
+  .ev h3 a { color: var(--text); }
+  .ev h3 a:hover { color: var(--accent-2); }
+  .ev p { margin: 0; color: var(--dim); font: 15.5px/1.6 var(--read); }
+  .tl-more { margin: 24px 0 0 171px; }
+
+  .game { display: block; color: var(--text); background-color: var(--panel); transition: box-shadow .3s; }
+  .game:hover { color: var(--text); box-shadow: var(--glow); }
+  .g-in { display: grid; grid-template-columns: 1.3fr 1fr; gap: 34px; padding: 26px; align-items: center; }
+  .g-in img { width: 100%; border-radius: 3px; border: 1px solid var(--line); }
+  .g-in h2 { font-size: clamp(24px, 3vw, 36px); text-transform: uppercase; margin-bottom: 14px; }
+  .g-in p { color: var(--dim); font: 16px/1.65 var(--read); margin: 0 0 22px; }
+
+  .archive { overflow: hidden; }
+  .strip { display: flex; gap: 14px; margin-top: 18px; width: max-content; animation: scroll 80s linear infinite; }
+  .strip:hover { animation-play-state: paused; }
+  .strip img { height: 210px; width: auto; aspect-ratio: 3 / 2; object-fit: cover; border: 1px solid var(--line); border-radius: 3px; cursor: zoom-in; filter: saturate(0.85); transition: filter .3s, transform .3s; }
+  .strip img:hover { filter: saturate(1.15); transform: translateY(-4px); }
+  @keyframes scroll { to { transform: translateX(-50%); } }
+
+  @media (max-width: 1080px) {
+    .hero-in { grid-template-columns: 1fr; }
+    .readout { max-width: 460px; }
+    .factions { grid-template-columns: 1fr 1fr; }
+    .factions .faction:first-child { grid-column: 1 / -1; }
+    .codex-row, .shelf { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .hero { min-height: auto; }
+    .hero-in { padding-bottom: 40px; }
+    .hero::before { background: linear-gradient(0deg, var(--void) 40%, rgba(3, 5, 11, 0.6) 62%, rgba(3, 5, 11, 0.05) 85%); }
+    .hero-art { bottom: auto; height: 520px; }
+    .hero-art img { object-position: 38% 30%; }
+    .hero-in { padding-top: 300px; }
+    .lead { font-size: 17px; }
+    .factions { grid-template-columns: 1fr; }
+    .book { grid-template-columns: 110px 1fr; gap: 16px; padding: 16px; }
+    .b-text { -webkit-line-clamp: 3; }
+    .tl::before { left: 6px; }
+    .tl li { grid-template-columns: 13px 1fr; gap: 14px; }
+    .tl .yr { grid-column: 2; text-align: left; order: -1; padding: 0; }
+    .tl .dot { grid-row: 1 / span 2; grid-column: 1; margin-top: 4px; }
+    .tl-more { margin-left: 27px; }
+    .g-in { grid-template-columns: 1fr; padding: 16px; }
+    .mini { grid-template-columns: 90px 1fr; }
+    .mini img { width: 90px; height: 66px; }
+    .strip img { height: 150px; }
+    .sec { padding-top: 80px; }
+  }
+</style>

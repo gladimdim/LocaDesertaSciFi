@@ -1,0 +1,20 @@
+---
+import Base from "../../layouts/Base.astro"
+import { tagIndex } from "../../lib/notes"
+const tags = await tagIndex()
+---
+<Base title="Tags" lang="en" active="tags" description="Tags of the Loca Deserta Sci-Fi universe codex and books.">
+  <section class="wrap tg">
+    <p class="label">Index</p>
+    <h1 class="display">Tags</h1>
+    <div class="cloud">{tags.map(([k, v]) => <a href={`/tags/${encodeURIComponent(k)}/`}>#{v.label}<sup>{v.notes.length}</sup></a>)}</div>
+  </section>
+</Base>
+<style>
+  .tg { padding-top: 90px; }
+  h1 { font-size: clamp(32px, 5vw, 60px); text-transform: uppercase; margin: 12px 0 34px; }
+  .cloud { display: flex; flex-wrap: wrap; gap: 10px; }
+  .cloud a { font: 500 14px var(--mono); padding: 9px 14px; border: 1px solid var(--line-2); border-radius: 3px; color: var(--accent-2); }
+  .cloud a:hover { border-color: var(--accent); box-shadow: var(--glow); }
+  sup { color: var(--muted); margin-left: 4px; }
+</style>
