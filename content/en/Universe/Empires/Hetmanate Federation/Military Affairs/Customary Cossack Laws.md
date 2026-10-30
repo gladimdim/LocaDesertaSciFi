@@ -90,6 +90,8 @@ The secrecy of the campaign, the council and the kurin. The Word shields a Cossa
 
 The youngest and most practical of the Words. Constant exposure in open space causes Cossacks in combat specialties — the [[Terminator|terminators]] above all — to lose reproductive function over the years despite anti-radiation drugs. Custom therefore obliges a man to start a family as early as possible, before the heaviest service, and the Sich supports this with an allowance to the family.
 
+![[../../../../../Images/Universe/Generated/cossack-teaching-words.png]]
+
 # How the Words Are Taught
 
 The Twelve Words are memorised among the plastuny from rank zero — earlier than a boy is taught to hold a weapon. Over the five years of training a plastun must be able to give any Word by its number, any number by its Word, and cite a model from the chronicles for each.
@@ -97,8 +99,6 @@ The Twelve Words are memorised among the plastuny from rank zero — earlier tha
 Beyond that the Words are passed on by the [[Atabai|atabai]] — not by recitation but by example: for five years the jura watches his mentor keep them, and it is this, not the examination, that counts as the real teaching.
 
 Before every campaign the sotnyk or kurinnyi reads the whole body aloud before the formation. This is called **laying down the Word**. A Cossack who stood in the ranks during the laying down of the Word can no longer plead ignorance of custom — and the council takes that moment as the start of his liability.
-
-![[../../../../../Images/Universe/Generated/cossack-teaching-words.png]]
 
 # Court and Punishment
 
@@ -126,6 +126,8 @@ In the year 118 [[../../../History/Stellar Era|SE]], a generation after the foun
 - whoever sealed an airlock and said nothing is nullified as one who abandoned a comrade.
 
 The interpretation pardoned no one: it shifted the weight of the Word from the act itself to the accounting for it. Formally, custom has not been softened once in a thousand years — and the Cossacks take pride in that.
+
+![[../../../../../Images/Universe/Generated/cossack-airlock-word.png]]
 
 # Contradictions
 

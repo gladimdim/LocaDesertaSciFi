@@ -1,0 +1,79 @@
+{
+  "mode": "built-in image_gen",
+  "density": "One additional illustration in each of five long articles, approximately 450–480 Ukrainian words per image overall. Existing images repositioned to avoid clustering.",
+  "images": [
+    {
+      "slug": "kharakternyk-owl-operative",
+      "path": "content/Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Характерники.md",
+      "before": "## Саламандри",
+      "prompt": "Use case: illustration-story. Landscape 16:9 article illustration, ultra-realistic cinematic photography for Loca Deserta. Believable materials and construction, restrained lighting, physically convincing detail. No text, labels, watermarks or existing franchise designs. Unspecified visual designs are artistic interpretations. A senior Owl-rank Kharakternyk operative stands in a quiet secure corridor of a futuristic monastery base. Medium-wide three-quarter portrait of one human in functional advanced combat armor. The FULLY ENCLOSED combat helmet has the unmistakable engineered form of an owl's face: broad facial disk geometry, two very large dark black optical lenses resembling wide open owl eyes, compact beak-like central armored ridge. This is a human wearing a manufactured helmet, NOT an anthropomorphic owl, animal head, feathered creature or magic mask. Subtle black ceramic and worn metal armor, sealed joints, precise sensors, background archivist workstations out of focus. No glowing eyes, supernatural effects or wings. Quiet authority and intelligence, no weapon firing. Hair concealed by helmet.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-fdd26fd2-581d-43d9-b33e-480fa68548cf.png",
+      "asset": "content/Images/Universe/Generated/kharakternyk-owl-operative.png"
+    },
+    {
+      "slug": "helium-3-orbital-refinery",
+      "path": "content/Всесвіт/Технології/Зоряна Справа/Реактор Горизонт-М.md",
+      "prompt": "Use case: illustration-story. Landscape 16:9 article illustration, ultra-realistic cinematic photography for Loca Deserta. Believable materials and construction, restrained lighting, physically convincing detail. No text, labels, watermarks or existing franchise designs. Unspecified visual designs are artistic interpretations. An enormous specialized orbital helium-3 processing refinery above a gas giant, supplying fuel for the Horizont-M starship fusion reactors. Wide orbital establishing view: modular industrial refinery with insulated cylindrical processing vessels, docking manifolds, trussed transfer conduits, radiator fins, service tugs and compact tankers. Gas giant's banded atmosphere fills lower background under hard sunlight. The station is IN ORBIT and not touching the clouds; small transfer craft imply atmospheric harvesting without impossible hoses stretching to the planet. Detailed metal, thermal blankets, practical engineering, immense scale. No visible flames, smoke, steam cooling towers or glowing liquid in open space. No people visible.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-c25b7971-6b9c-45d3-9b64-22679417fff5.png",
+      "asset": "content/Images/Universe/Generated/helium-3-orbital-refinery.png"
+    },
+    {
+      "slug": "cossack-airlock-word",
+      "key": "universe/empires/hetmanate-federation/military-affairs/customary-laws",
+      "before": {
+        "uk": "# Суперечності",
+        "en": "# Contradictions"
+      },
+      "prompt": "Use case: illustration-story. Landscape 16:9 article illustration, ultra-realistic cinematic photography for Loca Deserta. Believable materials and construction, restrained lighting, physically convincing detail. No text, labels, watermarks or existing franchise designs. Unspecified visual designs are artistic interpretations. A tense quiet science-fiction scene illustrating the Cossack Airlock Word and the moral burden of sealing a damaged starship compartment. View from the safe side of a reinforced pressure bulkhead: a senior Cossack in a fully SEALED helmet and practical space armor has one gloved hand resting on a mechanical emergency closure control, his lowered posture conveying grief and responsibility. The heavy split bulkhead is almost shut. Through its narrow reinforced viewport only a damaged empty passage with bent panels and drifting debris is visible. Behind the officer on the safe side, two helmeted crew members wait in silence. Cold practical emergency lights, realistic brushed steel, scratches and worn armor, intimate eye-level composition. No readable control text, dead bodies, injuries, unhelmeted people exposed to vacuum, giant fireballs or melodrama. The scene suggests a terrible decision without depicting deaths; all heads are enclosed in helmets.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-f0c9d92a-caae-4cf2-bb4c-8a4122a03ee6.png",
+      "asset": "content/Images/Universe/Generated/cossack-airlock-word.png"
+    },
+    {
+      "slug": "muryid-industry-exhausted",
+      "key": "universe/empires/hetmanate-federation/events/muryid-uprising",
+      "before": {
+        "uk": "# Наслідки",
+        "en": "# Consequences"
+      },
+      "prompt": "Use case: illustration-story. Landscape 16:9 article illustration, ultra-realistic cinematic photography for Loca Deserta. Believable materials and construction, restrained lighting, physically convincing detail. No text, labels, watermarks or existing franchise designs. Unspecified visual designs are artistic interpretations. The exhausted industrial capacity of the Muryid rebels after two years of war. Ultra-realistic wide interior of a vast futuristic arms-production factory, conveyors halted, unfinished spacecraft armor panels and empty component racks, dark assembly bays, a few damaged roof sections admitting pale dusty daylight. One small maintenance worklight among acres of idle machinery. Residual old scorch marks and neglected equipment convey prolonged shortages, not total destruction. No active molten-metal pouring, no functioning production line; this facility lacks material and energy for its former output. No identifiable ethnic characters, symbols, slogans, combat, corpses or prisoners. Somber industrial silence, photorealistic scale and textures.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-50388d0d-b76e-48ae-8600-64f4be74eec8.png",
+      "asset": "content/Images/Universe/Generated/muryid-industry-exhausted.png"
+    },
+    {
+      "slug": "cossack-baidak-shipbuilding",
+      "path": "content/Всесвіт/Імперії/Федерація Гетьманату/Історія/Історія.md",
+      "refs": true,
+      "prompt": "Use case: illustration-story. Landscape 16:9 article illustration, ultra-realistic cinematic photography for Loca Deserta. Believable materials and construction, restrained lighting, physically convincing detail. No text, labels, watermarks or existing franchise designs. Unspecified visual designs are artistic interpretations. HISTORICAL PRE-STELLAR scene in the alternate history of Loca Deserta: Cossacks rapidly building a fleet of wooden baidak boats for Bohdan Khmelnytskyi's planned sea expedition to southern Crimea. Wide natural documentary view of a busy riverside timber boatyard in the early-modern Ukrainian steppe. Rows of broad wooden hulls at various stages of construction on timber supports, hewn planks, adzes, axes, mallets, rope coils, teams of adult boatbuilders fitting ribs and launching one completed vessel. Reed-lined river and low steppe hills, golden late-afternoon sunlight, linen shirts, wool trousers, worn leather belts and historically plausible hand tools. Visible Cossacks have mostly clean-shaven scalps with a SINGLE isolated loose chub rooted in a small crown patch, draped forward or sideways, and natural mustaches; gray side locks on elders. Use attached references only for authentic Cossack haircut geometry. No mohawks, tied ponytails, braids or buns. No spacecraft, electricity, modern cranes, engines, futuristic armor, modern flags or battle. Emphasize organized human craftsmanship and fleet scale, not any identifiable modern ship model.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-8c3164ec-e478-415a-befc-bcdb39c77f65.png",
+      "asset": "content/Images/Universe/Generated/cossack-baidak-shipbuilding.png"
+    }
+  ],
+  "reposition": [
+    {
+      "path": "content/Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Характерники.md",
+      "slug": "kharakternyk-monastery",
+      "before": "## Перетворення"
+    },
+    {
+      "path": "content/Всесвіт/Технології/Зоряна Справа/Реактор Горизонт-М.md",
+      "slug": "horizont-m-heat-management",
+      "before": "## Конструктивні особливості"
+    },
+    {
+      "key": "universe/empires/hetmanate-federation/military-affairs/customary-laws",
+      "slug": "cossack-teaching-words",
+      "before": {
+        "uk": "# Як вчать Слова",
+        "en": "# How the Words Are Taught"
+      }
+    },
+    {
+      "key": "universe/empires/hetmanate-federation/events/muryid-uprising",
+      "slug": "muryid-orbital-campaign",
+      "before": {
+        "uk": "## Розповсюдження повстання",
+        "en": "## Spread of the Rebellion"
+      }
+    }
+  ]
+}
