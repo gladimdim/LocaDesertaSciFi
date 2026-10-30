@@ -1,0 +1,47 @@
+{
+  "mode": "built-in image_gen",
+  "density": "One image per selected article; chronology reuses existing artwork between intact timeline tables.",
+  "images": [
+    {
+      "slug": "hetmanate-administration",
+      "path": "content/Всесвіт/Імперії/Федерація Гетьманату/Адміністративний устрій.md",
+      "before": "## Курінь",
+      "refs": true,
+      "prompt": "Use case: illustration-story. New landscape 16:9 illustration for an article in the Loca Deserta science-fiction universe. Ultra-realistic cinematic photography, believable engineering, lifelike skin and cloth, physically grounded natural lighting, restrained color grade. No readable text, captions, invented rank badges, watermark or commercial logos. Unspecified architecture and clothing are artistic interpretation. Use the attached drawings ONLY as haircut geometry references, not rendering style. Every Hetmanate Cossack has the bottom-row Cossack/characterist haircut: almost entirely CLEAN SHAVEN scalp, one SMALL isolated top-front root patch with a soft loose lock swept forward and sideways across a temple. Gray longer side lock for elders, shorter brown lock for juniors. All backs of heads clean shaven. No front-to-nape ridge, mohawk, ponytail, braid, bun or hair ties. Civilian commoners may have simple bowl cuts and do NOT have the Cossack chub. An elected Hetmanate planetary administrator and two Cossack civic officers in a restrained futuristic public administration room overlooking a populated colony. A large physical table supports a subtle three-dimensional stellar-system map: one central star, several planets, with a closer inset globe showing continental administrative regions. The officers discuss how their planetary kurin fits into a system-wide palanka, pointing to one planet. Human-scale civic workplace, documents on plain tablets, daylight through tall windows, no throne, no lavish palace, no battle command center. Three adults of differing ages, older mustached administrator has the specified gray loose side-falling chub. Compose distinctly from a military council or classroom: over-table oblique wide view with planetary model central and city in background.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-68f692ea-4ee3-403b-a046-994613c8b128.png",
+      "asset": "content/Images/Universe/Generated/hetmanate-administration.png"
+    },
+    {
+      "slug": "cossack-service-ranks",
+      "path": "content/Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Ранги.md",
+      "before": "# Ранг 20-25",
+      "refs": true,
+      "prompt": "Use case: illustration-story. New landscape 16:9 illustration for an article in the Loca Deserta science-fiction universe. Ultra-realistic cinematic photography, believable engineering, lifelike skin and cloth, physically grounded natural lighting, restrained color grade. No readable text, captions, invented rank badges, watermark or commercial logos. Unspecified architecture and clothing are artistic interpretation. Use the attached drawings ONLY as haircut geometry references, not rendering style. Every Hetmanate Cossack has the bottom-row Cossack/characterist haircut: almost entirely CLEAN SHAVEN scalp, one SMALL isolated top-front root patch with a soft loose lock swept forward and sideways across a temple. Gray longer side lock for elders, shorter brown lock for juniors. All backs of heads clean shaven. No front-to-nape ridge, mohawk, ponytail, braid, bun or hair ties. Civilian commoners may have simple bowl cuts and do NOT have the Cossack chub. A junior adult Cossack on active duty and a seasoned senior Cossack work together inspecting a colony outpost's landing logistics from an elevated covered walkway. Both are visibly adults, junior around 23 and senior around 55. Junior holds a rugged service tablet while senior calmly points toward arriving transport operations; experienced mentorship shown through posture, not invented badges or medals. Practical future service armor and utility uniforms, helmets carried at hip so the authentic isolated loose chubs are visible. Senior gray mustache and gray side-swept lock, younger shorter dark forelock. In the middle distance cargo shuttle, hangar and a few staff under an alien world's natural pale sky. Grounded daily service, no ceremony, no combat, no children.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-45ae7fbf-a36b-4c93-bf19-11b2034bb1b1.png",
+      "asset": "content/Images/Universe/Generated/cossack-service-ranks.png"
+    },
+    {
+      "slug": "hetmanate-social-estates",
+      "path": "content/Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Соціальні стани.md",
+      "before": "# [[Рабство|Раби]]",
+      "refs": true,
+      "prompt": "Use case: illustration-story. New landscape 16:9 illustration for an article in the Loca Deserta science-fiction universe. Ultra-realistic cinematic photography, believable engineering, lifelike skin and cloth, physically grounded natural lighting, restrained color grade. No readable text, captions, invented rank badges, watermark or commercial logos. Unspecified architecture and clothing are artistic interpretation. Use the attached drawings ONLY as haircut geometry references, not rendering style. Every Hetmanate Cossack has the bottom-row Cossack/characterist haircut: almost entirely CLEAN SHAVEN scalp, one SMALL isolated top-front root patch with a soft loose lock swept forward and sideways across a temple. Gray longer side lock for elders, shorter brown lock for juniors. All backs of heads clean shaven. No front-to-nape ridge, mohawk, ponytail, braid, bun or hair ties. Civilian commoners may have simple bowl cuts and do NOT have the Cossack chub. An ordinary morning in a prosperous Hetmanate planetary colony street, illustrating Cossacks and free civilian commoners sharing public life. Eye-level documentary scene: two adult Cossacks in practical futuristic service uniforms, shaved scalps with isolated loose side-falling chubs, passing an unarmed civilian tradesperson with a simple bowl haircut who is arranging useful produce and repair tools at a modest market stall. Other adult civilians in ordinary work clothes walk to their jobs; a retired older Cossack with a gray loose chub sits nearby. Distinguish roles with clothing and hair, not class labels or cartoon stereotypes. Advanced transport and habitable colony architecture in background, warm daylight, calm everyday atmosphere. No weapons on civilian commoners, no slaves in this composition, no readable shop signs. Focus on people's social roles, not a battle or formal assembly.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-90a8d6f2-7498-4418-ada0-c14a03a4a2a3.png",
+      "asset": "content/Images/Universe/Generated/hetmanate-social-estates.png"
+    },
+    {
+      "slug": "africa-aftermath",
+      "key": "universe/history/destruction-of-africa",
+      "prompt": "Use case: illustration-story. New landscape 16:9 illustration for an article in the Loca Deserta science-fiction universe. Ultra-realistic cinematic photography, believable engineering, lifelike skin and cloth, physically grounded natural lighting, restrained color grade. No readable text, captions, invented rank badges, watermark or commercial logos. Unspecified architecture and clothing are artistic interpretation. A somber wide ground-level vista of the aftermath of a catastrophic nuclear war in the alternate-history Africa of 1990 Old Era, BEFORE humanity's interstellar age. From a barren ridge look across a devastated inland industrial city and surrounding ash-covered plains. Abandoned late-20th-century concrete buildings, collapsed transmission pylons, scorched infrastructure fading into atmospheric dust, a dim sun filtered by gray-brown haze. Convey an immense lifeless exclusion zone through silence and scale, not graphic suffering. No people, bodies, mushroom-cloud spectacle, active blasts, futuristic spacecraft, space armor, flying aircraft, alien planets or supernatural green radiation glow. No real city landmarks or flags. Retain ultra-realistic photographic detail and documentary gravity.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-ee135e56-0d86-4df0-9124-310d3cc275f0.png",
+      "asset": "content/Images/Universe/Generated/africa-aftermath.png"
+    }
+  ],
+  "reuse": [
+    {
+      "path": "content/Всесвіт/Історія/Хронологія.md",
+      "before": "## До Зоряної Епохи",
+      "asset": "content/Images/Universe/Generated/first-warp-jump.png"
+    }
+  ]
+}
