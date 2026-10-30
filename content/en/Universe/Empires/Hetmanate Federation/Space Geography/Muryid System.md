@@ -14,3 +14,5 @@ The system is renowned for its [[../Miscellany/Muryid Steel|Muryid Steel]], whic
 ## Muryid Uprising
 
 In 485 [[../../../History/Stellar Era|Stellar Era]], the [[../Events/Muryid Uprising|Muryid Uprising]] took place in the Muryid System — an insurrection that nearly destabilized the entire Hetmanate. Due to the immense value and importance of [[../Miscellany/Muryid Steel|Muryid Steel]], the Hetmanate committed massive [[../Military Affairs/Haiduks|Haiduk]] forces to suppress the rebellion.
+
+![[../../../../../Images/Universe/Generated/muryid-system.png]]

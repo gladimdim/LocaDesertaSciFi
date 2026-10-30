@@ -36,3 +36,5 @@ The Colonization Council conducts the auction under these rules:
 6. The band must search for settlers for the new planet.
 7. The planet must pay a 3% tax to the Sich treasury after twenty years from the start of settlement.
 8. For the first twenty years the planet pays no taxes, but must provide recruits for the Hetmanate army.
+
+![[../../../../Images/Universe/Generated/hetmanate-colonization.png]]

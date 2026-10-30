@@ -21,3 +21,5 @@ Plasma weapons consume significantly more energy than conventional electromagnet
 In the Hetmanate's troops, plasma guns are used primarily by **[[../../Empires/Hetmanate Federation/Military Affairs/Serdiuks|Serdiuks]]**, **[[../../Empires/Hetmanate Federation/Military Affairs/Terminator|Terminators]]**, and heavy infantry units. They are designed for engaging armored vehicles, combat machines, robots, and infantry in exoskeletons. Plasma is inferior to Melta in the ability to instantly burn through super-thick armor, but surpasses it in range, versatility, and rate of fire, making it one of the primary weapon systems of the Hetmanate.
 
 On military spaceships, colossal [[../../Empires/Hetmanate Federation/Star Affairs/Ships/Ship Weapons/Energiya Plasma Cannon|Energiya Plasma Cannon]] systems are installed, which were developed for engaging and destroying enormous military ships at distances of thousands of kilometers.
+
+![[../../../../Images/Universe/Generated/plasma-weapons.png]]

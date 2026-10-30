@@ -25,3 +25,5 @@ In the military doctrine of the [[../../Empires/Hetmanate Federation/Hetmanate F
 - **[[Laser Weapons]]** — universal weapon against manpower and light cover.
 - **[[Plasma]]** — engagement of heavy infantry, robots, and light armored vehicles.
 - **[[Melta]]** — destruction of tanks, fortifications, and the toughest armored targets.
+
+![[../../../../Images/Universe/Generated/laser-weapons.png]]

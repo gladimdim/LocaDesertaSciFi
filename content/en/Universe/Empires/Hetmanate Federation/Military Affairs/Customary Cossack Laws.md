@@ -58,6 +58,8 @@ It is this Word, and not military expediency, that explains why [[Serdiuks|serdi
 
 Every office in the Hetmanate is elective for a term of one year, from desiatnyk to Hetman. The Word grants a voice to every registered Cossack regardless of rank, and at the same time forbids re-litigation: once the council has decided, carry it out to the end of the term and bring your disagreement to the next council, not back to the kurin.
 
+![[../../../../../Images/Universe/Generated/cossack-council.png]]
+
 ## VII. The Word on Merit
 > A father's glory does not serve his son.
 
@@ -95,6 +97,8 @@ The Twelve Words are memorised among the plastuny from rank zero — earlier tha
 Beyond that the Words are passed on by the [[Atabai|atabai]] — not by recitation but by example: for five years the jura watches his mentor keep them, and it is this, not the examination, that counts as the real teaching.
 
 Before every campaign the sotnyk or kurinnyi reads the whole body aloud before the formation. This is called **laying down the Word**. A Cossack who stood in the ranks during the laying down of the Word can no longer plead ignorance of custom — and the council takes that moment as the start of his liability.
+
+![[../../../../../Images/Universe/Generated/cossack-teaching-words.png]]
 
 # Court and Punishment
 

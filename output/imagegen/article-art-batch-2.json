@@ -1,0 +1,86 @@
+{
+  "mode": "built-in image_gen",
+  "density": "About one illustration per 500 words; two for each selected long article, one for each short technical article.",
+  "images": [
+    {
+      "slug": "horizont-m-reactor",
+      "key": "universe/technologies/star-affairs/horizont-m-reactor",
+      "before": {
+        "uk": "## Що стоїть за цифрами"
+      },
+      "prompt": "Use case: illustration-story. Landscape 16:9 editorial artwork for Loca Deserta sci-fi encyclopedia. Ultra-realistic cinematic science-fiction photography, believable practical engineering, fine material detail, natural light and physically grounded shadows, restrained colors. No captions, readable text, watermark, logos or existing franchise designs. Unspecified designs are artistic interpretations. An enormous heavy toroidal fusion reactor undergoing maintenance inside a cavernous starship engineering bay. Show superconducting magnet housings wrapped around a complex toroidal vacuum chamber, massive shielding, ceramic power conduits and tiered access catwalks. Tiny suited engineers for monumental scale: bare reactor mass 85000 tonnes. Reactor is shut down with a maintenance sector open, showing sophisticated solid machinery, NOT an exposed glowing ball of plasma. Low industrial work lights, steel and ceramic surfaces. No turbine hall.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-dadad2ad-4f66-4c06-ab00-f3535817799d.png",
+      "asset": "content/Images/Universe/Generated/horizont-m-reactor.png"
+    },
+    {
+      "slug": "horizont-m-heat-management",
+      "key": "universe/technologies/star-affairs/horizont-m-reactor",
+      "before": {
+        "uk": "## Історія створення"
+      },
+      "prompt": "Use case: illustration-story. Landscape 16:9 editorial artwork for Loca Deserta sci-fi encyclopedia. Ultra-realistic cinematic science-fiction photography, believable practical engineering, fine material detail, natural light and physically grounded shadows, restrained colors. No captions, readable text, watermark, logos or existing franchise designs. Unspecified designs are artistic interpretations. Close exterior view along the flank of a colossal 42-kilometer DARYA-class starship, focusing on its immense deployed heat radiator banks and armored liquid-metal coolant trunks connected to hull-mounted power modules. Radiator panels recede into immense distance, subtle dark-red thermal glow, hard starlight on hull, deep black vacuum and a few tiny maintenance craft giving scale. The reactor system rejects waste heat via radiators; no cooling towers, steam, flame or smoke in vacuum. Crop the ship so its unspecified full silhouette is not central.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-062246a2-cd3b-4d84-b1b5-bc555c558c5a.png",
+      "asset": "content/Images/Universe/Generated/horizont-m-heat-management.png"
+    },
+    {
+      "slug": "muryid-citadel",
+      "key": "universe/empires/hetmanate-federation/events/muryid-uprising",
+      "before": {
+        "uk": "# Перебіг",
+        "en": "# Course of Events"
+      },
+      "prompt": "Use case: illustration-story. Landscape 16:9 editorial artwork for Loca Deserta sci-fi encyclopedia. Ultra-realistic cinematic science-fiction photography, believable practical engineering, fine material detail, natural light and physically grounded shadows, restrained colors. No captions, readable text, watermark, logos or existing franchise designs. Unspecified designs are artistic interpretations. The science-fiction citadel in the future city Baghdad on the planet Baghdad in the Muryid System, at the beginning of its siege in year 485 Stellar Era. Wide establishing view from fortified walls across a dense metal-rich industrial capital to distant spaceport landing fields. Small groups of Hetmanate Serdiuks in practical sealed heavy armor occupy the parapets, autonomous defensive turrets in standby, hastily secured entrances and atmospheric tension. Architecture blends monumental fortified civic buildings with futuristic infrastructure. No crowds, civilian harm, corpses or graphic violence. This is a future alien-world capital, not modern Earth Baghdad.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-7638af1c-47c8-4dcf-bf75-81e002ffd768.png",
+      "asset": "content/Images/Universe/Generated/muryid-citadel.png"
+    },
+    {
+      "slug": "muryid-orbital-campaign",
+      "key": "universe/empires/hetmanate-federation/events/muryid-uprising",
+      "before": {
+        "uk": "# Кінець",
+        "en": "# End"
+      },
+      "prompt": "Use case: illustration-story. Landscape 16:9 editorial artwork for Loca Deserta sci-fi encyclopedia. Ultra-realistic cinematic science-fiction photography, believable practical engineering, fine material detail, natural light and physically grounded shadows, restrained colors. No captions, readable text, watermark, logos or existing franchise designs. Unspecified designs are artistic interpretations. The wider space campaign of the Muryid Uprising. A scarred military frigate beside a small fortified lunar base, a boarding transport cautiously approaching its docking airlock, other spacecraft tiny above the moon's cratered horizon and an inhabited planet beyond. Show evidence of a prolonged contested campaign through damaged panels and old impact scars. Grounded ultra-realistic orbital warfare photograph, hard directional sunlight, restrained engine glow. No visible laser beams in vacuum, no fireballs, no gore, no identifiable ethnic combatants. Emphasize logistical scale and vulnerability.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-c6d390c7-87d8-4556-aa4d-905a7eda9214.png",
+      "asset": "content/Images/Universe/Generated/muryid-orbital-campaign.png"
+    },
+    {
+      "slug": "cossack-council",
+      "key": "universe/empires/hetmanate-federation/military-affairs/customary-laws",
+      "before": {
+        "uk": "## VII.",
+        "en": "## VII."
+      },
+      "prompt": "Use case: illustration-story. Landscape 16:9 editorial artwork for Loca Deserta sci-fi encyclopedia. Ultra-realistic cinematic science-fiction photography, believable practical engineering, fine material detail, natural light and physically grounded shadows, restrained colors. No captions, readable text, watermark, logos or existing franchise designs. Unspecified designs are artistic interpretations. An elected council of spacefaring Ukrainian Cossacks inside a futuristic military assembly hall, illustrating the custom that every registered Cossack has a voice regardless of rank. Eye-level wide scene of veterans in worn practical futuristic service clothing and partly removed armor seated at equal height in a broad semicircle, listening to a standing speaker. Some have traditional oseledets forelocks and mustaches. No throne, crown or supreme monarch. Viewport reveals a distant alien steppe colony. Warm human faces, sober deliberation, functional advanced interior, no caricature or fantasy costume.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-1c9462d1-ea37-4b3c-b165-6230a15a3a32.png",
+      "asset": "content/Images/Universe/Generated/cossack-council.png"
+    },
+    {
+      "slug": "cossack-teaching-words",
+      "key": "universe/empires/hetmanate-federation/military-affairs/customary-laws",
+      "before": {
+        "uk": "# Суд і кара",
+        "en": "# Court and Punishment"
+      },
+      "prompt": "Use case: illustration-story. Landscape 16:9 editorial artwork for Loca Deserta sci-fi encyclopedia. Ultra-realistic cinematic science-fiction photography, believable practical engineering, fine material detail, natural light and physically grounded shadows, restrained colors. No captions, readable text, watermark, logos or existing franchise designs. Unspecified designs are artistic interpretations. A veteran Ukrainian space Cossack mentor teaching the Twelve Words, the oral customary laws, to a small group of adult cadets in a planetary training barracks. Intimate medium-wide documentary photograph: older mentor with mustache and oseledets forelock, practical worn futuristic uniform, attentive young adults seated nearby. Equipment lockers and sealed space helmets in background, alien dawn visible through reinforced window. Oral teaching, no giant sacred book or carved text. Subtle gestures, human connection and passed-down duty, restrained natural lighting, all characters visibly adults.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-aacf0792-1ca9-4854-9c58-d92b814938b5.png",
+      "asset": "content/Images/Universe/Generated/cossack-teaching-words.png"
+    },
+    {
+      "slug": "laser-weapons",
+      "key": "universe/technologies/general-weapons/laser-weapons",
+      "before": {},
+      "prompt": "Use case: illustration-story. Landscape 16:9 editorial artwork for Loca Deserta sci-fi encyclopedia. Ultra-realistic cinematic science-fiction photography, believable practical engineering, fine material detail, natural light and physically grounded shadows, restrained colors. No captions, readable text, watermark, logos or existing franchise designs. Unspecified designs are artistic interpretations. A futuristic Hetmanate infantry laser rifle being fired during a controlled range test. Side three-quarter composition showing a soldier in practical protective armor bracing a compact robust rifle with emitter optics, heat sinks and energy cell; downrange a light metal target has a small incandescent heated spot. Dry dusty test range, a very faint narrow light path only where dust scatters it, no thick glowing bolt, no kinetic recoil, no cartridge cases or projectile ammunition belts. Functional reliable standard infantry weapon, a little heat shimmer around emitter, detailed metal and ceramic surfaces. No injured people.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-fde47547-0c64-4779-91d6-d7527d79fa74.png",
+      "asset": "content/Images/Universe/Generated/laser-weapons.png"
+    },
+    {
+      "slug": "plasma-weapons",
+      "key": "universe/technologies/general-weapons/plasma",
+      "before": {},
+      "prompt": "Use case: illustration-story. Landscape 16:9 editorial artwork for Loca Deserta sci-fi encyclopedia. Ultra-realistic cinematic science-fiction photography, believable practical engineering, fine material detail, natural light and physically grounded shadows, restrained colors. No captions, readable text, watermark, logos or existing franchise designs. Unspecified designs are artistic interpretations. A futuristic Hetmanate heavy infantry plasma gun in a controlled armored-target test. Side-angle photograph with a sealed-armored soldier holding a substantial weapon with superconducting coil housings, compact energy pack and heat-dissipation hardware. A single compact blue-white plasma packet travels across a short gap toward an unmanned armored target, faint thin ionized trail and brief halo at muzzle, localized impact deformation and small cracked hot patch on target. Strong visual distinction from a continuous laser beam or flamethrower. Realistic restrained exposure, dark industrial test bay, no giant explosions, no injured people.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-a14c3795-b3b2-4828-92d5-cd7d2950e05a.png",
+      "asset": "content/Images/Universe/Generated/plasma-weapons.png"
+    }
+  ]
+}

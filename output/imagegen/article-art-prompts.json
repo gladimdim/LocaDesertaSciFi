@@ -1,0 +1,36 @@
+{
+  "mode": "built-in image_gen",
+  "style": "ultra-realistic sci-fi",
+  "images": [
+    {
+      "slug": "first-warp-jump",
+      "prompt": "Use case: illustration-story. Asset type: landscape article illustration for Loca Deserta science-fiction encyclopedia. Ultra-realistic cinematic science fiction, photographic materials and believable engineering, detailed practical surfaces, natural physically grounded lighting, restrained color grading, wide 16:9 composition. No text, captions, logos or watermark. Show the first crewed interstellar research vessel departing Europa toward the Wastes of Jupiter, just BEFORE its historic warp jump. One large experimental spacecraft, icy curved Europa below and immense realistically banded Jupiter beyond. Three scientists are aboard but need not be visible. Elegant monumental scale, deep black vacuum, crisp sunlight and deep shadows, intricate radiator arrays and functional hull. No magical glowing portal or visible gravitational shock wave: the article says the wave is detectable only by instruments. Ship shape is an artistic interpretation.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-b6428930-647b-4ec5-8e1a-a26a6cdb6bac.png",
+      "asset": "content/Images/Universe/Generated/first-warp-jump.png"
+    },
+    {
+      "slug": "jovian-europa",
+      "prompt": "Use case: illustration-story. Asset type: landscape article illustration for Loca Deserta science-fiction encyclopedia. Ultra-realistic cinematic science fiction, photographic materials and believable engineering, detailed practical surfaces, natural physically grounded lighting, restrained color grading, wide 16:9 composition. No text, captions, logos or watermark. Show the early independent civilian scientific research station on the icy surface of Jupiter's moon Europa, dedicated to developing warp engines. Broad establishing shot across fissured ice toward interconnected pressurized research habitats, shielded laboratories, service infrastructure and a few tiny suited scientists for scale. Jupiter hangs above the horizon. Demilitarized scientific outpost: no weapons, military ships or soldiers. Photoreal ice, radiation-shielded habitat shells, believable airlocks, hard low sunlight. Architecture is an artistic interpretation.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-49392b56-19ad-42c9-80ef-58ce1ee70a4f.png",
+      "asset": "content/Images/Universe/Generated/jovian-europa.png"
+    },
+    {
+      "slug": "muryid-system",
+      "prompt": "Use case: illustration-story. Asset type: landscape article illustration for Loca Deserta science-fiction encyclopedia. Ultra-realistic cinematic science fiction, photographic materials and believable engineering, detailed practical surfaces, natural physically grounded lighting, restrained color grading, wide 16:9 composition. No text, captions, logos or watermark. Show the industrial heart of one inhabited metal-rich planet in the Muryid System: an immense futuristic steel foundry manufacturing curved spacecraft hull plating. Interior wide establishing photograph with gigantic formed steel sections on automated handling gantries, controlled molten metal pouring in background, heat shimmer, sparks, practical industrial lighting, highly detailed heat-darkened steel and machinery. A few distant protected workers provide scale. The civilization supplies starship hulls, armor and colony stations. No battle. Factory architecture is an artistic interpretation.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-0de94b7f-89b1-44ea-8ee0-f4342132fcbc.png",
+      "asset": "content/Images/Universe/Generated/muryid-system.png"
+    },
+    {
+      "slug": "hetmanate-colonization",
+      "prompt": "Use case: illustration-story. Asset type: landscape article illustration for Loca Deserta science-fiction encyclopedia. Ultra-realistic cinematic science fiction, photographic materials and believable engineering, detailed practical surfaces, natural physically grounded lighting, restrained color grading, wide 16:9 composition. No text, captions, logos or watermark. Show a Hetmanate Federation colonizer expedition terraforming a newly discovered rocky planet. Wide elevated cinematic view of landed industrial expedition spacecraft and modular terraforming infrastructure across a vast frontier plain, geological drilling installation accessing geothermal energy, early sheltered agricultural modules and a small team of suited surveyors. Atmosphere is only partially developed, restrained dusty horizon, rugged credible machinery, epic landscape, low sun. This is a futuristic spacefaring colonizer wagon-train, not literal wooden wagons. Machinery and landscape are artistic interpretations.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-5ce46b3c-6e99-498c-bdea-8df25c459362.png",
+      "asset": "content/Images/Universe/Generated/hetmanate-colonization.png"
+    },
+    {
+      "slug": "melta",
+      "prompt": "Use case: illustration-story. Asset type: landscape article illustration for Loca Deserta science-fiction encyclopedia. Ultra-realistic cinematic science fiction, photographic materials and believable engineering, detailed practical surfaces, natural physically grounded lighting, restrained color grading, wide 16:9 composition. No text, captions, logos or watermark. Show a futuristic Hetmanate combat engineer demonstrating a heavy close-range melta thermal weapon against an unoccupied thick armored blast door in a test facility. Three-quarter side view, readable silhouette of weapon and impact, sealed practical protective combat suit. A short narrow discharge of superheated plasma and metallic aerosol crosses the short gap to the door, a localized white-hot breach with molten steel dripping below; heat distortion and modest sparks. Compact reactor block and robust cooling hardware on the weapon. Realistic exposure retaining detail, no giant fireball, no injured people, no fantasy ornament or franchise emblems. Weapon design is an artistic interpretation.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-3355d278-899d-4e56-a0e9-7388682fd3ef.png",
+      "asset": "content/Images/Universe/Generated/melta.png"
+    }
+  ]
+}

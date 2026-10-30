@@ -19,3 +19,5 @@ Due to enormous energy consumption, most models are equipped with replaceable en
 In the Hetmanate's troops, meltas are used primarily by **[[../../Empires/Hetmanate Federation/Military Affairs/Serdiuks|Serdiuks]]-stormtroopers**, **heavy Terminators**, and engineering units. They are used to breach fortifications, destroy heavy armored vehicles, combat robots, and sealed airlocks of space stations. In close combat, a single precise shot can turn even the thickest armor into incandescent scrap metal. [[../../Empires/Hetmanate Federation/Military Affairs/Terminator|Terminators]] often use single-shot melta-guns, which in close combat inflict catastrophic damage on the enemy.
 
 Colossal [[../../Empires/Hetmanate Federation/Star Affairs/Ships/Ship Weapons/Melta Launch System|Melta Launch Systems]] also exist, with which military starships are equipped.
+
+![[../../../../Images/Universe/Generated/melta.png]]
