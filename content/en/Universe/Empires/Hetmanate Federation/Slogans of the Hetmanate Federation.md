@@ -35,7 +35,7 @@ Space and Freedom.
 > — *Serdyuk Vasyl Kryvoshapka, Last Stand at Warp Beacon Azov-9 (Year 319 SE)*
 
 > **"They deployed a capital dreadnought against a single kurin! Cossacks, what greater honor could we ask for?!"**  
-> — *Sotnyk Mykola Bohun, Orbital Defense of Wild Field 17 (Year 320 SE)*
+> — *Sotnyk Mykola Bohun, Orbital Defense of Loca Deserta 17 (Year 320 SE)*
 
 > **"Lock your visors and ignite your sabers! Today, we teach the cold stars to fear Cossack steel!"**  
 > — *Khorunzhyi Ostap Hostroshablia, The Assault on Iron Gate Nebula (Year 323 SE)*

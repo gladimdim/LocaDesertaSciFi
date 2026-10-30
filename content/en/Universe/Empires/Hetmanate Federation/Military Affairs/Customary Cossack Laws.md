@@ -44,7 +44,7 @@ The loudest breach of this Word in recent history was the [[../Events/Muryid Upr
 
 The heaviest of all breaches, and the only one for which custom permits execution without a council hearing, provided the treachery was witnessed by at least three.
 
-The second half of the Word is not mercy but contempt. After the betrayal by the Commonwealth and Lithuania (~-570 SE), captured Poles were punished by water: a noose on a long pole, led to the nearest river and held under the pole until they stopped struggling. Asked why they did not simply cut a throat, the Cossacks answered that the holy soil of the Wild Fields must stay clean. The sabre is for an enemy; a traitor is drowned, hanged or put out of an airlock, but never cut down.
+The second half of the Word is not mercy but contempt. After the betrayal by the Commonwealth and Lithuania (~-570 SE), captured Poles were punished by water: a noose on a long pole, led to the nearest river and held under the pole until they stopped struggling. Asked why they did not simply cut a throat, the Cossacks answered that the holy soil of Loca Deserta must stay clean. The sabre is for an enemy; a traitor is drowned, hanged or put out of an airlock, but never cut down.
 
 ## V. The Word on Captivity
 > For their own, they always come.

@@ -127,7 +127,7 @@ As of 495 SE, the Hetmanate Federation had 52 DARYA-class ships in service. The 
 
 - **"Volyn"** — flagship of the transport fleet, the largest ever built (61 km). The first ship of this class, launched from orbital shipyards above Jupiter in 427 SE. Permanently carries a reinforced squadron: 15 Tavrs, 8 Dubs, 200 Sokils.
 
-- **"Dyke Pole"** (Wild Field) — specializes in the mobile headquarters role; has enhanced communications, reconnaissance, and electronic warfare systems. Serves the needs of the Central Stellar Kish.
+- **"Dyke Pole"** (Loca Deserta) — specializes in the mobile headquarters role; has enhanced communications, reconnaissance, and electronic warfare systems. Serves the needs of the Central Stellar Kish.
 
 - **"Slobozhanshchyna"** — optimized for landing operations; carries twice the number of atmospheric flyers and orbital landing boats of the standard configuration.
 

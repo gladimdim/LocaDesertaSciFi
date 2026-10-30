@@ -19,7 +19,7 @@ const STR = {
     description:
       "Всесвіт Loca Deserta Sci-Fi: Федерація Гетьманату, Корпоративна Республіка та Імперія Сонця ділять галактику після Марсіанського Поділу. Кодекс, хронологія, книги та ігри.",
     heroKicker: "Зоряна Епоха · ~495 рік ЗЕ",
-    heroTitle: ["Дике Поле", "серед зірок"],
+    heroTitle: ["Дике Поле", "Sci-Fi"],
     heroLead:
       "Через п'ять століть після першого варп-стрибка три імперії ділять галактику. Козаки Федерації Гетьманату тримають кордон на найвіддаленіших зорях.",
     startReading: "Читати «Зоряний Гетьманат»",
@@ -69,7 +69,7 @@ const STR = {
     description:
       "The Loca Deserta Sci-Fi universe: the Hetmanate Federation, the Corporate Republic and the Empire of the Sun split the galaxy after the Martian Partition. Codex, timeline, books and games.",
     heroKicker: "Star Era · ~495 SE",
-    heroTitle: ["Wild Fields", "among the stars"],
+    heroTitle: ["Loca Deserta", "Sci-Fi"],
     heroLead:
       "Five centuries after the first warp jump, three empires divide the galaxy. The Cossacks of the Hetmanate Federation hold the border at the farthest stars.",
     startReading: "Read “Space Hetmanate”",
@@ -78,10 +78,10 @@ const STR = {
     codexLead: "Empires, history, technology and worlds of the universe.",
     factions: "Empires",
     books: "Books",
-    booksLead: "Novels and stories of the “Siege of Wild Fields 17” series.",
+    booksLead: "Novels and stories of the “Siege of Loca Deserta 17” series.",
     games: "Games",
     timeline: "Timeline",
-    timelineLead: "Key events from Old Earth to the siege of Wild Fields 17.",
+    timelineLead: "Key events from Old Earth to the siege of Loca Deserta 17.",
     fullTimeline: "Full timeline",
     history: "History",
     technologies: "Technologies",
@@ -119,7 +119,7 @@ const STR = {
     description:
       "Das Loca-Deserta-Sci-Fi-Universum: Hetmanat-Föderation, Konzernrepublik und Sonnenimperium teilen die Galaxis. Kodex, Chronik, Bücher und Spiele.",
     heroKicker: "Sternenära · ~495 SE",
-    heroTitle: ["Wilde Felder", "zwischen den Sternen"],
+    heroTitle: ["Loca Deserta", "Sci-Fi"],
     heroLead:
       "Fünf Jahrhunderte nach dem ersten Warpsprung teilen drei Imperien die Galaxis. Die Kosaken der Hetmanat-Föderation halten die Grenze an den fernsten Sternen.",
     startReading: "„Space Hetmanate“ lesen",
@@ -128,7 +128,7 @@ const STR = {
     codexLead: "Imperien, Geschichte, Technologie und Welten des Universums.",
     factions: "Imperien",
     books: "Bücher",
-    booksLead: "Romane und Erzählungen der Reihe „Belagerung der Wilden Felder 17“.",
+    booksLead: "Romane und Erzählungen der Reihe „Belagerung von Loca Deserta 17“.",
     games: "Spiele",
     timeline: "Chronik",
     timelineLead: "Schlüsselereignisse von der Alten Erde bis zur Belagerung.",
