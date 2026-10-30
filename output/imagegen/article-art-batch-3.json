@@ -1,0 +1,70 @@
+{
+  "mode": "built-in image_gen",
+  "density": "One illustration per roughly A4 page of prose; two in long articles, at most one in short articles.",
+  "images": [
+    {
+      "slug": "kharakternyk-monastery",
+      "path": "content/Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Характерники.md",
+      "before": "# Навчання",
+      "prompt": "Use case: illustration-story. New landscape 16:9 article illustration for Loca Deserta sci-fi universe. Ultra-realistic cinematic photography, convincing future engineering, real skin and material texture, restrained natural light, no painterly or cartoon style. No readable lettering, captions, watermark or commercial logos. Designs not explicitly specified are artistic interpretations. A secret futuristic citadel-monastery on the planet Heracles' Pillars, home to the elite Kharakternyk Cossack order. Wide atmospheric exterior at dawn where forest meets open steppe. Restrained monumental stone and armored metal architecture, enclosed cloisters, small concealed spacecraft landing bay, secure airlocks and subtle modern infrastructure. A few tiny robed figures provide scale without discernible faces. This is an austere residential training and scientific complex with cells, archives and a concealed pharmacology laboratory, not a magical temple. Earthlike landscape, no enormous alien planets in sky, no glowing runes or supernatural effects. Architecture is speculative, grounded in article's steppe-forest setting.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-40a156cd-faa8-414c-b049-3d65dc0880a3.png",
+      "asset": "content/Images/Universe/Generated/kharakternyk-monastery.png"
+    },
+    {
+      "slug": "kharakternyk-final-trial",
+      "path": "content/Всесвіт/Імперії/Федерація Гетьманату/Військова Справа/Характерники.md",
+      "before": "# Гераклові Стовпи",
+      "refs": true,
+      "prompt": "Use case: illustration-story. New landscape 16:9 article illustration for Loca Deserta sci-fi universe. Ultra-realistic cinematic photography, convincing future engineering, real skin and material texture, restrained natural light, no painterly or cartoon style. No readable lettering, captions, watermark or commercial logos. Designs not explicitly specified are artistic interpretations. All visible Hetmanate Cossacks including elders have a clean-shaven scalp with ONE isolated loose chub/oseledets lock rooted in a SMALL top/front crown patch, softly swept across the forehead or to a temple. No front-to-nape hair stripe, mohawk ridge, ponytail, braid, bun, hair tie, modern undercut. Variation in length, gray or brown color, curl and direction. Reference images depict hairstyle geometry only; do not copy their drawing style. Bowl cuts are permitted only for civilian commoners, never Cossacks. A solitary adult male Kharakternyk initiate in his late twenties on the final survival trial on an uninhabited continent of Heracles' Pillars. Wide environmental shot at blue-hour dusk: exhausted but determined man in worn plain expedition clothes, primitive axe at his belt and small supplies, looking across a rugged forested valley toward ONE tiny distant guiding light on a high mountain ridge. Visible bare head has authentic isolated Cossack side-falling forelock. His surroundings are physically real wilderness, mist and rock, no magic aura or monsters. The light is a distant practical beacon guiding him; no laser trail. Quiet endurance and vast scale, no fighting, no wounds.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-c1eca370-f13b-4075-9088-dd1f116ba7dc.png",
+      "asset": "content/Images/Universe/Generated/kharakternyk-final-trial.png"
+    },
+    {
+      "slug": "cossack-career-academy",
+      "path": "content/Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Просування козаків по службі.md",
+      "before": "# Переведення",
+      "refs": true,
+      "prompt": "Use case: illustration-story. New landscape 16:9 article illustration for Loca Deserta sci-fi universe. Ultra-realistic cinematic photography, convincing future engineering, real skin and material texture, restrained natural light, no painterly or cartoon style. No readable lettering, captions, watermark or commercial logos. Designs not explicitly specified are artistic interpretations. All visible Hetmanate Cossacks including elders have a clean-shaven scalp with ONE isolated loose chub/oseledets lock rooted in a SMALL top/front crown patch, softly swept across the forehead or to a temple. No front-to-nape hair stripe, mohawk ridge, ponytail, braid, bun, hair tie, modern undercut. Variation in length, gray or brown color, curl and direction. Reference images depict hairstyle geometry only; do not copy their drawing style. Bowl cuts are permitted only for civilian commoners, never Cossacks. A small class of ADULT veteran Cossacks attending the Hetmanate Legal Academy after completing at least five years of military service. An older mustached Cossack instructor with gray isolated side-falling forelock teaches attentive adults in their twenties and thirties in practical future service uniforms. Eye-level candid view of serious discussion around a seminar table with plain tablets and a small abstract projected civic-planning model with no text. Futuristic university interior and established colony city seen through a window. Emphasize career progression into law and civic administration, intellectual study after service, not weapons training or a graduation ceremony. All visible people are Cossacks with specified shaved scalp and loose forelock. No children.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-ed4c83c6-c7ba-4cb0-9729-0a600d031e3e.png",
+      "asset": "content/Images/Universe/Generated/cossack-career-academy.png"
+    },
+    {
+      "slug": "federation-labor-allocation",
+      "path": "content/Всесвіт/Імперії/Федерація Гетьманату/Соціальна Справа/Рабство.md",
+      "before": "# Вихід з Рабства",
+      "prompt": "Use case: illustration-story. New landscape 16:9 article illustration for Loca Deserta sci-fi universe. Ultra-realistic cinematic photography, convincing future engineering, real skin and material texture, restrained natural light, no painterly or cartoon style. No readable lettering, captions, watermark or commercial logos. Designs not explicitly specified are artistic interpretations. A sober documentary-style view of a futuristic penal labor allocation center in the Hetmanate Federation. Adult civilian prisoners in plain practical work clothing wait in a controlled processing line beside luggage and issued safety helmets; an administrative clerk behind reinforced glass matches labor assignments on unreadable screens. Subtle faded geometric forehead identification marks, not readable QR codes or words. The civilians may have simple bowl-cut hair or short ordinary haircuts, no Cossack forelocks. Background through glass shows a utilitarian transport bay and waiting enclosed shuttle. Controlled doors, austere institutional design, impersonal bureaucracy and constrained movement. No smiling recruitment-ad mood, chains, beatings, nudity, wounds or torture. All people adults, scene expresses loss of liberty without sensational violence.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-0d8802c5-79c9-496a-b38b-646520c21c0e.png",
+      "asset": "content/Images/Universe/Generated/federation-labor-allocation.png"
+    },
+    {
+      "slug": "martian-division-conference",
+      "key": "universe/history/martian-division-of-the-world",
+      "before": {
+        "uk": "## Результати",
+        "en": "## Results"
+      },
+      "refs": true,
+      "prompt": "Use case: illustration-story. New landscape 16:9 article illustration for Loca Deserta sci-fi universe. Ultra-realistic cinematic photography, convincing future engineering, real skin and material texture, restrained natural light, no painterly or cartoon style. No readable lettering, captions, watermark or commercial logos. Designs not explicitly specified are artistic interpretations. All visible Hetmanate Cossacks including elders have a clean-shaven scalp with ONE isolated loose chub/oseledets lock rooted in a SMALL top/front crown patch, softly swept across the forehead or to a temple. No front-to-nape hair stripe, mohawk ridge, ponytail, braid, bun, hair tie, modern undercut. Variation in length, gray or brown color, curl and direction. Reference images depict hairstyle geometry only; do not copy their drawing style. Bowl cuts are permitted only for civilian commoners, never Cossacks. The historic Martian conference of year 33 Stellar Era, dividing space among three empires by a literal lottery. Exactly THREE principal adult leaders sit around a dignified circular conference table: Corporate Republic emperor Dan Rios in a restrained futuristic formal suit; Empire of the Sun ruler Wang Mang, an East Asian man in refined futuristic formal robes; Hetmanate Emperor-Koshovyi Taras Velychko, a mustached Cossack elder with clean-shaven scalp and a SINGLE loose isolated side-falling forelock as in references, in sober future military dress. One leader draws a small folded paper ticket from a neutral transparent lottery bowl while others watch tensely. Small loose tickets lie on the table, markings not readable. A subdued transparent spherical star map divided into three equal volumetric sectors hovers above the table. Through a reinforced panorama window: Mars' rusty red terrain and distant habitat domes. No thrones, fantasy crowns, weapon displays or caricatures. Historical diplomatic gravity, nuanced expressions, no resemblance to present-day real politicians.",
+      "source": "/home/gladimdim/.codex/generated_images/01a18c87-7a99-7291-b6a9-fb8f4b636328/exec-d340aec3-d693-4a31-9da2-4b5388f52cc6.png",
+      "asset": "content/Images/Universe/Generated/martian-division-conference.png"
+    }
+  ],
+  "reuse": [
+    {
+      "key": "universe/history/main-history-of-the-universe",
+      "asset": "content/Images/Universe/Generated/first-warp-jump.png",
+      "before": {
+        "uk": "## Марсіанський поділ",
+        "en": "## The Martian Division"
+      }
+    },
+    {
+      "key": "universe/history/main-history-of-the-universe",
+      "asset": "content/Images/Universe/Generated/martian-division-conference.png",
+      "before": {
+        "uk": "## Результати",
+        "en": "## Results"
+      }
+    }
+  ]
+}

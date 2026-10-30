@@ -19,6 +19,8 @@ The launch was broadcast to all four inhabited bodies of the Solar System: Earth
 
 Two Earth days later, another gravitational wave struck the sensors placed around the Wastes. A few hours after that, Europa received a video signal from the cosmonauts. The astronomical time of their return from warp became the beginning of the new Stellar Era, or SE. Humanity gained access to any star.
 
+![[../../../Images/Universe/Generated/first-warp-jump.png]]
+
 ## The Martian Division of the Universe and the Teegarden Incident
 
 Every member of the European (Jovian) International Research Station received access to all developments of the laboratory. In year 23 SE, each empire had already founded one colony in the nearest star system, Alpha Centauri. The search for further systems able to host humans showed that there were fairly few of them, and even fewer systems rich in useful minerals. Warp jumps were also expensive, because lawrencium and nobelium are unstable and must be held calm only under micronuclear explosions. The empires began debating who had the right to mine asteroids, comets, and planets and to create colonies there.
@@ -34,6 +36,8 @@ Because any military presence on Jovian Europa was forbidden, and the emperors o
 On July 24, year 33 SE, the [[Martian Division of the World|Martian Division of the Universe]] took place. The entire universe was divided into three sectors. Each sector was one third of the sphere that represented the Universe. The division was conducted by lottery: each emperor drew a ticket with a sector name. As soon as an emperor drew the third ticket for a sector, that sector was automatically granted to that empire for eternal use.
 
 Dan Rios, emperor of the Corporate Republic, was the first to draw three tickets. The Corporates received the upper-right sector. Between the Sunflowers and the Hetmanates, a heated struggle arose: each wanted the "left" sector, because the "lower" one contained the enormous Canis Major Void, where there is almost nothing. Emperor-Koshovyi Taras Velychko and the Sunflower emperor Wang Mang (王莽) could not draw the third "left" ticket. Five times in a row each drew an already occupied sector. Finally, Wang Mang drew the "left" sector, granting his empire rule there, while the Hetmanates automatically received the "lower" sector. Though the Hets were in despair, an agreement was an agreement.
+
+![[../../../Images/Universe/Generated/martian-division-conference.png]]
 
 ## Results of the Martian Division of the Universe in Year 33
 

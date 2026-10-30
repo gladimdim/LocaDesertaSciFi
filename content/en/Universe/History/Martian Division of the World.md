@@ -9,6 +9,8 @@ On July 24, year 33 SE, the Martian Division of the Universe took place. The ent
 
 Dan Rios, emperor of the Corporate Republic, was the first to draw three tickets. The Corporates received the upper-right sector. Between the Sunflowers and the Hetmanates, a heated struggle arose: each wanted the "left" sector, because the "lower" one contained the enormous Canis Major Void, where there is almost nothing. Emperor-Koshovyi Taras Velychko and the Sunflower emperor Wang Mang (王莽) could not draw the third "left" ticket. Five times in a row each drew an already occupied sector. Finally, Wang Mang drew the "left" sector, granting his empire rule there, while the Hetmanates automatically received the "lower" sector. Though the Hets were in despair, an agreement was an agreement.
 
+![[../../../Images/Universe/Generated/martian-division-conference.png]]
+
 ## Results of the Martian Division of the Universe in Year 33
 
 - Each sector was granted to an empire in eternal possession.
