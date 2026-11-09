@@ -15,4 +15,4 @@ There are different variations of this weapon. Since it is a Terminator's person
 
 Extremely powerful in close combat. It fires the entire plasma charge from the flask in one shot. Because of the large mass of plasma fired, it must be reloaded every time. It is a favorite weapon of hand-to-hand Terminators.
 
-![Short Plasma Carbine](../../../../../Images/Universe/Hetmanate-Federation/Short_Plasma_Carbine.jpg)
+![Single-shot short plasma handgun with a protected plasma reservoir](../../../../../Images/Universe/Generated/short-plasma-handgun.png)

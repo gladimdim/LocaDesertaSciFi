@@ -21,5 +21,9 @@ After the suppression of the Muryid Uprising, bot-horses quickly spread across a
 ## Advantages
 Can traverse virtually any terrain. Does not require oxygen to operate. Some modifications can carry a heavy [[../Military Affairs/Terminator|Terminator]] on their back.
 
+![Bot-horse with a segmented neck, head-mounted optical sensors and a vox antenna in a maintenance hangar](../../../../../Images/Universe/Generated/bot-horse-reference-hangar.png)
+
+*A saddled bot-horse with secured equipment in a maintenance hangar.*
+
 ## Disadvantages
 Requires replacement of the cold fusion battery with warp substances such as einsteinium or strontium. Rarely has armor. Vulnerable to kinetic projectiles.

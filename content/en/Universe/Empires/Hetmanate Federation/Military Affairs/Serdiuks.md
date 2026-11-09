@@ -7,6 +7,10 @@ translations:
 ---
 Serdiuks are the main combat arm of the [[../Hetmanate Federation|Hetmanate Federation]]. They take part in all active operations and, unlike [[Haiduks|Haiduks]], conduct offensive campaigns.
 
+![Serdiuk in superheavy armor with a matte hemispherical visor and shoulder-mounted cannon](../../../../../Images/Universe/Generated/serdiuk-heavy-portrait.png)
+
+*A superheavy Serdiuk at a moonbase airlock.*
+
 ## Tasks
 
 ### Fighting the [[Khartsyzy|Khartsyzy]]
@@ -16,6 +20,10 @@ Every space palanka has several Serdiuk regiments at its disposal. This allows e
 ## External Threats
 
 Although open wars between empires are fairly rare, Serdiuks are still the troops most often committed to them.
+
+![Six-meter Serdiuk mech with a Konyk melta cannon covering an infantry landing on a moon](../../../../../Images/Universe/Generated/serdiuk-konyk-moon-landing.png)
+
+*A mech armed with the Konyk clears a lunar landing zone for the Serdiuks.*
 
 ## Armament
 
@@ -27,9 +35,17 @@ All new weapon types go first to the Serdiuks. Because they often fight in space
 
 #### Space Infantry
 
+![Serdiuks fighting inside a depressurized space station](../../../../../Images/Universe/Generated/serdiuks-decompressed-station.png)
+
+*Station assault: covering fire and an advance behind an armored shield.*
+
 #### Flyers
 
 #### Cavalry
+
+![Mounted Serdiuk patrol with plasma lances on bot-horses with segmented necks and optical sensors](../../../../../Images/Universe/Generated/serdiuk-cavalry-reference-patrol.png)
+
+*A mounted Serdiuk patrol on armored bot-horses.*
 
 #### Plastuns
 

@@ -51,6 +51,10 @@ A boarding operation begins with the *sotnia* deploying from the carrier. Termin
 
 Priority targets during boarding are: the bridge, the reactor compartment, life support systems, and communication nodes. The *sotnia* operates quickly — a typical operation to capture a medium-class ship lasts from 15 to 30 minutes. If resistance is too strong, the *sotnia* switches to sabotage tactics: destruction of critical systems and withdrawal.
 
+![Terminator boarding team cutting through a ship's hull under shield and plasma-fire cover](../../../../../Images/Universe/Generated/terminators-orbital-boarding.png)
+
+*An engineer cuts a passage through the hull while the boarding team provides cover and approaches on jet packs.*
+
 ### Planetary Deployment
 
 On planetary surfaces, SJS perform the role of forward assault groups. Deployment occurs from low orbit or from an atmospheric carrier. Terminators enter the atmosphere in the cruise mode of their packs, bleeding off speed immediately before landing. The first wave of the landing disperses across the terrain, forming a perimeter, after which the advance toward the objective begins in a series of successive jumps.

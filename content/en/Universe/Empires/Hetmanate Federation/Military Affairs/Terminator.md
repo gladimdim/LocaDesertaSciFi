@@ -11,6 +11,10 @@ Every Terminator has a heavy outer armored spacesuit that allows combat in open 
 
 Controlling a Terminator suit requires great strength, skill, and long training. Inside it, every Cossack sits in a personal spacesuit that protects him from depressurization, extreme temperatures, and vacuum if the main outer suit is breached.
 
+![Veteran Terminator in heavy powered armor](../../../../../Images/Universe/Generated/terminator-veteran-portrait.png)
+
+*A veteran Terminator before a boarding operation.*
+
 ## Terminator Specializations
 
 There are several Terminator specializations.
