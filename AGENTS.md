@@ -31,6 +31,30 @@ where it is **Дике Поле** (with normal Ukrainian declension: Диког�
 - Apply this direction consistently to armor, shields, vehicles and other
   faction markings, including image-generation prompts.
 
+## Cossack appearance and akinakes
+
+- Depict adult male Cossacks with moustaches and Cossack hairstyles: a long
+  oseledets lock or a top forelock (chub) falling toward the forehead, with
+  shaved sides. Vary moustaches, hair, age, facial features and poses between
+  characters, including background Cossacks when their features are visible.
+- Follow `output/imagegen/references/cossack-hairstyles.png` and
+  `output/imagegen/references/cossack-forelock.png`. Use varied Ukrainian
+  portrait references for faces; avoid caricatures and identical faces.
+- Kharakternyky carry ONE Scythian akinakes per person, sheathed on the
+  wearer's anatomical RIGHT thigh. Do not substitute paired Caucasian
+  kindjals, modern knives or a left-side mount. The akinakes is a compact
+  straight double-edged short sword with a short bilobed guard and a
+  transverse pommel; use functional suspension straps.
+- Approved character examples are
+  `content/Images/Books/Muryid-Uprising/vyhovsky-kharakternyky-station-pencil-v2.png`
+  and `content/Images/Books/Muryid-Uprising/vyhovsky-sich-riflemen-tavern-pencil-v2.png`.
+  Earlier versions of these scenes were superseded and must not guide hair,
+  facial hair or weapons.
+- For illustrations in Vyhovsky's diary, retain the approved graphite-pencil
+  sketch style on warm off-white paper, with loose hatching and unfinished
+  edges, as if drawn by Vyhovsky himself. Apply these appearance and weapon
+  requirements explicitly in generation and editing prompts.
+
 ## Bot-horse artwork
 
 - Follow `output/imagegen/references/bot-horse-approved-style.png` for bot-horse
